@@ -1,0 +1,290 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17/10/2016, 16:33:54
+    Author     : rodrigomuniz
+*/
+// bootstrap
+@import "bootstrap.less";
+
+
+
+
+/*
+reset
+*/
+
+h1, h2, h3, h4, h5, p, a{
+    margin: 0;
+    padding: 0;
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+    border: 0;
+    border-top: 0;
+    border-left: 0;
+    .box-shadow(none);
+}
+
+input{
+    .box-shadow(none)!important;
+    border: 0;
+}
+
+
+/*
+Cores
+*/
+@branco: white;
+@preto: black;
+
+@roxo: rgb(63,42,86);
+
+@cinza-claro: rgb(245,245,245);
+@cinza-escuro: rgb(153,153,153);
+
+
+
+/*
+Botoes
+*/
+
+.btn-padrao-lush(@cor: @roxo){
+    .btn;
+    .button-variant(@cor, transparent, @cor);
+    border-radius: 0;
+    border-bottom-width: 3px;
+    text-transform: uppercase;
+}
+
+.btn-lupa{
+    .btn;
+    .button-variant(@branco, transparent, transparent);    
+}
+.btn-reservar{
+    .btn-padrao-lush(@branco);
+    width: 136px;
+    font-size: 16px;
+}
+
+.btn-padrao-roxo{
+    .btn-padrao-lush;
+}
+
+.btn-enviar{
+    .btn-padrao-lush;
+}
+
+
+#menu{
+    background: @roxo !important;
+}
+
+.menu-link span, .menu-link span::before, .menu-link span::after{
+    height: 2px !important;
+}
+
+/*.menu-link{
+    span{
+        &::before{
+            top: -10px !important;
+        }
+        &::after{
+            bottom: -10px !important;
+        }
+    }
+}*/
+
+.header{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+
+    .header-content{
+
+        padding-top: 46px;
+
+        .header-item{
+            z-index: 100;
+        }
+
+        .titulo{
+
+            .text-center;
+
+            h1{
+                color: @branco;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .botoes-r{
+            .list-inline;
+            text-align: right;
+        }
+
+        .menu-link{
+            position: absolute;
+            margin-top: -25px;
+            //width: 65px;
+        }
+    }
+}
+
+.vitrine{
+    position: relative;
+    z-index: 50;
+
+    img{
+        width: 100%;
+    }
+
+    .sub-titulo{
+        position: absolute;
+        .text-center;
+        bottom: 400px;
+        color: @branco;
+
+
+    }
+
+    .seta-baixo{
+        position: absolute;
+        .text-center;
+        bottom: 60px;        
+        color: @branco;
+
+        p{
+            font-size: 60px;
+        }
+
+    }
+}
+
+footer{
+    background-color: @roxo;
+    height: 160px;
+    color: @branco;
+    padding-top: 72px;
+
+    .endereco{
+        .text-center;
+    }
+
+    ul{
+        .list-inline;
+        text-align: right;
+    }
+
+}
+
+
+.home{
+
+    .faixa-quartos{
+
+        .card-quarto{
+
+            margin-top: 62px;
+            margin-bottom: 78px;
+
+            img{
+                .img-responsive;
+            }
+
+            .btn-padrao-roxo{
+                margin-top: 16px;
+                width: 100%;
+            }
+
+
+        }
+
+    }//faixa-quartos
+
+    .faixa-cinza{
+        background-color: @cinza-claro;        
+        color: @cinza-escuro;
+
+        padding-top: 90px;
+        padding-bottom: 90px;
+
+
+
+    }//faixa-cinza
+
+    .faixa-news-letter{
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        .card-news-letter{
+
+            border: solid 1px @roxo;
+            border-top:0px;
+            border-bottom-width: 3px;
+
+            .card-header{
+                background-color: @roxo;
+                color: @branco;
+                text-transform: uppercase;
+                .text-center;
+                padding-top: 32px;
+                padding-bottom: 32px;
+
+
+            }
+
+            .card-body{
+                padding-top: 30px;
+                padding-bottom: 30px;
+
+                .form-titulo{
+
+                    color: @roxo;
+                    .text-center;
+                    margin-bottom: 40px 
+
+                }
+
+                .campo-linha{
+                    border-radius: 0;
+                    border:0;
+                    border-bottom: solid 1px @cinza-escuro;
+                    padding-left: 0
+                }
+
+
+
+                .btn-enviar{
+                    margin-top: 42px;
+                    width: 100%;
+                }
+
+            }
+        }
+
+    }//faixa-news-letter
+
+}
