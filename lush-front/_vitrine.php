@@ -1,13 +1,27 @@
 <div class="container-fluid vitrine">
     <div class="row">
-        <img src="img/teste/lush-motel-fachada.jpg">
 
-        <div class="col-xs-12 sub-titulo">                    
-            <h2>Experiência única</h2>                    
+        <div class="vitrine-content">
+
+            <div class=" image-vitrine">                    
+                <img src="img/lush_spa_splash@2x.png">                   
+            </div>
+            
+            <div class=" sub-titulo">                    
+                <h2>Experiência única</h2>                    
+            </div>
+            
+            <div class="img-filter"></div>
+            
+            <div class=" seta-baixo">      
+                <a href="#">
+                <img src="img/seta_baixo@2x.png" class="img-responsive">   
+                </a>
+            </div>
+
         </div>
-        <div class="col-xs-12 seta-baixo">                    
-            <p><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></p>                    
-        </div>
+
+
 
     </div>
 </div>

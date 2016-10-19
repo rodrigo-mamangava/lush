@@ -5,7 +5,10 @@
  */
 
 
-smoothScroll.init();
-$(document).ready(function () {
-    $('.menu-link').menuFullpage();
-});
+$.fatNav();
+
+
+//smoothScroll.init();
+//$(document).ready(function () {
+//    $('.menu-link').menuFullpage();
+//});

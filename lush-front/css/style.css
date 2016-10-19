@@ -6770,6 +6770,19 @@ input {
   box-shadow: none !important;
   border: 0;
 }
+.carousel-control .icon-prev,
+.carousel-control .icon-next,
+.carousel-control .glyphicon-menu-right,
+.carousel-control .glyphicon-menu-left {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 5;
+  display: inline-block;
+}
+/*
+Cores
+*/
 /*
 Cores
 */
@@ -6885,6 +6898,10 @@ fieldset[disabled] .btn-lupa.focus {
 .btn-lupa .badge {
   color: transparent;
   background-color: white;
+}
+.btn-lupa img {
+  width: 30px;
+  height: 30px;
 }
 .btn-reservar {
   display: inline-block;
@@ -7235,16 +7252,18 @@ fieldset[disabled] .btn-enviar.focus {
 .menu-link span::after {
   height: 2px !important;
 }
-/*.menu-link{
-    span{
-        &::before{
-            top: -10px !important;
-        }
-        &::after{
-            bottom: -10px !important;
-        }
-    }
-}*/
+.hamburger {
+  position: absolute;
+  top: 42px;
+}
+.fat-nav {
+  background: #3f2a56;
+}
+.hamburger__icon,
+.hamburger__icon:after,
+.hamburger__icon:before {
+  background-color: white;
+}
 .header {
   position: absolute;
   top: 0;
@@ -7263,6 +7282,10 @@ fieldset[disabled] .btn-enviar.focus {
 .header .header-content .titulo h1 {
   color: white;
   text-transform: uppercase;
+}
+.header .header-content .titulo h1 img {
+  width: 81.51px;
+  height: 14.22px;
 }
 .header .header-content .botoes-r {
   padding-left: 0;
@@ -7283,23 +7306,51 @@ fieldset[disabled] .btn-enviar.focus {
   position: relative;
   z-index: 50;
 }
-.vitrine img {
+.vitrine .vitrine-content {
+  position: relative;
+  z-index: 50;
+}
+.vitrine .vitrine-content .image-vitrine img {
+  display: block;
+  max-width: 100%;
+  height: auto;
   width: 100%;
 }
-.vitrine .sub-titulo {
+.vitrine .vitrine-content .sub-titulo {
   position: absolute;
   text-align: center;
-  bottom: 400px;
+  bottom: 40%;
   color: white;
+  z-index: 52;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
-.vitrine .seta-baixo {
+.vitrine .vitrine-content .img-filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 51;
+}
+.vitrine .vitrine-content .seta-baixo {
   position: absolute;
   text-align: center;
   bottom: 60px;
   color: white;
+  z-index: 52;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
-.vitrine .seta-baixo p {
-  font-size: 60px;
+.vitrine .vitrine-content .seta-baixo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: auto;
 }
 footer {
   background-color: #3f2a56;
@@ -7321,6 +7372,17 @@ footer ul > li {
   padding-left: 5px;
   padding-right: 5px;
 }
+footer ul li:first-of-type {
+  padding-right: 34px;
+}
+footer .logo {
+  width: 32px;
+  height: auto;
+}
+footer .rede-social {
+  width: 26px;
+  height: auto;
+}
 .home .faixa-quartos .card-quarto {
   margin-top: 62px;
   margin-bottom: 78px;
@@ -7335,10 +7397,22 @@ footer ul > li {
   width: 100%;
 }
 .home .faixa-cinza {
-  background-color: #f5f5f5;
+  background-color: #f2f2f2;
   color: #999999;
   padding-top: 90px;
   padding-bottom: 90px;
+}
+.home .faixa-cinza .logo_L {
+  display: block;
+  max-width: 100%;
+  width: 83.75px;
+  height: auto;
+  padding-top: 6px;
+}
+.home .faixa-cinza p {
+  font-family: 'FairfieldLTW01-45Light';
+  font-size: 19px;
+  line-height: 30px;
 }
 .home .faixa-news-letter {
   padding-top: 80px;
@@ -7375,4 +7449,177 @@ footer ul > li {
 .home .faixa-news-letter .card-news-letter .card-body .btn-enviar {
   margin-top: 42px;
   width: 100%;
+}
+.faixa-orderby {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+.faixa-orderby p {
+  color: #3f2a56;
+}
+.faixa-orderby p span {
+  color: #999999;
+}
+.post-type-archive-suite .lista-suites .item-suite {
+  padding-top: 32px;
+}
+.post-type-archive-suite .lista-suites .item-suite .detalhes {
+  padding-top: 165px;
+  text-align: center;
+}
+.post-type-archive-suite .lista-suites .item-suite .detalhes h2 {
+  padding-bottom: 30px;
+}
+.post-type-archive-suite .lista-suites .item-suite .detalhes .price {
+  color: #999999;
+}
+.post-type-archive-suite .lista-suites .item-suite .detalhes h2,
+.post-type-archive-suite .lista-suites .item-suite .detalhes .amout {
+  color: #3f2a56;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+.post-type-archive-suite .lista-suites .item-suite .detalhes a {
+  color: #b067ce;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.post-type-archive-suite .lista-suites .item-suite .detalhes a:hover {
+  color: #8d39b0;
+  text-decoration: none;
+}
+.post-type-archive-suite .lista-suites .item-suite .detalhes a p {
+  padding-top: 45px;
+}
+.post-type-archive-suite .lista-suites .item-suite .foto-produto:nth-child(even) {
+  padding-right: 0px;
+}
+.post-type-archive-suite .lista-suites .item-suite .foto-produto:nth-child(odd) {
+  padding-left: 0px;
+}
+.post-type-archive-suite .lista-suites .item-suite .foto-produto img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.faixa-btn {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+.faixa-btn .btn-concierge {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #3f2a56;
+  background-color: transparent;
+  border-color: #3f2a56;
+  border-radius: 0;
+  border-bottom-width: 3px;
+  text-transform: uppercase;
+}
+.faixa-btn .btn-concierge:focus,
+.faixa-btn .btn-concierge:active:focus,
+.faixa-btn .btn-concierge.active:focus,
+.faixa-btn .btn-concierge.focus,
+.faixa-btn .btn-concierge:active.focus,
+.faixa-btn .btn-concierge.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.faixa-btn .btn-concierge:hover,
+.faixa-btn .btn-concierge:focus,
+.faixa-btn .btn-concierge.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.faixa-btn .btn-concierge:active,
+.faixa-btn .btn-concierge.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.faixa-btn .btn-concierge.disabled,
+.faixa-btn .btn-concierge[disabled],
+fieldset[disabled] .faixa-btn .btn-concierge {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.faixa-btn .btn-concierge.disabled,
+fieldset[disabled] a.faixa-btn .btn-concierge {
+  pointer-events: none;
+}
+.faixa-btn .btn-concierge:focus,
+.faixa-btn .btn-concierge.focus {
+  color: #3f2a56;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #000000;
+}
+.faixa-btn .btn-concierge:hover {
+  color: #3f2a56;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #21162d;
+}
+.faixa-btn .btn-concierge:active,
+.faixa-btn .btn-concierge.active,
+.open > .dropdown-toggle.faixa-btn .btn-concierge {
+  color: #3f2a56;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #21162d;
+}
+.faixa-btn .btn-concierge:active:hover,
+.faixa-btn .btn-concierge.active:hover,
+.open > .dropdown-toggle.faixa-btn .btn-concierge:hover,
+.faixa-btn .btn-concierge:active:focus,
+.faixa-btn .btn-concierge.active:focus,
+.open > .dropdown-toggle.faixa-btn .btn-concierge:focus,
+.faixa-btn .btn-concierge:active.focus,
+.faixa-btn .btn-concierge.active.focus,
+.open > .dropdown-toggle.faixa-btn .btn-concierge.focus {
+  color: #3f2a56;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: #000000;
+}
+.faixa-btn .btn-concierge:active,
+.faixa-btn .btn-concierge.active,
+.open > .dropdown-toggle.faixa-btn .btn-concierge {
+  background-image: none;
+}
+.faixa-btn .btn-concierge.disabled:hover,
+.faixa-btn .btn-concierge[disabled]:hover,
+fieldset[disabled] .faixa-btn .btn-concierge:hover,
+.faixa-btn .btn-concierge.disabled:focus,
+.faixa-btn .btn-concierge[disabled]:focus,
+fieldset[disabled] .faixa-btn .btn-concierge:focus,
+.faixa-btn .btn-concierge.disabled.focus,
+.faixa-btn .btn-concierge[disabled].focus,
+fieldset[disabled] .faixa-btn .btn-concierge.focus {
+  background-color: transparent;
+  border-color: #3f2a56;
+}
+.faixa-btn .btn-concierge .badge {
+  color: transparent;
+  background-color: #3f2a56;
 }

@@ -15,22 +15,22 @@ include './_header.php';
 
             <div class="col-sm-4">            
                 <div class="card-quarto">
-                    <img src="img/teste/lush-motel-fachada.jpg">
+                    <img src="img/conheca_suite@2x.png">
                     <a class="btn-padrao-roxo">Conheça mais</a>
                 </div>            
             </div>
 
             <div class="col-sm-4">            
                 <div class="card-quarto">
-                    <img src="img/teste/lush-motel-fachada.jpg">
-                    <a class="btn-padrao-roxo">Conheça mais</a>
+                    <img src="img/mapa@2x.png">
+                    <a class="btn-padrao-roxo">Descubra como chegar</a>
                 </div>            
             </div>
 
             <div class="col-sm-4">            
                 <div class="card-quarto">
-                    <img src="img/teste/lush-motel-fachada.jpg">
-                    <a class="btn-padrao-roxo">Conheça mais</a>
+                    <img src="img/explore_cozinha@2x.png">
+                    <a class="btn-padrao-roxo">Explore nossa cosinha</a>
                 </div>            
             </div>
 
@@ -44,7 +44,7 @@ include './_header.php';
         <div class="row">
 
             <div class="col-sm-1 col-sm-offset-2">
-                <p>Logo</p>
+                <img class="logo_L" src="img/logo_completo_roxo@2x.png">
             </div>
             <div class="col-sm-6 col-sm-offset-1">
                 <p>
