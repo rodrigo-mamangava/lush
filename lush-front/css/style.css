@@ -7244,6 +7244,118 @@ fieldset[disabled] .btn-enviar.focus {
   color: transparent;
   background-color: #3f2a56;
 }
+.btn-lilas {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background-color: #a44fc7;
+  border-color: #a44fc7;
+  width: 100%;
+  border-radius: 0;
+}
+.btn-lilas:focus,
+.btn-lilas:active:focus,
+.btn-lilas.active:focus,
+.btn-lilas.focus,
+.btn-lilas:active.focus,
+.btn-lilas.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-lilas:hover,
+.btn-lilas:focus,
+.btn-lilas.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.btn-lilas:active,
+.btn-lilas.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-lilas.disabled,
+.btn-lilas[disabled],
+fieldset[disabled] .btn-lilas {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-lilas.disabled,
+fieldset[disabled] a.btn-lilas {
+  pointer-events: none;
+}
+.btn-lilas:focus,
+.btn-lilas.focus {
+  color: white;
+  background-color: #8a37ac;
+  border-color: #5b2472;
+}
+.btn-lilas:hover {
+  color: white;
+  background-color: #8a37ac;
+  border-color: #8434a4;
+}
+.btn-lilas:active,
+.btn-lilas.active,
+.open > .dropdown-toggle.btn-lilas {
+  color: white;
+  background-color: #8a37ac;
+  border-color: #8434a4;
+}
+.btn-lilas:active:hover,
+.btn-lilas.active:hover,
+.open > .dropdown-toggle.btn-lilas:hover,
+.btn-lilas:active:focus,
+.btn-lilas.active:focus,
+.open > .dropdown-toggle.btn-lilas:focus,
+.btn-lilas:active.focus,
+.btn-lilas.active.focus,
+.open > .dropdown-toggle.btn-lilas.focus {
+  color: white;
+  background-color: #742e91;
+  border-color: #5b2472;
+}
+.btn-lilas:active,
+.btn-lilas.active,
+.open > .dropdown-toggle.btn-lilas {
+  background-image: none;
+}
+.btn-lilas.disabled:hover,
+.btn-lilas[disabled]:hover,
+fieldset[disabled] .btn-lilas:hover,
+.btn-lilas.disabled:focus,
+.btn-lilas[disabled]:focus,
+fieldset[disabled] .btn-lilas:focus,
+.btn-lilas.disabled.focus,
+.btn-lilas[disabled].focus,
+fieldset[disabled] .btn-lilas.focus {
+  background-color: #a44fc7;
+  border-color: #a44fc7;
+}
+.btn-lilas .badge {
+  color: #a44fc7;
+  background-color: white;
+}
 #menu {
   background: #3f2a56 !important;
 }
@@ -7263,6 +7375,15 @@ fieldset[disabled] .btn-enviar.focus {
 .hamburger__icon:after,
 .hamburger__icon:before {
   background-color: white;
+}
+.img-filter {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 51;
 }
 .header {
   position: absolute;
@@ -7622,4 +7743,233 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .faixa-btn .btn-concierge .badge {
   color: transparent;
   background-color: #3f2a56;
+}
+.suite-single .faixa-detalhes {
+  padding-top: 56px;
+  padding-bottom: 68px;
+}
+.suite-single .faixa-detalhes .descricao p {
+  font-size: 20px;
+  color: #666666;
+}
+.suite-single .faixa-detalhes .descricao ul {
+  padding-top: 23px;
+}
+.suite-single .faixa-detalhes .descricao ul li {
+  font-size: 20px;
+  color: #3f2a56;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table {
+  width: 100%;
+  border: 1px solid #3f2a56;
+  border-bottom: 3 px #3f2a56;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-size: 1.8rem;
+  color: #3f2a56;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr:first-of-type th {
+  padding-top: 26px;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td {
+  padding-top: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td:nth-of-type(2) {
+  text-align: right;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td hr {
+  margin-top: 0;
+  margin-bottom: 0;
+  border: 0;
+  border-top: 1px solid #d0c5db;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td.linha {
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background-color: #a44fc7;
+  border-color: #a44fc7;
+  width: 100%;
+  border-radius: 0;
+  margin-top: 12px;
+  margin-bottom: 34px;
+  font-size: 13px;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active:focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active:focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active.focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:hover,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.disabled,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar[disabled],
+fieldset[disabled] .suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.disabled,
+fieldset[disabled] a.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar {
+  pointer-events: none;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.focus {
+  color: white;
+  background-color: #8a37ac;
+  border-color: #5b2472;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:hover {
+  color: white;
+  background-color: #8a37ac;
+  border-color: #8434a4;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active,
+.open > .dropdown-toggle.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar {
+  color: white;
+  background-color: #8a37ac;
+  border-color: #8434a4;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active:hover,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active:hover,
+.open > .dropdown-toggle.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:hover,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active:focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active:focus,
+.open > .dropdown-toggle.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active.focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active.focus,
+.open > .dropdown-toggle.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.focus {
+  color: white;
+  background-color: #742e91;
+  border-color: #5b2472;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active,
+.open > .dropdown-toggle.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar {
+  background-image: none;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.disabled:hover,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar[disabled]:hover,
+fieldset[disabled] .suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:hover,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.disabled:focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar[disabled]:focus,
+fieldset[disabled] .suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.disabled.focus,
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar[disabled].focus,
+fieldset[disabled] .suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.focus {
+  background-color: #a44fc7;
+  border-color: #a44fc7;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar .badge {
+  color: #a44fc7;
+  background-color: white;
+}
+.suite-single .faixa-detalhes .info-preco .compartilhar {
+  padding-top: 80px;
+}
+.suite-single .faixa-detalhes .info-preco .compartilhar p {
+  color: #3f2a56;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-family: 'htf34';
+}
+.suite-single .faixa-detalhes .info-preco .compartilhar ul {
+  padding-top: 23px;
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.suite-single .faixa-detalhes .info-preco .compartilhar ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.suite-single .faixa-detalhes .info-preco .compartilhar ul li {
+  border: 2px solid #3f2a56;
+  border-radius: 50px;
+  padding: 6px 7px;
+  margin-right: 26px;
+}
+.suite-single .faixa-detalhes .info-preco .compartilhar ul li img {
+  height: 17.9px;
+  width: auto;
+}
+.suite-single .faixa-fotos-produto .carousel img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.suite-single .faixa-outras-suites-list {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.suite-single .faixa-outras-suites-list .titulo {
+  text-align: center;
+  font-family: 'FairfieldLTW01-45Light';
+  font-size: 42px;
+  font-size: 4.2rem;
+  color: #3f2a56;
+  padding-bottom: 49px;
+}
+.suite-single .faixa-outras-suites-list .suite-item {
+  padding-bottom: 24px;
+}
+.suite-single .faixa-outras-suites-list .suite-item .outra-site-item {
+  position: relative;
+}
+.suite-single .faixa-outras-suites-list .suite-item .outra-site-item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.suite-single .faixa-outras-suites-list .suite-item .outra-site-item .info-suite {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: white;
+  text-align: center;
 }

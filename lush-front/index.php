@@ -5,6 +5,7 @@ include './_header.php';
 <div class="home">
 
     <?php
+    $urlImagem = 'img/lush_spa_splash@2x.png';
     include './_vitrine.php';
     ?>
 

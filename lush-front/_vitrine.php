@@ -4,7 +4,7 @@
         <div class="vitrine-content">
 
             <div class=" image-vitrine">                    
-                <img src="img/lush_spa_splash@2x.png">                   
+                <img src="<?php echo $urlImagem; ?>">                   
             </div>
             
             <div class=" sub-titulo">                    

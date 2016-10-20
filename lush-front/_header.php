@@ -7,7 +7,7 @@
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Lush</title>
 
-        <!-- font -->
+        <!-- font -->        
         <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6062032/6854972/css/fonts.css" />
 
         <!-- Bootstrap -->
