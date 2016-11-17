@@ -1,0 +1,888 @@
+/*
+Theme Name: LUSH 2.0
+Author: Plau & Mamangava
+Description: Description
+Version: 2.0.0
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+lush_2.0 is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> bootstrap core:
+----------------------------------------------------------------*/
+@import "bootstrap.less";
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Reset
+# Fontes
+# Cores
+# Elementos
+# Forms
+# Navigation
+        ## Links
+        ## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+        ## Posts and pages
+        ## Comments
+# Infinite scroll
+# Media
+        ## Captions
+        ## Galleries
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+# Reset
+--------------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, p, a{
+    margin: 0;
+    padding: 0;
+}
+
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+    border: 0;
+    border-top: 0;
+    border-left: 0;
+    .box-shadow(none);
+}
+
+input{
+    .box-shadow(none)!important;
+    border: 0;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-menu-right, .carousel-control .glyphicon-menu-left {
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    z-index: 5;
+    display: inline-block;
+}
+
+
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+
+
+@FairfieldLTW01-45Light:'FairfieldLTW01-45Light'; 
+
+@FairfieldLTW01-46LightI:'FairfieldLTW01-46LightI'; 
+
+@FairfieldLTW01-55Medium:'FairfieldLTW01-55Medium 706181';
+
+@FairfieldLTW01-56Medium:'FairfieldLTW01-56Medium';
+
+@FairfieldLTW01-75Bold:'FairfieldLTW01-75Bold'; 
+
+@FairfieldLTW01-76BoldIt:'FairfieldLTW01-76BoldIt'; 
+
+@FairfieldLTW01-85Heavy:'FairfieldLTW01-85Heavy'; 
+
+@FairfieldLTW01-86HeavyI:'FairfieldLTW01-86HeavyI'; 
+
+@FairfieldLTW01-45LightC:'FairfieldLTW01-45LightC 706178'; 
+
+@FairfieldLTW01-55Medium :'FairfieldLTW01-55Medium 706178'; 
+
+@FairfieldLTW01-75BoldCa:'FairfieldLTW01-75BoldCa'; 
+
+@FairfieldLTW01-85HeavyC:'FairfieldLTW01-85HeavyC'; 
+
+@GrotesqueDispMTW01-Bold:'GrotesqueDispMTW01-Bold 706605';
+
+@knockout: "Knockout 28 A", "Knockout 28 B";
+
+@fairfield: 'FairfieldLTW01-45Light';
+
+@grotesque: 'GrotesqueDispMTW01-Bold 706605';
+
+@junior: "Knockout 34 A", "Knockout 34 B";
+
+body{
+    font-family: @FairfieldLTW01-55Medium;
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+/*--------------------------------------------------------------
+# Cores
+--------------------------------------------------------------*/
+@branco: white;
+@preto: black;
+@roxo: rgb(63,42,86);
+@roxo-claro: #D0C5DB;
+
+@roxo-fosco-v2: #6e5e8b;
+
+@roxo-v2-titulo: #3f2658;
+
+@lilas: #A44FC7;
+@rosa: rgb(176, 103, 206);
+@cinza-claro: rgb(242,242,242);
+@cinza-escuro: rgb(153,153,153);
+
+@cinza-v2-texto: #b8b8b8;
+
+@cinza-v2-fundo: #f2f2f2;
+
+@filtro-image-color:rgba(0,0,0,0.3);
+
+@font-cinza: #666666;
+@font-roxo: #3F2A56;
+
+@verde-agua: #00d0b0;
+
+
+
+/*--------------------------------------------------------------
+# Elementos
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Texto
+--------------------------------------------------------------*/
+.subtitulo-h2{
+    margin-top: 124px;
+    margin-bottom:  46px;
+    .text-center;
+    font-family: @knockout;
+    font-size: 18px;
+    .text-uppercase;
+    letter-spacing: 1.6px;
+    color: @cinza-v2-texto;
+}
+
+.texto-padrao-cinza{
+    font-family: @FairfieldLTW01-56Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #969696;
+}
+/*--------------------------------------------------------------
+# Botoes
+--------------------------------------------------------------*/
+
+.btn-padrao-lush(@cor: @roxo){
+    .btn;
+    .button-variant(@cor, transparent, @cor);
+    border-radius: 0;    
+    text-transform: uppercase;
+    .sombra-padrao;
+    font-family: @junior;
+
+    padding: 11px 48px;
+}
+
+.btn-lupa{
+    .btn;
+    .button-variant(@branco, transparent, transparent);  
+    img{
+        width: 21.8px;
+        height: 21.8px;
+    }
+}
+.btn-reservar{
+    .btn-padrao-lush(@branco);
+    box-shadow: 0 2px 0 #ffffff;
+    width: 136px;
+    font-size: 14px;
+}
+.btn-reservar-lilas{
+    .btn-padrao-lush(@lilas);
+    box-shadow: 0 2px 0 @lilas;
+    width: 136px;
+    font-size: 14px;
+    color: @lilas !important;
+}
+
+.btn-padrao-roxo{
+    .btn-padrao-lush;
+}
+
+.btn-enviar{
+    .btn-padrao-lush;
+}
+
+.btn-lilas{
+    .btn;
+    .button-variant(@branco, @lilas, @lilas); 
+    font-family: @junior;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 2px 0 @lilas;
+}
+
+.sombra-padrao{
+    box-shadow: 0 2px 0 @font-roxo;
+}
+
+.btn-branco-v2{
+    .btn;
+    .button-variant(@verde-agua, @branco, @branco);
+    border-radius: 0;    
+    text-transform: uppercase;
+    //font-size: 14px;
+
+    .sombra-padrao;
+    box-shadow: 0 2px 0 0 #008672;
+    font-family: @junior;
+}
+
+.btn-participar-v2{
+    .btn;
+    .button-variant(@branco, @roxo-fosco-v2, @roxo-fosco-v2);
+    border-radius: 0;    
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2.2px;
+
+    //.sombra-padrao;
+    box-shadow: 0 2px 0 0 #3f2658;
+    font-family: @junior;
+
+}
+
+
+.btn-verde-v02{
+    .btn;
+    .button-variant(@branco, @verde-agua, @verde-agua) !important;
+    border-radius: 0;    
+    text-transform: uppercase;
+    //font-size: 14px;
+
+    .sombra-padrao;
+    box-shadow: 0 2px 0 0 #008672 !important;
+    font-family: @junior;
+    margin-top: 9px;
+    padding: 11px 48px !important;
+}
+
+.btn-transparente{
+    .btn;
+    .button-variant(#b8b8b8, transparent, transparent) !important;
+    border-radius: 0;    
+    text-transform: uppercase;
+
+    font-family: @junior;
+    margin-top: 9px;
+    padding: 11px 48px !important;
+
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    font-family: @junior;
+}
+
+
+.vitrine{
+    height: 734px;
+    width: 100%;
+    background-color: red;
+}
+
+
+.menu-header{
+
+    padding-top: 106px;
+
+    .logo{
+        img{
+            height: 20px;
+            width: auto;
+        }
+    }
+
+    .menu-itens{
+        .text-right;
+
+        .language-social{
+            .list-inline;
+            color: @branco;
+            font-family: @knockout;
+            font-size: 18px;
+            letter-spacing: 1.4px;
+            .text-uppercase;
+
+            img{
+                width: 17px;
+                height: auto;
+            }
+
+
+        }
+
+    }
+
+}
+
+
+.menu-principal{
+
+    .navbar{
+        border:0;
+        min-height: 64px;
+        margin-bottom: 0px;
+
+        opacity: 0.85;
+        background-color: #f2f2f2;
+
+        .navbar-header{
+            .navbar-brand{
+
+                background-color: @roxo;
+                height: 64px;
+                width: 64px;
+
+                img.logo{
+                    width: 27px;
+                    height: auto;
+                    margin-left: 3px;
+                    margin-top: 3px;
+                }
+            }
+        }
+
+        .navbar-nav > li > a {
+            padding-top: 21px;
+            padding-bottom: 21px;
+            font-family: @junior;
+            font-size: 18px;
+            letter-spacing: 1.4px;
+            color: #969696;
+
+        }
+    }
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #3f2658;
+    background-color: initial;
+}
+
+
+
+.faixa-carousel-suites{
+
+    margin-bottom: 123px;
+
+    .carousel-slick{
+
+        .suite{
+            position: relative;
+            height: 800px;
+
+            img{                
+                width: 95%;
+                height: auto;
+            }
+
+            .suite-card{
+                position: absolute;
+                bottom: 0px;
+                left: 100px;
+                width: 656px;
+                background-color: #ffffff;
+                box-shadow: 0 -4px 0 0 #3f2658;
+                padding: 30px 32px;
+
+
+
+
+                .escolha{
+                    font-family: @junior;
+                    font-size: 16px;
+                    letter-spacing: 1.6px;
+                    color: #969696;   
+                    margin-bottom: 12px;
+                }
+
+
+                h2{
+                    font-family: @FairfieldLTW01-55Medium;
+                    font-size: 42px;
+                    font-weight: 500;
+                    font-style: italic;
+                    line-height: 1.4;
+                    letter-spacing: 0.5px;
+                    color: #3f2658;
+
+                    margin-bottom: 9px;
+                }
+
+                .descricao{
+                    font-family: @FairfieldLTW01-55Medium;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 1.6;
+                    letter-spacing: 0.2px;
+                    color: #969696;
+                    margin-bottom: 48px;
+                }
+
+                .btn-verde-v02{
+                    font-size: 18px;
+                    letter-spacing: 2.2px;
+                }
+
+                .explorar{
+                    font-family: @junior;
+                    font-size: 18px;
+                    letter-spacing: 1.8px;
+                    color: #b8b8b8;
+
+                    padding-left: 33px;
+                }
+            }
+
+
+        }
+    }
+
+
+
+    .slick-slide{
+        opacity: 0.5;      
+    }
+
+    .slick-active{
+        opacity: 1; 
+    }
+
+    .slick-prev, .slick-next {
+        font-size: 0;
+        line-height: 0;
+        position: absolute;
+        top: 50%;
+        display: block;
+
+        width: 62px;
+        height: 62px;
+        background-color: #3f2658;
+
+
+        padding: 0;
+
+        -webkit-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+        z-index: 100;
+
+
+        &:hover, &:focus{
+            color: @branco;
+            outline: none;
+            background-color: #3f2658;
+        }
+    }
+
+    .slick-prev {
+        left: 40px;
+    }
+    .slick-next {
+        right: 40px;
+    }
+
+    .slick-next:before {
+        font-family: FontAwesome;
+        content: '\f105';
+        font-size: 40px;
+    }
+    .slick-prev:before {
+        font-family: FontAwesome;
+        content: '\f104';
+        font-size: 40px;
+    }
+
+}
+
+.faixa-faichada{
+    height: 540px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}//faixa-faichada
+
+
+
+
+.faixa-saiba-mais{
+
+    background-color: @cinza-v2-fundo;
+    padding-bottom: 126px;
+
+
+
+    h2{
+        .subtitulo-h2;
+
+    }
+
+    .subfaixa-destaque{
+        position: relative;
+        padding: 0;
+        background-color: white;
+        margin-bottom: 10px;
+
+        .destaque-img{
+            img{
+                width: 100%;
+                height: auto;
+            }  
+
+        }
+
+        .destaque-texto{
+
+            .text-center;
+
+
+            .icon-destaque{
+                margin-top: 80px;
+                width: 25.8px;
+                height: auto;
+            }
+
+            h3{
+                margin-top: 22px;
+                font-family: @FairfieldLTW01-56Medium;
+                font-size: 38px;
+                font-weight: 500;
+                font-style: italic;
+                line-height: 0.7;
+                letter-spacing: 0.4px;
+                color: @roxo-v2-titulo;
+
+            }
+
+            p{
+                margin-top: 22px;
+                margin-bottom:  47px;
+                .texto-padrao-cinza;
+
+            }
+
+            a{
+                font-family: @knockout;
+                font-size: 18px;
+                letter-spacing: 1.8px;
+                text-align: center;
+                color: #b8b8b8;
+
+                .text-uppercase;
+
+                img{
+                    width: 12px;
+                    height: auto;
+                    padding-left: 7.5px;
+                }
+            }
+
+        }
+
+
+
+    }
+
+
+}//faixa-saiba-mais
+
+.faixa-mapa{
+
+    h2{
+        .subtitulo-h2;
+    }
+
+    .mapa-wrap{
+
+        position: relative;
+        z-index: 50;
+
+        h3{
+            font-family: @FairfieldLTW01-56Medium;
+            font-size: 26px;
+            font-weight: 500;
+            font-style: italic;
+            line-height: 1.1;
+            letter-spacing: 0.3px;
+            text-align: center;
+            color: #3f2658;
+
+            position: absolute;
+            z-index: 52;
+            width: 150px;
+            left: 50%;
+            margin-left: -75px;
+            top: 60%;
+
+        }
+        img{
+            .img-responsive;
+            position: relative;
+            z-index: 50;
+        }
+    }
+
+    p{
+        margin-top: 47px;
+        margin-bottom: 127px;
+
+        .texto-padrao-cinza;
+    }
+
+}
+
+
+
+.faixa-lush-member{
+    background-color: #d2d2d2;
+    .text-center;
+
+    padding-top: 84px;
+    padding-bottom: 100px;
+
+    h2{
+        font-family: @junior;
+        font-size: 18px;
+        letter-spacing: 1.6px;
+        color: #969696;
+
+        margin-bottom: 32px;
+
+
+    }
+
+    h3{
+        font-family: @FairfieldLTW01-56Medium;
+        font-size: 38px;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 0.7;
+        letter-spacing: 0.4px;
+        color: @branco;
+
+        margin-bottom: 15px;
+    }
+
+    p{
+        font-family: @FairfieldLTW01-56Medium;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #969696;
+
+        margin-bottom: 60px;
+    }
+
+    .campo{
+        margin-bottom: 36px;
+
+        background: transparent;
+        border-bottom: solid 1px #b8b8b8;
+        width: 384px;
+
+        font-family: @FairfieldLTW01-55Medium;
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 1.3;
+        letter-spacing: 0.2px;
+        color: #3f2658;
+
+        &:focus{
+            border-bottom: solid 1px #3f2658;
+
+            outline: none;
+            outline-color: none;
+            outline-style: none;
+            outline-width: 0;
+        }
+
+
+
+    }
+
+
+
+    .btn-participar-v2{
+        margin-bottom: 0px
+    }
+
+
+
+}
+
+.faixa-explore{
+
+    background-color: @verde-agua;
+
+    margin-top: 32px;
+
+    .text-center;
+
+    p{
+        font-family: @knockout;
+        font-size: 18px;
+        letter-spacing: 1.6px;
+        text-align: center;
+        color: #048572;
+
+        margin-top: 100px;
+    }
+    h2{
+        font-family: @FairfieldLTW01-56Medium;
+        font-size: 38px;
+        font-weight: 500;
+        font-style: italic;
+        line-height: 0.7;
+        letter-spacing: 0.4px;
+        text-align: center;
+        color: #ffffff;
+
+        margin-top: 45px;
+    }
+    .btn-reservar-v2{
+        .btn-branco-v2;
+
+
+        margin-top: 62px;
+        margin-bottom: 100px;
+    }
+}
+
+
+.faixa-mapa-como-chegar{
+    height: 736px;
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    .card-endereco{
+        .text-center;
+        background-color: @branco;
+        padding-top: 22px;
+        padding-bottom: 25px;
+        margin-top: 85%;
+
+        h1{
+            font-family: @FairfieldLTW01-55Medium;
+            font-size: 24px;
+            font-weight: 500;
+            font-style: italic;
+            font-stretch: normal;
+            line-height: 1.17;
+            letter-spacing: 0.3px;
+            text-align: center;
+            color: #3f2658;
+
+            margin-bottom: 9px;
+        }
+
+        p{
+            font-family: @FairfieldLTW01-55Medium;
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.75;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: #969696;
+
+        }
+    }
+
+}//faixa-mapa-como-chegar
+
+
+
+
+footer{
+
+    background-color: #2a1a3c;
+    margin-top: 32px;
+    padding-top: 90px;
+    padding-bottom: 103px;
+
+    .logo{
+        width: 72px;
+        height: auto;
+
+        margin-bottom: 68.4px;
+    }
+
+    p{
+        font-family: @FairfieldLTW01-55Medium;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.2;
+        letter-spacing: 0.2px;
+        color: #6e5e8b;
+    }
+
+    .menu-footer{
+        list-style-type: none;
+        li{
+            a{
+
+                font-family: @knockout;
+                font-size: 16px;
+                line-height: 2.2;
+                letter-spacing: 1.4px;
+                color: #6e5e8b;
+            }
+
+        }
+    }
+
+    .links-sociais{
+        .list-inline;
+        .text-right;
+        img{
+            width: 18px;
+            height: 18px;
+            margin-left: 32px;
+        }
+    }
+}
+
+

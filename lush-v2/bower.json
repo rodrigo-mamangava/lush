@@ -1,0 +1,20 @@
+{
+  "name": "lush-v2",
+  "authors": [
+    "rodrigo-mamangava <rodrigo@mamangava.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slick-carousel": "^1.6.0"
+  }
+}
