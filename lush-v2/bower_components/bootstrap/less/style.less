@@ -834,6 +834,300 @@ body{
 }//faixa-mapa-como-chegar
 
 
+.faixa-orderby{
+    background-color: @cinza-claro;
+    .text-center;
+
+    padding-top: 28px;
+    padding-bottom: 28px;
+
+
+    p{
+        color: @roxo;
+
+        span{
+            color: @cinza-escuro;
+        }
+    }
+
+
+}//faixa-orderby
+
+
+
+.post-type-archive-suite{
+
+
+    .lista-suites{
+
+        .item-suite{
+
+
+            padding-top: 32px;
+
+            .detalhes{
+
+                padding-top: 165px;
+
+                .text-center;
+                h2{
+                    padding-bottom: 30px;
+                }
+
+                .price{
+                    color: @cinza-escuro;                    
+                    .amout{
+
+                    }   
+                }
+
+                h2, .amout{
+                    color: @roxo;
+                    font-size: 40px;
+                    text-transform: uppercase;
+                }
+
+
+
+                a{
+
+                    color: @rosa;
+                    text-decoration: none;
+                    text-transform: uppercase;
+
+                    &:hover{
+                        color:  darken(@rosa, 15%);
+                        text-decoration: none;
+                    }
+
+                    p{
+                        padding-top: 45px;
+                    }
+                }
+
+
+            }
+
+            .foto-produto{
+
+                &:nth-child(even) {
+                    padding-right: 0px;
+                }
+                &:nth-child(odd) {
+                    padding-left: 0px;
+                }
+
+                img{
+                    .img-responsive;
+                    width: 100%;
+
+                }
+            }
+
+        }
+    }
+
+}//post-type-archive-suite
+
+
+
+.faixa-btn{
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .text-center;
+
+
+    .btn-concierge{
+        .btn-padrao-roxo;
+    }
+
+}//faixa-btn
+
+
+
+.suite-single{
+
+    .faixa-detalhes{
+        padding-top: 56px;
+        padding-bottom: 68px; 
+
+        .descricao{
+            p{
+                font-size: 20px;
+                color: @font-cinza;
+            }
+
+            ul{
+                padding-top: 23px;
+                li{
+                    font-size: 20px;
+                    color: @font-roxo;
+                }
+            }
+        }
+
+        .info-preco{
+
+            .tabela-preco{
+                table{
+                    width: 100%;
+                    border: 1px solid @roxo;
+                    border-bottom: 3 px @roxo;
+                    text-transform: uppercase;
+
+                    font-size: 18px;
+                    font-size: 1.8rem;
+
+                    color: @font-roxo;
+
+
+                    tbody{
+                        tr{
+
+                            &:first-of-type{
+                                th{
+                                    padding-top: 26px;
+                                }
+                            }
+
+                            td{
+                                padding-top: 10px;
+                                padding-left: 32px;
+                                padding-right: 32px;
+                                &:nth-of-type(1){
+
+                                }
+                                &:nth-of-type(2){
+                                    text-align: right;
+
+                                }
+
+                                hr{
+                                    margin-top: 0;
+                                    margin-bottom: 0;
+                                    border: 0;
+                                    border-top: 1px solid @roxo-claro;
+                                }
+
+                                &.linha{
+                                    padding-top: 5px;
+                                    padding-bottom: 0px;
+                                }
+
+                                .btn-reservar{
+                                    .btn-lilas;
+                                    margin-top: 12px;
+                                    margin-bottom: 34px;
+                                    font-size: 13px;
+                                }
+
+                            }
+
+                        }
+                    }
+
+                }
+
+
+            }//tabela-preco
+
+            .compartilhar{
+
+                p{
+                    color: @roxo;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    font-family: @junior;
+                }
+
+                padding-top: 80px;
+
+                ul{                 
+                    padding-top: 23px;
+                    .list-inline;
+
+                    li{
+                        border: 2px solid @roxo;
+                        border-radius: 50px;
+                        padding: 6px 7px;
+                        margin-right: 26px;
+
+
+                        img{
+                            height: 17.9px;
+                            width: auto;
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .faixa-fotos-produto{
+        .carousel{
+            img{
+                .img-responsive;
+                width: 100%;
+            }
+        }
+    }
+
+    .faixa-outras-suites-list{
+
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+
+        .titulo{
+            .text-center;
+            font-family: @fairfield;
+            font-size: 42px;
+            font-size: 4.2rem;
+            color: @roxo;
+            padding-bottom: 49px;
+
+        }
+
+
+        .suite-item{
+            
+            padding-bottom: 24px;
+
+            .outra-site-item{
+                position: relative;
+
+                img{
+                    .img-responsive;
+                    width: 100%
+                }
+
+                .info-suite{
+                    position: absolute;
+                    top: 40%;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+
+                    color: @branco;
+
+                    .text-center;
+
+                }
+
+            }
+
+        }
+
+
+    }//faixa-outras-suites-list
+
+}
+
 
 
 footer{
