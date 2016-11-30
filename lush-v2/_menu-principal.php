@@ -20,7 +20,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Suites <span class="sr-only">(current)</span></a></li>                      
+                        <li><a href="suites.php">Suites</a></li>                      
                         <li><a href="#">Gastronomia</a></li>                        
                         <li><a href="#">Pacotes Especiais</a></li>                        
                         <li><a href="#">Novidades</a></li>                        

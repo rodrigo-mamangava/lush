@@ -8013,6 +8013,123 @@ fieldset[disabled] .btn-transparente.focus {
   color: transparent !important;
   background-color: #b8b8b8 !important;
 }
+.btn-servico-concierge {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #6e5e8b;
+  background-color: white;
+  border-color: white;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3f2a56;
+  box-shadow: 0 2px 0 0 #3f2658 !important;
+  font-family: "Knockout 34 A", "Knockout 34 B";
+  margin-top: 9px;
+  padding: 11px 48px !important;
+}
+.btn-servico-concierge:focus,
+.btn-servico-concierge:active:focus,
+.btn-servico-concierge.active:focus,
+.btn-servico-concierge.focus,
+.btn-servico-concierge:active.focus,
+.btn-servico-concierge.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-servico-concierge:hover,
+.btn-servico-concierge:focus,
+.btn-servico-concierge.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.btn-servico-concierge:active,
+.btn-servico-concierge.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-servico-concierge.disabled,
+.btn-servico-concierge[disabled],
+fieldset[disabled] .btn-servico-concierge {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-servico-concierge.disabled,
+fieldset[disabled] a.btn-servico-concierge {
+  pointer-events: none;
+}
+.btn-servico-concierge:focus,
+.btn-servico-concierge.focus {
+  color: #6e5e8b;
+  background-color: #e6e6e6;
+  border-color: #bfbfbf;
+}
+.btn-servico-concierge:hover {
+  color: #6e5e8b;
+  background-color: #e6e6e6;
+  border-color: #e0e0e0;
+}
+.btn-servico-concierge:active,
+.btn-servico-concierge.active,
+.open > .dropdown-toggle.btn-servico-concierge {
+  color: #6e5e8b;
+  background-color: #e6e6e6;
+  border-color: #e0e0e0;
+}
+.btn-servico-concierge:active:hover,
+.btn-servico-concierge.active:hover,
+.open > .dropdown-toggle.btn-servico-concierge:hover,
+.btn-servico-concierge:active:focus,
+.btn-servico-concierge.active:focus,
+.open > .dropdown-toggle.btn-servico-concierge:focus,
+.btn-servico-concierge:active.focus,
+.btn-servico-concierge.active.focus,
+.open > .dropdown-toggle.btn-servico-concierge.focus {
+  color: #6e5e8b;
+  background-color: #d4d4d4;
+  border-color: #bfbfbf;
+}
+.btn-servico-concierge:active,
+.btn-servico-concierge.active,
+.open > .dropdown-toggle.btn-servico-concierge {
+  background-image: none;
+}
+.btn-servico-concierge.disabled:hover,
+.btn-servico-concierge[disabled]:hover,
+fieldset[disabled] .btn-servico-concierge:hover,
+.btn-servico-concierge.disabled:focus,
+.btn-servico-concierge[disabled]:focus,
+fieldset[disabled] .btn-servico-concierge:focus,
+.btn-servico-concierge.disabled.focus,
+.btn-servico-concierge[disabled].focus,
+fieldset[disabled] .btn-servico-concierge.focus {
+  background-color: white;
+  border-color: white;
+}
+.btn-servico-concierge .badge {
+  color: white;
+  background-color: #6e5e8b;
+}
 .vitrine {
   height: 734px;
   width: 100%;
@@ -8550,47 +8667,350 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   color: #999999;
 }
 .post-type-archive-suite .lista-suites .item-suite {
-  padding-top: 32px;
+  background-color: #f2f2f2;
+}
+.post-type-archive-suite .lista-suites .item-suite:first-of-type {
+  margin-top: 86px;
 }
 .post-type-archive-suite .lista-suites .item-suite .detalhes {
-  padding-top: 165px;
+  padding-top: 115px;
   text-align: center;
+  text-transform: uppercase;
 }
 .post-type-archive-suite .lista-suites .item-suite .detalhes h2 {
   padding-bottom: 30px;
+  font-family: 'FairfieldLTW01-55Medium 706178';
+  font-size: 42px;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #3f2658;
+  padding-bottom: 17px;
 }
 .post-type-archive-suite .lista-suites .item-suite .detalhes .price {
   color: #999999;
+  font-family: 'FairfieldLTW01-55Medium 706178';
+  font-size: 18px;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #b8b8b8;
+  padding-bottom: 15px;
 }
-.post-type-archive-suite .lista-suites .item-suite .detalhes h2,
-.post-type-archive-suite .lista-suites .item-suite .detalhes .amout {
-  color: #3f2a56;
-  font-size: 40px;
-  text-transform: uppercase;
+.post-type-archive-suite .lista-suites .item-suite .detalhes .price .amout {
+  font-family: "Knockout 28 A", "Knockout 28 B";
+  font-size: 98px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #3f2658;
 }
-.post-type-archive-suite .lista-suites .item-suite .detalhes a {
-  color: #b067ce;
+.post-type-archive-suite .lista-suites .item-suite a {
+  font-family: "Knockout 28 A", "Knockout 28 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.8px;
+  color: #b8b8b8;
+}
+.post-type-archive-suite .lista-suites .item-suite a:hover {
+  color: #929292;
   text-decoration: none;
-  text-transform: uppercase;
 }
-.post-type-archive-suite .lista-suites .item-suite .detalhes a:hover {
-  color: #8d39b0;
-  text-decoration: none;
+.post-type-archive-suite .lista-suites .item-suite a p {
+  padding-top: 106px;
 }
-.post-type-archive-suite .lista-suites .item-suite .detalhes a p {
-  padding-top: 45px;
-}
-.post-type-archive-suite .lista-suites .item-suite .foto-produto:nth-child(even) {
+.post-type-archive-suite .lista-suites .foto-produto:nth-child(even) {
   padding-right: 0px;
 }
-.post-type-archive-suite .lista-suites .item-suite .foto-produto:nth-child(odd) {
+.post-type-archive-suite .lista-suites .foto-produto:nth-child(odd) {
   padding-left: 0px;
 }
-.post-type-archive-suite .lista-suites .item-suite .foto-produto img {
+.post-type-archive-suite .lista-suites .foto-produto img {
   display: block;
   max-width: 100%;
   height: auto;
   width: 100%;
+}
+.faixa-concierge {
+  background-color: #00d0b0;
+  margin-top: 32px;
+  text-align: center;
+  background-color: #6e5e8b;
+}
+.faixa-concierge p {
+  font-family: "Knockout 28 A", "Knockout 28 B";
+  font-size: 18px;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #048572;
+  margin-top: 100px;
+}
+.faixa-concierge h2 {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 38px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 0.7;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 45px;
+}
+.faixa-concierge .btn-reservar-v2 {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #00d0b0;
+  background-color: white;
+  border-color: white;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3f2a56;
+  box-shadow: 0 2px 0 0 #008672;
+  font-family: "Knockout 34 A", "Knockout 34 B";
+  margin-top: 62px;
+  margin-bottom: 100px;
+}
+.faixa-concierge .btn-reservar-v2:focus,
+.faixa-concierge .btn-reservar-v2:active:focus,
+.faixa-concierge .btn-reservar-v2.active:focus,
+.faixa-concierge .btn-reservar-v2.focus,
+.faixa-concierge .btn-reservar-v2:active.focus,
+.faixa-concierge .btn-reservar-v2.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.faixa-concierge .btn-reservar-v2:hover,
+.faixa-concierge .btn-reservar-v2:focus,
+.faixa-concierge .btn-reservar-v2.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.faixa-concierge .btn-reservar-v2:active,
+.faixa-concierge .btn-reservar-v2.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.faixa-concierge .btn-reservar-v2.disabled,
+.faixa-concierge .btn-reservar-v2[disabled],
+fieldset[disabled] .faixa-concierge .btn-reservar-v2 {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.faixa-concierge .btn-reservar-v2.disabled,
+fieldset[disabled] a.faixa-concierge .btn-reservar-v2 {
+  pointer-events: none;
+}
+.faixa-concierge .btn-reservar-v2:focus,
+.faixa-concierge .btn-reservar-v2.focus {
+  color: #00d0b0;
+  background-color: #e6e6e6;
+  border-color: #bfbfbf;
+}
+.faixa-concierge .btn-reservar-v2:hover {
+  color: #00d0b0;
+  background-color: #e6e6e6;
+  border-color: #e0e0e0;
+}
+.faixa-concierge .btn-reservar-v2:active,
+.faixa-concierge .btn-reservar-v2.active,
+.open > .dropdown-toggle.faixa-concierge .btn-reservar-v2 {
+  color: #00d0b0;
+  background-color: #e6e6e6;
+  border-color: #e0e0e0;
+}
+.faixa-concierge .btn-reservar-v2:active:hover,
+.faixa-concierge .btn-reservar-v2.active:hover,
+.open > .dropdown-toggle.faixa-concierge .btn-reservar-v2:hover,
+.faixa-concierge .btn-reservar-v2:active:focus,
+.faixa-concierge .btn-reservar-v2.active:focus,
+.open > .dropdown-toggle.faixa-concierge .btn-reservar-v2:focus,
+.faixa-concierge .btn-reservar-v2:active.focus,
+.faixa-concierge .btn-reservar-v2.active.focus,
+.open > .dropdown-toggle.faixa-concierge .btn-reservar-v2.focus {
+  color: #00d0b0;
+  background-color: #d4d4d4;
+  border-color: #bfbfbf;
+}
+.faixa-concierge .btn-reservar-v2:active,
+.faixa-concierge .btn-reservar-v2.active,
+.open > .dropdown-toggle.faixa-concierge .btn-reservar-v2 {
+  background-image: none;
+}
+.faixa-concierge .btn-reservar-v2.disabled:hover,
+.faixa-concierge .btn-reservar-v2[disabled]:hover,
+fieldset[disabled] .faixa-concierge .btn-reservar-v2:hover,
+.faixa-concierge .btn-reservar-v2.disabled:focus,
+.faixa-concierge .btn-reservar-v2[disabled]:focus,
+fieldset[disabled] .faixa-concierge .btn-reservar-v2:focus,
+.faixa-concierge .btn-reservar-v2.disabled.focus,
+.faixa-concierge .btn-reservar-v2[disabled].focus,
+fieldset[disabled] .faixa-concierge .btn-reservar-v2.focus {
+  background-color: white;
+  border-color: white;
+}
+.faixa-concierge .btn-reservar-v2 .badge {
+  color: white;
+  background-color: #00d0b0;
+}
+.faixa-concierge p {
+  color: white;
+}
+.faixa-concierge h2 {
+  color: white;
+  padding-bottom: 62px;
+}
+.faixa-concierge .btn-servico-concierge {
+  margin-bottom: 100px;
+}
+.brn-reserve-suite {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white !important;
+  background-color: #00d0b0 !important;
+  border-color: #00d0b0 !important;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3f2a56;
+  box-shadow: 0 2px 0 0 #008672 !important;
+  font-family: "Knockout 34 A", "Knockout 34 B";
+  margin-top: 9px;
+  padding: 11px 48px !important;
+  font-size: 22px;
+  letter-spacing: 2.7px;
+}
+.brn-reserve-suite:focus,
+.brn-reserve-suite:active:focus,
+.brn-reserve-suite.active:focus,
+.brn-reserve-suite.focus,
+.brn-reserve-suite:active.focus,
+.brn-reserve-suite.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.brn-reserve-suite:hover,
+.brn-reserve-suite:focus,
+.brn-reserve-suite.focus {
+  color: #333333;
+  text-decoration: none;
+}
+.brn-reserve-suite:active,
+.brn-reserve-suite.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.brn-reserve-suite.disabled,
+.brn-reserve-suite[disabled],
+fieldset[disabled] .brn-reserve-suite {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.brn-reserve-suite.disabled,
+fieldset[disabled] a.brn-reserve-suite {
+  pointer-events: none;
+}
+.brn-reserve-suite:focus,
+.brn-reserve-suite.focus {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #005144 !important;
+}
+.brn-reserve-suite:hover {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #00937c !important;
+}
+.brn-reserve-suite:active,
+.brn-reserve-suite.active,
+.open > .dropdown-toggle.brn-reserve-suite {
+  color: white !important;
+  background-color: #009d85 !important;
+  border-color: #00937c !important;
+}
+.brn-reserve-suite:active:hover,
+.brn-reserve-suite.active:hover,
+.open > .dropdown-toggle.brn-reserve-suite:hover,
+.brn-reserve-suite:active:focus,
+.brn-reserve-suite.active:focus,
+.open > .dropdown-toggle.brn-reserve-suite:focus,
+.brn-reserve-suite:active.focus,
+.brn-reserve-suite.active.focus,
+.open > .dropdown-toggle.brn-reserve-suite.focus {
+  color: white !important;
+  background-color: #007967 !important;
+  border-color: #005144 !important;
+}
+.brn-reserve-suite:active,
+.brn-reserve-suite.active,
+.open > .dropdown-toggle.brn-reserve-suite {
+  background-image: none !important;
+}
+.brn-reserve-suite.disabled:hover,
+.brn-reserve-suite[disabled]:hover,
+fieldset[disabled] .brn-reserve-suite:hover,
+.brn-reserve-suite.disabled:focus,
+.brn-reserve-suite[disabled]:focus,
+fieldset[disabled] .brn-reserve-suite:focus,
+.brn-reserve-suite.disabled.focus,
+.brn-reserve-suite[disabled].focus,
+fieldset[disabled] .brn-reserve-suite.focus {
+  background-color: #00d0b0 !important;
+  border-color: #00d0b0 !important;
+}
+.brn-reserve-suite .badge {
+  color: #00d0b0 !important;
+  background-color: white !important;
 }
 .faixa-btn {
   padding-top: 80px;
@@ -8712,196 +9132,177 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   color: transparent;
   background-color: #3f2a56;
 }
-.suite-single .faixa-detalhes {
-  padding-top: 56px;
-  padding-bottom: 68px;
-}
-.suite-single .faixa-detalhes .descricao p {
-  font-size: 20px;
-  color: #666666;
-}
-.suite-single .faixa-detalhes .descricao ul {
-  padding-top: 23px;
-}
-.suite-single .faixa-detalhes .descricao ul li {
-  font-size: 20px;
-  color: #3f2a56;
-}
-.suite-single .faixa-detalhes .info-preco .tabela-preco table {
+.img-filter {
   width: 100%;
-  border: 1px solid #3f2a56;
-  border-bottom: 3 px #3f2a56;
-  text-transform: uppercase;
-  font-size: 18px;
-  font-size: 1.8rem;
-  color: #3f2a56;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 51;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr:first-of-type th {
-  padding-top: 26px;
+.vitrine-interna {
+  position: relative;
+  z-index: 50;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td {
-  padding-top: 10px;
-  padding-left: 32px;
-  padding-right: 32px;
+.vitrine-interna .vitrine-content {
+  height: 360px;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 50;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td:nth-of-type(2) {
-  text-align: right;
+.vitrine-interna .vitrine-content .image-vitrine img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td hr {
-  margin-top: 0;
-  margin-bottom: 0;
-  border: 0;
-  border-top: 1px solid #d0c5db;
-}
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td.linha {
-  padding-top: 5px;
-  padding-bottom: 0px;
-}
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
+.vitrine-interna .vitrine-content .sub-titulo {
+  position: absolute;
   text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: white;
-  background-color: #a44fc7;
-  border-color: #a44fc7;
-  font-family: "Knockout 34 A", "Knockout 34 B";
+  bottom: 40%;
+  z-index: 52;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.vitrine-interna .vitrine-content .sub-titulo h2 {
+  font-family: "Knockout 28 A", "Knockout 28 B";
+  font-size: 98px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #ffffff;
+}
+.vitrine-interna .vitrine-content .img-filter {
   width: 100%;
-  border-radius: 0;
-  box-shadow: 0 2px 0 #a44fc7;
-  margin-top: 12px;
-  margin-bottom: 34px;
-  font-size: 13px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 51;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active:focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active:focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active.focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active.focus {
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: -2px;
-}
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:hover,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.focus {
-  color: #333333;
-  text-decoration: none;
-}
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active {
-  outline: 0;
-  background-image: none;
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.disabled,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar[disabled],
-fieldset[disabled] .suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar {
-  cursor: not-allowed;
-  opacity: 0.65;
-  filter: alpha(opacity=65);
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-a.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.disabled,
-fieldset[disabled] a.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar {
-  pointer-events: none;
-}
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.focus {
+.vitrine-interna .vitrine-content .seta-baixo {
+  position: absolute;
+  text-align: center;
+  bottom: 60px;
   color: white;
-  background-color: #8a37ac;
-  border-color: #5b2472;
+  z-index: 52;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:hover {
-  color: white;
-  background-color: #8a37ac;
-  border-color: #8434a4;
+.vitrine-interna .vitrine-content .seta-baixo img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40px;
+  height: auto;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active,
-.open > .dropdown-toggle.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar {
-  color: white;
-  background-color: #8a37ac;
-  border-color: #8434a4;
+.suite-single .faixa-detalhes {
+  padding-top: 62px;
+  padding-bottom: 100px;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active:hover,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active:hover,
-.open > .dropdown-toggle.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:hover,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active:focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active:focus,
-.open > .dropdown-toggle.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active.focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active.focus,
-.open > .dropdown-toggle.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.focus {
-  color: white;
-  background-color: #742e91;
-  border-color: #5b2472;
+.suite-single .faixa-detalhes .atributos {
+  font-family: "Knockout 28 A", "Knockout 28 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.89;
+  letter-spacing: 0.3px;
+  color: #b8b8b8;
+  text-transform: uppercase;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:active,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.active,
-.open > .dropdown-toggle.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar {
-  background-image: none;
+.suite-single .faixa-detalhes .atributos ul {
+  padding-top: 5px;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.disabled:hover,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar[disabled]:hover,
-fieldset[disabled] .suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:hover,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.disabled:focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar[disabled]:focus,
-fieldset[disabled] .suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar:focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.disabled.focus,
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar[disabled].focus,
-fieldset[disabled] .suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar.focus {
-  background-color: #a44fc7;
-  border-color: #a44fc7;
+.suite-single .faixa-detalhes .info-preco .descricao {
+  font-family: 'FairfieldLTW01-55Medium 706178';
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.55;
+  letter-spacing: 0.2px;
+  color: #3f2658;
 }
-.suite-single .faixa-detalhes .info-preco .tabela-preco table tbody tr td .btn-reservar .badge {
-  color: #a44fc7;
-  background-color: white;
+.suite-single .faixa-detalhes .info-preco .tabela-preco {
+  padding-top: 29px;
 }
-.suite-single .faixa-detalhes .info-preco .compartilhar {
+.suite-single .faixa-detalhes .info-preco .tabela-preco p {
+  font-family: 'FairfieldLTW01-55Medium 706178';
+  font-size: 22px;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 2.95;
+  color: #b8b8b8;
+  position: relative;
+  border-bottom: 1px solid #d2d2d2;
+}
+.suite-single .faixa-detalhes .info-preco .tabela-preco p span {
+  font-family: "Knockout 28 A", "Knockout 28 B";
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.95;
+  letter-spacing: 0.7px;
+  text-align: right;
+  color: #6e5e8b;
+  position: absolute;
+  right: 0;
+}
+.suite-single .faixa-detalhes .info-reserve {
+  padding-top: 81px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.suite-single .faixa-detalhes .info-reserve .brn-reserve-suite {
+  text-transform: uppercase;
+}
+.suite-single .faixa-detalhes .info-compartilhe {
+  padding-top: 60px;
+  text-align: center;
+}
+.suite-single .faixa-detalhes .info-compartilhe .compartilhar {
   padding-top: 80px;
 }
-.suite-single .faixa-detalhes .info-preco .compartilhar p {
-  color: #3f2a56;
-  font-size: 13px;
-  text-transform: uppercase;
-  font-family: "Knockout 34 A", "Knockout 34 B";
+.suite-single .faixa-detalhes .info-compartilhe .compartilhar p {
+  font-family: "Knockout 28 A", "Knockout 28 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #3f2658;
 }
-.suite-single .faixa-detalhes .info-preco .compartilhar ul {
-  padding-top: 23px;
+.suite-single .faixa-detalhes .info-compartilhe .compartilhar ul {
+  padding-top: 27px;
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
 }
-.suite-single .faixa-detalhes .info-preco .compartilhar ul > li {
+.suite-single .faixa-detalhes .info-compartilhe .compartilhar ul > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
-.suite-single .faixa-detalhes .info-preco .compartilhar ul li {
-  border: 2px solid #3f2a56;
-  border-radius: 50px;
-  padding: 6px 7px;
-  margin-right: 26px;
+.suite-single .faixa-detalhes .info-compartilhe .compartilhar ul li {
+  margin-right: 32.5px;
 }
-.suite-single .faixa-detalhes .info-preco .compartilhar ul li img {
-  height: 17.9px;
+.suite-single .faixa-detalhes .info-compartilhe .compartilhar ul li img {
+  height: 26px;
   width: auto;
 }
 .suite-single .faixa-fotos-produto .carousel img {
@@ -8911,19 +9312,25 @@ fieldset[disabled] .suite-single .faixa-detalhes .info-preco .tabela-preco table
   width: 100%;
 }
 .suite-single .faixa-outras-suites-list {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 125px;
+  padding-bottom: 124px;
 }
 .suite-single .faixa-outras-suites-list .titulo {
   text-align: center;
-  font-family: 'FairfieldLTW01-45Light';
-  font-size: 42px;
-  font-size: 4.2rem;
-  color: #3f2a56;
-  padding-bottom: 49px;
+  font-family: "Knockout 28 A", "Knockout 28 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.6px;
+  color: #b8b8b8;
+  padding-bottom: 50px;
 }
 .suite-single .faixa-outras-suites-list .suite-item {
-  padding-bottom: 24px;
+  padding-bottom: 39px;
+}
+.suite-single .faixa-outras-suites-list .suite-item a {
+  text-decoration: none;
 }
 .suite-single .faixa-outras-suites-list .suite-item .outra-site-item {
   position: relative;
@@ -8934,14 +9341,22 @@ fieldset[disabled] .suite-single .faixa-detalhes .info-preco .tabela-preco table
   height: auto;
   width: 100%;
 }
-.suite-single .faixa-outras-suites-list .suite-item .outra-site-item .info-suite {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  right: 0;
-  margin: auto;
-  color: white;
-  text-align: center;
+.suite-single .faixa-outras-suites-list .suite-item p {
+  font-family: 'FairfieldLTW01-55Medium 706178';
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  color: #b8b8b8;
+}
+.suite-single .faixa-outras-suites-list .suite-item p span {
+  font-family: "Knockout 28 A", "Knockout 28 B";
+  font-size: 34px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.7px;
+  color: #3f2658;
 }
 footer {
   background-color: #2a1a3c;
