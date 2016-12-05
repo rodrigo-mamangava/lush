@@ -8411,7 +8411,6 @@ fieldset[disabled] .btn-servico-concierge.focus {
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 26px;
   font-weight: 500;
-  font-style: italic;
   line-height: 1.1;
   letter-spacing: 0.3px;
   text-align: center;
@@ -8458,14 +8457,13 @@ fieldset[disabled] .btn-servico-concierge.focus {
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 38px;
   font-weight: 500;
-  font-style: italic;
   line-height: 0.7;
   letter-spacing: 0.4px;
   color: white;
   margin-bottom: 15px;
 }
 .faixa-lush-member p {
-  font-family: 'FairfieldLTW01-56Medium';
+  font-family: 'FairfieldLTW01-55Medium 706181';
   font-size: 18px;
   font-weight: 500;
   line-height: 1.6;
@@ -8513,7 +8511,6 @@ fieldset[disabled] .btn-servico-concierge.focus {
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 38px;
   font-weight: 500;
-  font-style: italic;
   line-height: 0.7;
   letter-spacing: 0.4px;
   text-align: center;
@@ -8778,7 +8775,6 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 38px;
   font-weight: 500;
-  font-style: italic;
   line-height: 0.7;
   letter-spacing: 0.4px;
   text-align: center;
