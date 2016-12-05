@@ -69,7 +69,7 @@ input[type="url"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus {   
+.uneditable-input:focus {
     border: 0;
     border-top: 0;
     border-left: 0;
@@ -96,39 +96,30 @@ input{
 --------------------------------------------------------------*/
 
 
-@FairfieldLTW01-45Light:'FairfieldLTW01-45Light'; 
+@FairfieldLTW01-45Light:'FairfieldLTW01-45Light';
 
-@FairfieldLTW01-46LightI:'FairfieldLTW01-46LightI'; 
+@FairfieldLTW01-46LightI:'FairfieldLTW01-46LightI';
 
 @FairfieldLTW01-55Medium:'FairfieldLTW01-55Medium 706181';
 
 @FairfieldLTW01-56Medium:'FairfieldLTW01-56Medium';
 
-@FairfieldLTW01-75Bold:'FairfieldLTW01-75Bold'; 
+@FairfieldLTW01-75Bold:'FairfieldLTW01-75Bold';
 
-@FairfieldLTW01-76BoldIt:'FairfieldLTW01-76BoldIt'; 
+@FairfieldLTW01-76BoldIt:'FairfieldLTW01-76BoldIt';
 
-@FairfieldLTW01-85Heavy:'FairfieldLTW01-85Heavy'; 
+@FairfieldLTW01-85Heavy:'FairfieldLTW01-85Heavy';
 
-@FairfieldLTW01-86HeavyI:'FairfieldLTW01-86HeavyI'; 
+@FairfieldLTW01-86HeavyI:'FairfieldLTW01-86HeavyI';
 
-@FairfieldLTW01-45LightC:'FairfieldLTW01-45LightC 706178'; 
+@FairfieldLTW01-45LightC:'FairfieldLTW01-45LightC 706178';
 
-@FairfieldLTW01-55Medium :'FairfieldLTW01-55Medium 706178'; 
-
-@FairfieldLTW01-75BoldCa:'FairfieldLTW01-75BoldCa'; 
-
-@FairfieldLTW01-85HeavyC:'FairfieldLTW01-85HeavyC'; 
-
-@GrotesqueDispMTW01-Bold:'GrotesqueDispMTW01-Bold 706605';
-
-@knockout: "Knockout 28 A", "Knockout 28 B";
+@knockout29: "Knockout 29 A", "Knockout 29 B";
 
 @fairfield: 'FairfieldLTW01-45Light';
 
-@grotesque: 'GrotesqueDispMTW01-Bold 706605';
-
-@junior: "Knockout 34 A", "Knockout 34 B";
+@knockout34: "Knockout 34 A", "Knockout 34 B";
+@knockout26: "Knockout 26 A", "Knockout 26 B";
 
 body{
     font-family: @FairfieldLTW01-55Medium;
@@ -176,9 +167,9 @@ body{
     margin-top: 124px;
     margin-bottom:  46px;
     .text-center;
-    font-family: @knockout;
+    font-family: @knockout29;
     font-size: 18px;
-    .text-uppercase;
+    text-transform: uppercase;
     letter-spacing: 1.6px;
     color: @cinza-v2-texto;
 }
@@ -199,17 +190,17 @@ body{
 .btn-padrao-lush(@cor: @roxo){
     .btn;
     .button-variant(@cor, transparent, @cor);
-    border-radius: 0;    
+    border-radius: 0;
     text-transform: uppercase;
     .sombra-padrao;
-    font-family: @junior;
+    font-family: @knockout29;
 
     padding: 11px 48px;
 }
 
 .btn-lupa{
     .btn;
-    .button-variant(@branco, transparent, transparent);  
+    .button-variant(@branco, transparent, transparent);
     img{
         width: 21.8px;
         height: 21.8px;
@@ -241,8 +232,8 @@ body{
 
 .btn-lilas{
     .btn;
-    .button-variant(@branco, @lilas, @lilas); 
-    font-family: @junior;
+    .button-variant(@branco, @lilas, @lilas);
+    font-family: @knockout34;
     width: 100%;
     border-radius: 0;
     box-shadow: 0 2px 0 @lilas;
@@ -255,26 +246,26 @@ body{
 .btn-branco-v2{
     .btn;
     .button-variant(@verde-agua, @branco, @branco);
-    border-radius: 0;    
+    border-radius: 0;
     text-transform: uppercase;
     //font-size: 14px;
 
     .sombra-padrao;
     box-shadow: 0 2px 0 0 #008672;
-    font-family: @junior;
+    font-family: @knockout34;
 }
 
 .btn-participar-v2{
     .btn;
     .button-variant(@branco, @roxo-fosco-v2, @roxo-fosco-v2);
-    border-radius: 0;    
+    border-radius: 0;
     text-transform: uppercase;
     font-size: 18px;
     letter-spacing: 2.2px;
 
     //.sombra-padrao;
     box-shadow: 0 2px 0 0 #3f2658;
-    font-family: @junior;
+    font-family: @knockout29;
 
 }
 
@@ -284,13 +275,13 @@ body{
 .btn-verde-v02{
     .btn;
     .button-variant(@branco, @verde-agua, @verde-agua) !important;
-    border-radius: 0;    
+    border-radius: 0;
     text-transform: uppercase;
     //font-size: 14px;
 
     .sombra-padrao;
     box-shadow: 0 2px 0 0 #008672 !important;
-    font-family: @junior;
+    font-family: @knockout34;
     margin-top: 9px;
     padding: 11px 48px !important;
 }
@@ -298,36 +289,52 @@ body{
 .btn-transparente{
     .btn;
     .button-variant(#b8b8b8, transparent, transparent) !important;
-    border-radius: 0;    
+    border-radius: 0;
     text-transform: uppercase;
 
-    font-family: @junior;
+    font-family: @knockout34;
     margin-top: 9px;
     padding: 11px 48px !important;
 
     font-size: 18px;
     letter-spacing: 1.8px;
-    font-family: @junior;
+    font-family: @knockout34;
 }
 
 .btn-servico-concierge{
     .btn;
     .button-variant(#6e5e8b, @branco, @branco);
-    border-radius: 0;    
+    border-radius: 0;
     text-transform: uppercase;
 
     .sombra-padrao;
     box-shadow: 0 2px 0 0 #3f2658 !important;
-    font-family: @junior;
+    font-family: @knockout34;
     margin-top: 9px;
     padding: 11px 48px !important;
 }
 
 
 .vitrine{
-    height: 734px;
+    height: 90vh;
     width: 100%;
     background-color: red;
+    .vitrine-chamada {
+      display: flex;
+      height: 30em;
+      align-items: center;
+      h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      font-family: @knockout26;
+      font-size: 6.5em;
+      text-transform: uppercase;
+      line-height: .8;
+      letter-spacing: .02em;
+    }
+  }
 }
 
 
@@ -348,10 +355,10 @@ body{
         .language-social{
             .list-inline;
             color: @branco;
-            font-family: @knockout;
+            font-family: @knockout29;
             font-size: 18px;
             letter-spacing: 1.4px;
-            .text-uppercase;
+            text-transform: uppercase;
 
             img{
                 width: 17px;
@@ -395,10 +402,11 @@ body{
         .navbar-nav > li > a {
             padding-top: 21px;
             padding-bottom: 21px;
-            font-family: @junior;
+            font-family: @knockout29;
             font-size: 18px;
             letter-spacing: 1.4px;
             color: #969696;
+            text-transform: uppercase;
 
         }
     }
@@ -421,7 +429,7 @@ body{
             position: relative;
             height: 800px;
 
-            img{                
+            img{
                 width: 95%;
                 height: auto;
             }
@@ -439,19 +447,20 @@ body{
 
 
                 .escolha{
-                    font-family: @junior;
+                    font-family: @knockout29;
                     font-size: 16px;
                     letter-spacing: 1.6px;
-                    color: #969696;   
+                    color: #969696;
                     margin-bottom: 12px;
+                    text-transform: uppercase;
                 }
 
 
                 h2{
-                    font-family: @FairfieldLTW01-55Medium;
+                    font-family: @FairfieldLTW01-46LightI;
                     font-size: 42px;
                     font-weight: 500;
-                    font-style: italic;
+                    font-style: normal;
                     line-height: 1.4;
                     letter-spacing: 0.5px;
                     color: #3f2658;
@@ -472,10 +481,11 @@ body{
                 .btn-verde-v02{
                     font-size: 18px;
                     letter-spacing: 2.2px;
+                    font-family: @knockout29;
                 }
 
                 .explorar{
-                    font-family: @junior;
+                    font-family: @knockout29;
                     font-size: 18px;
                     letter-spacing: 1.8px;
                     color: #b8b8b8;
@@ -491,11 +501,11 @@ body{
 
 
     .slick-slide{
-        opacity: 0.5;      
+        opacity: 0.5;
     }
 
     .slick-active{
-        opacity: 1; 
+        opacity: 1;
     }
 
     .slick-prev, .slick-next {
@@ -583,7 +593,7 @@ body{
             img{
                 width: 100%;
                 height: auto;
-            }  
+            }
 
         }
 
@@ -618,7 +628,7 @@ body{
             }
 
             a{
-                font-family: @knockout;
+                font-family: @knockout29;
                 font-size: 18px;
                 letter-spacing: 1.8px;
                 text-align: center;
@@ -697,7 +707,7 @@ body{
     padding-bottom: 100px;
 
     h2{
-        font-family: @junior;
+        font-family: @knockout34;
         font-size: 18px;
         letter-spacing: 1.6px;
         color: #969696;
@@ -777,7 +787,7 @@ body{
     .text-center;
 
     p{
-        font-family: @knockout;
+        font-family: @knockout29;
         font-size: 18px;
         letter-spacing: 1.6px;
         text-align: center;
@@ -916,7 +926,7 @@ body{
                     padding-bottom: 15px;
 
                     .amout{
-                        font-family: @knockout;
+                        font-family: @knockout29;
                         font-size: 98px;
                         font-weight: normal;
                         font-style: normal;
@@ -936,7 +946,7 @@ body{
 
             a{
 
-                font-family: @knockout;
+                font-family: @knockout29;
                 font-size: 18px;
                 font-weight: normal;
                 font-style: normal;
@@ -1049,7 +1059,7 @@ body{
         z-index: 50;
 
 
-        .image-vitrine{            
+        .image-vitrine{
             img{
                 .img-responsive;
                 width:100%;
@@ -1066,7 +1076,7 @@ body{
             margin: 0 auto;
 
             h2{
-                font-family: @knockout;
+                font-family: @knockout29;
                 font-size: 98px;
                 font-weight: normal;
                 font-style: normal;
@@ -1093,7 +1103,7 @@ body{
         .seta-baixo{
             position: absolute;
             .text-center;
-            bottom: 60px;        
+            bottom: 60px;
             color: @branco;
             z-index: 52;
 
@@ -1126,11 +1136,11 @@ body{
 
     .faixa-detalhes{
         padding-top: 62px;
-        padding-bottom: 100px; 
+        padding-bottom: 100px;
 
         .atributos{
 
-            font-family: @knockout;
+            font-family: @knockout29;
             font-size: 18px;
             font-weight: normal;
             font-style: normal;
@@ -1138,7 +1148,7 @@ body{
             line-height: 1.89;
             letter-spacing: 0.3px;
             color: #b8b8b8;
-            
+
             .text-uppercase;
 
             ul{
@@ -1159,7 +1169,7 @@ body{
                 font-stretch: normal;
                 line-height: 1.55;
                 letter-spacing: 0.2px;
-                color: #3f2658; 
+                color: #3f2658;
             }
 
             .tabela-preco{
@@ -1179,7 +1189,7 @@ body{
                     border-bottom: 1px solid #d2d2d2;
 
                     span{
-                        font-family: @knockout;
+                        font-family: @knockout29;
                         font-size: 22px;
                         font-weight: normal;
                         font-style: normal;
@@ -1205,7 +1215,7 @@ body{
             .center-block;
 
             .brn-reserve-suite{
-                .text-uppercase;
+                text-transform: uppercase;
 
             }
 
@@ -1220,7 +1230,7 @@ body{
             .compartilhar{
 
                 p{
-                    font-family: @knockout;
+                    font-family: @knockout29;
                     font-size: 18px;
                     font-weight: normal;
                     font-style: normal;
@@ -1232,7 +1242,7 @@ body{
 
                 padding-top: 80px;
 
-                ul{                 
+                ul{
                     padding-top: 27px;
                     .list-inline;
 
@@ -1269,7 +1279,7 @@ body{
 
         .titulo{
             .text-center;
-            font-family: @knockout;
+            font-family: @knockout29;
             font-size: 18px;
             font-weight: normal;
             font-style: normal;
@@ -1282,7 +1292,7 @@ body{
 
 
         .suite-item{
-            
+
             a{
                 text-decoration: none;
             }
@@ -1308,7 +1318,7 @@ body{
 
 
                 span{
-                    font-family: @knockout;
+                    font-family: @knockout29;
                     font-size: 34px;
                     font-weight: normal;
                     font-style: normal;
@@ -1355,7 +1365,7 @@ footer{
         li{
             a{
 
-                font-family: @knockout;
+                font-family: @knockout29;
                 font-size: 16px;
                 line-height: 2.2;
                 letter-spacing: 1.4px;
@@ -1375,5 +1385,3 @@ footer{
         }
     }
 }
-
-

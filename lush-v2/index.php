@@ -18,10 +18,16 @@
                         </ul>
                     </div>
                 </div>
-
+                <div class="row">
+                  <div class="col-lg-offset-1 col-lg-6 col-xs-5 logo">
+                    <div class="vitrine-chamada">
+                      <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
+                    </div>
+                  </col-xs-12>
+                </div>
             </div>
 
-        </div>        
+        </div>
     </div>
 </div><!-- .faixa-vitrine -->
 
@@ -34,51 +40,51 @@
         <div class="carousel-slick center">
 
             <div class="suite">
-                <img src="img/v2/img-centro@2x.jpg" >                
+                <img src="img/v2/img-centro@2x.jpg" >
                 <div class="suite-card">
                     <p class="escolha">Escolha sua suite</p>
                     <h2>Lush Spa Splash</h2>
 
                     <p class="descricao">
-                        Uma suite exuberante e única, completa com piscina 
-                        aquecida privativa dentro da suite, 75m2 com muito 
+                        Uma suite exuberante e única, completa com piscina
+                        aquecida privativa dentro da suite, 75m2 com muito
                         conforto, entretenimento e privacidade.
                     </p>
 
                     <a class="btn-verde-v02" href="#">Quero reservar</a> <a class="explorar btn-transparente" href="#">Explore suite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                </div>                               
+                </div>
             </div><!-- suite -->
 
             <div class="suite">
-                <img src="img/v2/img-centro@2x.jpg" >                
+                <img src="img/v2/img-centro@2x.jpg" >
                 <div class="suite-card">
                     <p class="escolha">Escolha sua suite</p>
                     <h2>Lush Spa Splash</h2>
 
                     <p class="descricao">
-                        Uma suite exuberante e única, completa com piscina 
-                        aquecida privativa dentro da suite, 75m2 com muito 
+                        Uma suite exuberante e única, completa com piscina
+                        aquecida privativa dentro da suite, 75m2 com muito
                         conforto, entretenimento e privacidade.
                     </p>
 
                     <a class="btn-verde-v02" href="#">Quero reservar</a> <a class="explorar" href="#">Explore suite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                </div>                               
+                </div>
             </div><!-- suite -->
 
             <div class="suite">
-                <img src="img/v2/img-centro@2x.jpg" >                
+                <img src="img/v2/img-centro@2x.jpg" >
                 <div class="suite-card">
                     <p class="escolha">Escolha sua suite</p>
                     <h2>Lush Spa Splash</h2>
 
                     <p class="descricao">
-                        Uma suite exuberante e única, completa com piscina 
-                        aquecida privativa dentro da suite, 75m2 com muito 
+                        Uma suite exuberante e única, completa com piscina
+                        aquecida privativa dentro da suite, 75m2 com muito
                         conforto, entretenimento e privacidade.
                     </p>
 
                     <a class="btn-verde-v02" href="#">Quero reservar</a> <a class="explorar" href="#">Explore suite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                </div>                               
+                </div>
             </div><!-- suite -->
 
 
@@ -113,7 +119,7 @@
         <div>
             <div class="row">
                 <div class="subfaixa-destaque col-xs-12">
-                    <div class="row"> 
+                    <div class="row">
                         <div class="item-subfaixa">
                             <div class="col-sm-5 destaque-img">
                                 <img src="img/v2/love-romantic-date-candlelight@2x.jpg" class="img-destaque">
@@ -122,7 +128,7 @@
                                 <img class="icon-destaque" src="img/v2/coracao@2x.jpg">
                                 <h3>Noites mais que especiais</h3>
                                 <p>
-                                    Um exclusivo cardápio gourmet, carta de vinhos, carta de cervejas 
+                                    Um exclusivo cardápio gourmet, carta de vinhos, carta de cervejas
                                     importadas e drinks especiais.
                                 </p>
 
@@ -134,13 +140,13 @@
                 </div>
 
                 <div class="subfaixa-destaque col-xs-12">
-                    <div class="row"> 
+                    <div class="row">
                         <div class="item-subfaixa">
                             <div class=" col-sm-7 destaque-texto">
                                 <img class="icon-destaque" src="img/v2/pacotes@2x.png">
                                 <h3>Experiências Gastronômicas</h3>
                                 <p>
-                                    Um exclusivo cardápio gourmet, carta de vinhos, 
+                                    Um exclusivo cardápio gourmet, carta de vinhos,
                                     carta de cervejas importadas e drinks especiais.
                                 </p>
 
@@ -171,14 +177,14 @@
             <div class="mapa-wrap">
                 <h3>#VemProLush</h3>
                 <img src="img/v2/mapa@2x.jpg">
-            </div>            
+            </div>
         </div>
 
         <div class="col-lg-6 col-lg-offset-3 col-md-12">
             <p>
-                Estamos localizados no centro da cidade de São Paulo, na Avenida 
+                Estamos localizados no centro da cidade de São Paulo, na Avenida
                 do Estado 6600, Ipiranga. Telefone: (11) 2271-0020
-            </p>            
+            </p>
         </div>
 
 
