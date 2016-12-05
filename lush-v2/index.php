@@ -51,7 +51,7 @@
                         conforto, entretenimento e privacidade.
                     </p>
 
-                    <a class="btn-verde-v02" href="#">Quero reservar</a> <a class="explorar btn-transparente" href="#">Explore suite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a class="btn-verde-v02" href="#">Quero reservar</a> <a class="explorar btn-transparente" href="suite.php">Explore suite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div><!-- suite -->
 
@@ -67,7 +67,7 @@
                         conforto, entretenimento e privacidade.
                     </p>
 
-                    <a class="btn-verde-v02" href="#">Quero reservar</a> <a class="explorar" href="#">Explore suite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a class="btn-verde-v02" href="#">Quero reservar</a> <a class="explorar" href="suite.php">Explore suite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div><!-- suite -->
 
@@ -83,7 +83,7 @@
                         conforto, entretenimento e privacidade.
                     </p>
 
-                    <a class="btn-verde-v02" href="#">Quero reservar</a> <a class="explorar" href="#">Explore suite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    <a class="btn-verde-v02" href="#">Quero reservar</a> <a class="explorar" href="suite.php">Explore suite <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                 </div>
             </div><!-- suite -->
 
