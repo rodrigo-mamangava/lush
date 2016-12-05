@@ -8351,19 +8351,18 @@ fieldset[disabled] .btn-servico-concierge.focus {
   height: auto;
 }
 .faixa-saiba-mais .subfaixa-destaque .destaque-texto {
+  padding: 8em 5em 5em;
   text-align: center;
 }
 .faixa-saiba-mais .subfaixa-destaque .destaque-texto .icon-destaque {
-  margin-top: 80px;
   width: 25.8px;
   height: auto;
+  margin-bottom: 2em;
 }
 .faixa-saiba-mais .subfaixa-destaque .destaque-texto h3 {
-  margin-top: 22px;
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 38px;
   font-weight: 500;
-  font-style: italic;
   line-height: 0.7;
   letter-spacing: 0.4px;
   color: #3f2658;
@@ -8378,6 +8377,8 @@ fieldset[disabled] .btn-servico-concierge.focus {
   letter-spacing: 0.2px;
   text-align: center;
   color: #969696;
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  padding: 0 4em;
 }
 .faixa-saiba-mais .subfaixa-destaque .destaque-texto a {
   font-family: "Knockout 29 A", "Knockout 29 B";
