@@ -8346,9 +8346,13 @@ fieldset[disabled] .btn-servico-concierge.focus {
   background-color: white;
   margin-bottom: 10px;
 }
+.faixa-saiba-mais .subfaixa-destaque .destaque-img {
+  height: 100%;
+}
 .faixa-saiba-mais .subfaixa-destaque .destaque-img img {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 .faixa-saiba-mais .subfaixa-destaque .destaque-texto {
   padding: 8em 5em 5em;

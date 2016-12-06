@@ -19,16 +19,16 @@
                     </div>
                 </div>
                 <div class="row">
-                  <div class="col-lg-offset-1 col-lg-6 col-xs-5 logo">
-                    <div class="vitrine-chamada">
-                      <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
-                    </div>
-                  </col-xs-12>
+                  <div class="col-lg-offset-1 col-lg-6 col-xs-12 col-md-8 logo">
+                      <div class="vitrine-chamada">
+                        <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
+                      </div>
+                  </div>
                 </div>
-            </div>
 
         </div>
     </div>
+  </div>
 </div><!-- .faixa-vitrine -->
 
 <?php include './_menu-principal.php';?>
@@ -72,7 +72,7 @@
             </div><!-- suite -->
 
             <div class="suite">
-                <img src="img/v2/img-centro@2x.jpg" >
+                <img src="img/v2/img-centro@2x.jpg" class="object-cover" >
                 <div class="suite-card">
                     <p class="escolha">Escolha sua suite</p>
                     <h2>Lush Spa Splash</h2>
