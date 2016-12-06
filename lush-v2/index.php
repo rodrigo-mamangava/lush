@@ -1,9 +1,8 @@
 <?php include './_header.php'; ?>
 
-<div class="container-fluid faixa-vitrine">
+<div class="jumbotron faixa-vitrine">
     <div class="row">
         <div class="vitrine">
-
             <div class="container menu-header">
                 <div class="row">
                     <div class="col-lg-offset-1 col-lg-4 col-xs-5 logo">
@@ -17,6 +16,7 @@
                             <li><img src="img/insta_branco@2x.png"></li>
                         </ul>
                     </div>
+
                 </div>
                 <div class="row">
                   <div class="col-lg-offset-1 col-lg-6 col-xs-12 col-md-8 logo">
@@ -25,6 +25,9 @@
                       </div>
                   </div>
                 </div>
+                  <video autoplay loop poster="" class="bg-video">
+                    <source src="img/video/lush-vitrine-video.mp4" type="video/webm">
+                  </video>
 
         </div>
     </div>

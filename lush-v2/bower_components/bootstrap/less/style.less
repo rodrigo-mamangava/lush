@@ -313,11 +313,15 @@ body{
     padding: 11px 48px !important;
 }
 
-
+.jumbotron.faixa-vitrine {
+  background: transparent;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 .vitrine{
     height: 90vh;
     width: 100%;
-    background-color: red;
+    overflow-y: hidden;
     .vitrine-chamada {
       display: flex;
       height: 30em;
@@ -326,14 +330,26 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
-
-      font-family: @knockout26;
-      font-size: 6.5em;
-      text-transform: uppercase;
-      line-height: .8;
-      letter-spacing: .02em;
-    }
+        color: white;
+        font-family: @knockout26;
+        font-size: 6.5em;
+        text-transform: uppercase;
+        line-height: .8;
+        letter-spacing: .02em;
+      }
   }
+  .bg-video{
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: -1000;
+      overflow: hidden;  }
 }
 
 

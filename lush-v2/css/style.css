@@ -8130,10 +8130,15 @@ fieldset[disabled] .btn-servico-concierge.focus {
   color: white;
   background-color: #6e5e8b;
 }
+.jumbotron.faixa-vitrine {
+  background: transparent;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
 .vitrine {
   height: 90vh;
   width: 100%;
-  background-color: red;
+  overflow-y: hidden;
 }
 .vitrine .vitrine-chamada {
   display: flex;
@@ -8144,11 +8149,25 @@ fieldset[disabled] .btn-servico-concierge.focus {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
   font-family: "Knockout 26 A", "Knockout 26 B";
   font-size: 6.5em;
   text-transform: uppercase;
   line-height: .8;
   letter-spacing: .02em;
+}
+.vitrine .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
 }
 .menu-header {
   padding-top: 106px;
