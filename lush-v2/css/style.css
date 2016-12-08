@@ -7896,6 +7896,11 @@ fieldset[disabled] .btn-verde-v02.focus {
   color: #00d0b0 !important;
   background-color: white !important;
 }
+.btn-tipo-knockout34 {
+  font-family: "Knockout 34 A", "Knockout 34 B";
+  margin-top: 9px;
+  padding: 11px 48px !important;
+}
 .btn-transparente {
   display: inline-block;
   margin-bottom: 0;
@@ -7920,11 +7925,11 @@ fieldset[disabled] .btn-verde-v02.focus {
   border-color: transparent !important;
   border-radius: 0;
   text-transform: uppercase;
+  font-family: "Knockout 34 A", "Knockout 34 B";
   margin-top: 9px;
   padding: 11px 48px !important;
   font-size: 18px;
   letter-spacing: 1.8px;
-  font-family: "Knockout 34 A", "Knockout 34 B";
 }
 .btn-transparente:focus,
 .btn-transparente:active:focus,
@@ -8129,6 +8134,123 @@ fieldset[disabled] .btn-servico-concierge.focus {
 .btn-servico-concierge .badge {
   color: white;
   background-color: #6e5e8b;
+}
+.btn-explore-cardapio {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white;
+  background-color: #6e5e8b;
+  border-color: #6e5e8b;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3F2A56;
+  box-shadow: 0 2px 0 0 #3f2658 !important;
+  font-family: "Knockout 34 A", "Knockout 34 B";
+  margin-top: 9px;
+  padding: 11px 48px !important;
+}
+.btn-explore-cardapio:focus,
+.btn-explore-cardapio:active:focus,
+.btn-explore-cardapio.active:focus,
+.btn-explore-cardapio.focus,
+.btn-explore-cardapio:active.focus,
+.btn-explore-cardapio.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-explore-cardapio:hover,
+.btn-explore-cardapio:focus,
+.btn-explore-cardapio.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn-explore-cardapio:active,
+.btn-explore-cardapio.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-explore-cardapio.disabled,
+.btn-explore-cardapio[disabled],
+fieldset[disabled] .btn-explore-cardapio {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-explore-cardapio.disabled,
+fieldset[disabled] a.btn-explore-cardapio {
+  pointer-events: none;
+}
+.btn-explore-cardapio:focus,
+.btn-explore-cardapio.focus {
+  color: white;
+  background-color: #56496d;
+  border-color: #322b3f;
+}
+.btn-explore-cardapio:hover {
+  color: white;
+  background-color: #56496d;
+  border-color: #514566;
+}
+.btn-explore-cardapio:active,
+.btn-explore-cardapio.active,
+.open > .dropdown-toggle.btn-explore-cardapio {
+  color: white;
+  background-color: #56496d;
+  border-color: #514566;
+}
+.btn-explore-cardapio:active:hover,
+.btn-explore-cardapio.active:hover,
+.open > .dropdown-toggle.btn-explore-cardapio:hover,
+.btn-explore-cardapio:active:focus,
+.btn-explore-cardapio.active:focus,
+.open > .dropdown-toggle.btn-explore-cardapio:focus,
+.btn-explore-cardapio:active.focus,
+.btn-explore-cardapio.active.focus,
+.open > .dropdown-toggle.btn-explore-cardapio.focus {
+  color: white;
+  background-color: #453b57;
+  border-color: #322b3f;
+}
+.btn-explore-cardapio:active,
+.btn-explore-cardapio.active,
+.open > .dropdown-toggle.btn-explore-cardapio {
+  background-image: none;
+}
+.btn-explore-cardapio.disabled:hover,
+.btn-explore-cardapio[disabled]:hover,
+fieldset[disabled] .btn-explore-cardapio:hover,
+.btn-explore-cardapio.disabled:focus,
+.btn-explore-cardapio[disabled]:focus,
+fieldset[disabled] .btn-explore-cardapio:focus,
+.btn-explore-cardapio.disabled.focus,
+.btn-explore-cardapio[disabled].focus,
+fieldset[disabled] .btn-explore-cardapio.focus {
+  background-color: #6e5e8b;
+  border-color: #6e5e8b;
+}
+.btn-explore-cardapio .badge {
+  color: #6e5e8b;
+  background-color: white;
 }
 .jumbotron.faixa-vitrine {
   background: transparent;
@@ -8344,6 +8466,77 @@ fieldset[disabled] .btn-servico-concierge.focus {
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.faixa-intercalada {
+  background-color: #f2f2f2;
+  padding-bottom: 126px;
+}
+.faixa-intercalada h2 {
+  margin-top: 124px;
+  margin-bottom: 46px;
+  text-align: center;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: #b8b8b8;
+}
+.faixa-intercalada .subfaixa-destaque {
+  position: relative;
+  padding: 0;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.faixa-intercalada .subfaixa-destaque .destaque-img {
+  height: 100%;
+}
+.faixa-intercalada .subfaixa-destaque .destaque-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.faixa-intercalada .subfaixa-destaque .destaque-texto {
+  padding: 8em 5em 5em;
+  text-align: center;
+}
+.faixa-intercalada .subfaixa-destaque .destaque-texto .icon-destaque {
+  width: 25.8px;
+  height: auto;
+  margin-bottom: 2em;
+}
+.faixa-intercalada .subfaixa-destaque .destaque-texto h3 {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 0.7;
+  letter-spacing: 0.4px;
+  color: #3f2658;
+}
+.faixa-intercalada .subfaixa-destaque .destaque-texto p {
+  margin-top: 22px;
+  margin-bottom: 47px;
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #969696;
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  padding: 0 4em;
+}
+.faixa-intercalada .subfaixa-destaque .destaque-texto a {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #b8b8b8;
+  text-transform: uppercase;
+}
+.faixa-intercalada .subfaixa-destaque .destaque-texto a img {
+  width: 12px;
+  height: auto;
+  padding-left: 7.5px;
 }
 .faixa-saiba-mais {
   background-color: #f2f2f2;
@@ -9397,6 +9590,207 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   letter-spacing: .02em;
   color: #3f2658;
 }
+/*--------------------------------------------------------------
+# gastronomia
+--------------------------------------------------------------*/
+.gastronomia .faixa-explore-cardapio {
+  background-color: #f2f2f2;
+  padding-bottom: 126px;
+  background-color: transparent;
+  margin-bottom: 200px;
+  text-align: center;
+}
+.gastronomia .faixa-explore-cardapio h2 {
+  margin-top: 124px;
+  margin-bottom: 46px;
+  text-align: center;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: #b8b8b8;
+}
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque {
+  position: relative;
+  padding: 0;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-img {
+  height: 100%;
+}
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto {
+  padding: 8em 5em 5em;
+  text-align: center;
+}
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto .icon-destaque {
+  width: 25.8px;
+  height: auto;
+  margin-bottom: 2em;
+}
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto h3 {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 0.7;
+  letter-spacing: 0.4px;
+  color: #3f2658;
+}
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto p {
+  margin-top: 22px;
+  margin-bottom: 47px;
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #969696;
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  padding: 0 4em;
+}
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto a {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #b8b8b8;
+  text-transform: uppercase;
+}
+.gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-texto a img {
+  width: 12px;
+  height: auto;
+  padding-left: 7.5px;
+}
+.gastronomia .faixa-explore-cardapio p {
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.55;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #969696;
+  margin-top: 72px;
+  margin-bottom: 50px;
+}
+.gastronomia .faixa-gastronomia-cats {
+  background-color: #f2f2f2;
+  padding-bottom: 126px;
+  background-color: transparent;
+}
+.gastronomia .faixa-gastronomia-cats h2 {
+  margin-top: 124px;
+  margin-bottom: 46px;
+  text-align: center;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: #b8b8b8;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque {
+  position: relative;
+  padding: 0;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-img {
+  height: 100%;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto {
+  padding: 8em 5em 5em;
+  text-align: center;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto .icon-destaque {
+  width: 25.8px;
+  height: auto;
+  margin-bottom: 2em;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto h3 {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 0.7;
+  letter-spacing: 0.4px;
+  color: #3f2658;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto p {
+  margin-top: 22px;
+  margin-bottom: 47px;
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #969696;
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  padding: 0 4em;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto a {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #b8b8b8;
+  text-transform: uppercase;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-texto a img {
+  width: 12px;
+  height: auto;
+  padding-left: 7.5px;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque {
+  border: solid 2px #f2f2f2;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .item-subfaixa .destaque-texto {
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .item-subfaixa .destaque-texto h3 {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 38px;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 0.74;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #3f2658;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .item-subfaixa .destaque-texto p {
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #969696;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .item-subfaixa .destaque-texto a {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.8px;
+  text-align: center;
+  color: #b8b8b8;
+}
 footer {
   background-color: #2a1a3c;
   margin-top: 32px;
@@ -9442,4 +9836,3 @@ footer .links-sociais img {
   height: 18px;
   margin-left: 32px;
 }
-/*# sourceMappingURL=style.css.map */

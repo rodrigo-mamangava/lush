@@ -285,19 +285,25 @@ body{
     padding: 11px 48px !important;
 }
 
+
+.btn-tipo-knockout34{
+    font-family: @knockout34;
+    margin-top: 9px;
+    padding: 11px 48px !important;
+}
+
 .btn-transparente{
     .btn;
     .button-variant(#b8b8b8, transparent, transparent) !important;
     border-radius: 0;
     text-transform: uppercase;
 
-    font-family: @knockout34;
-    margin-top: 9px;
-    padding: 11px 48px !important;
+    .btn-tipo-knockout34;
+
 
     font-size: 18px;
     letter-spacing: 1.8px;
-    font-family: @knockout34;
+
 }
 
 .btn-servico-concierge{
@@ -308,48 +314,60 @@ body{
 
     .sombra-padrao;
     box-shadow: 0 2px 0 0 #3f2658 !important;
-    font-family: @knockout34;
-    margin-top: 9px;
-    padding: 11px 48px !important;
+
+    .btn-tipo-knockout34;
 }
 
+.btn-explore-cardapio{
+    .btn;
+    .button-variant(@branco, @roxo-fosco-v2, @roxo-fosco-v2);
+    border-radius: 0;
+    text-transform: uppercase;
+
+    .sombra-padrao;
+    box-shadow: 0 2px 0 0 #3f2658 !important;
+
+    .btn-tipo-knockout34
+}
+
+
 .jumbotron.faixa-vitrine {
-  background: transparent;
-  padding-bottom: 0;
-  margin-bottom: 0;
+    background: transparent;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 .vitrine{
     height: 90vh;
     width: 100%;
     overflow-y: hidden;
     .vitrine-chamada {
-      display: flex;
-      height: 30em;
-      align-items: center;
-      h1 {
         display: flex;
+        height: 30em;
         align-items: center;
-        justify-content: center;
-        color: white;
-        font-family: @knockout26;
-        font-size: 6.5em;
-        text-transform: uppercase;
-        line-height: .8;
-        letter-spacing: .02em;
-      }
-  }
-  .bg-video{
-    position: absolute;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translateX(-50%) translateY(-50%);
-      transform: translateX(-50%) translateY(-50%);
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      z-index: -1000;
-      overflow: hidden;  }
+        h1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: @knockout26;
+            font-size: 6.5em;
+            text-transform: uppercase;
+            line-height: .8;
+            letter-spacing: .02em;
+        }
+    }
+    .bg-video{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: -1000;
+        overflow: hidden;  }
 }
 
 
@@ -586,7 +604,7 @@ body{
 
 
 
-.faixa-saiba-mais{
+.faixa-intercalada{
 
     background-color: @cinza-v2-fundo;
     padding-bottom: 126px;
@@ -605,7 +623,7 @@ body{
         margin-bottom: 10px;
 
         .destaque-img{
-          height: 100%;
+            height: 100%;
             img{
                 width: 100%;
                 height: auto;
@@ -666,6 +684,10 @@ body{
     }
 
 
+}//faixa-intercalada
+
+.faixa-saiba-mais{
+    .faixa-intercalada;
 }//faixa-saiba-mais
 
 .faixa-mapa{
@@ -1346,6 +1368,109 @@ body{
 
 
     }//faixa-outras-suites-list
+
+}
+
+/*--------------------------------------------------------------
+# gastronomia
+--------------------------------------------------------------*/
+.gastronomia{
+
+    .faixa-explore-cardapio{
+
+        .faixa-intercalada;
+        background-color: transparent;
+        margin-bottom: 200px;
+
+        .text-center;
+
+        p{
+            font-family: @FairfieldRegular;
+            font-size: 22px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.55;
+            letter-spacing: 0.2px;
+            text-align: center;
+            color: #969696;
+
+            margin-top: 72px;
+            margin-bottom: 50px;
+
+        }
+
+        .btn-servico-concierge{
+
+
+        }
+
+    }//faixa-explore-cardapio
+
+    .faixa-gastronomia-cats{
+
+        .faixa-saiba-mais;
+        background-color: transparent;
+
+        .subfaixa-destaque{
+            border: solid 2px #f2f2f2;
+
+            .item-subfaixa{
+
+                .destaque-img{
+
+                }
+
+                .destaque-texto{
+                    padding-top: 100px;
+                    padding-bottom: 0;
+                    
+                    h3{
+                        font-family: @FairfieldItalic;
+                        font-size: 38px;
+                        font-weight: 500;
+                        font-style: italic;
+                        font-stretch: normal;
+                        line-height: 0.74;
+                        letter-spacing: 0.4px;
+                        text-align: center;
+                        color: #3f2658;
+
+                    }
+
+                    p{
+                        font-family: @FairfieldRegular;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.56;
+                        letter-spacing: 0.2px;
+                        text-align: center;
+                        color: #969696;
+                    }
+
+                    a{
+                        font-family: @knockout29;
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 1.8px;
+                        text-align: center;
+                        color: #b8b8b8;
+                    }
+
+                }
+            }
+
+
+
+        }
+
+
+
+    }//faixa-gastronomia-cats
 
 }
 
