@@ -8168,6 +8168,17 @@ fieldset[disabled] .btn-servico-concierge.focus {
   height: auto;
   z-index: -1000;
   overflow: hidden;
+  background: #000;
+}
+.vitrine .bg-video:before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
 }
 .menu-header {
   padding-top: 106px;
