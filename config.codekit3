@@ -4985,9 +4985,9 @@
 		"ie": 1,
 		"iI": 0,
 		"ma": 1,
-		"oA": 0,
-		"oAP": "\/lush-v2\/css\/style.css",
-		"oF": 3,
+		"oA": 2,
+		"oAP": "\/lush-v2\/bower_components\/bootstrap\/less\/style.less",
+		"oF": 0,
 		"oS": 0,
 		"rU": 0,
 		"sI": 0,
@@ -6515,6 +6515,12 @@
 		"oAP": "\/lush-v2\/fonts\/glyphicons-halflings-regular.woff2",
 		"oF": 0
 		},
+	"\/lush-v2\/gastronomia.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lush-v2\/gastronomia.php",
+		"oF": 0
+		},
 	"\/lush-v2\/img\/conheca_suite.png": {
 		"ft": 32768,
 		"iS": 194275,
@@ -6875,6 +6881,22 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/lush-v2\/img\/v2\/bar-adega@3x.jpg": {
+		"ft": 16384,
+		"iS": 1220922,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/bar-adega@3x.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/cafedamanha-brunch@3x.jpg": {
+		"ft": 16384,
+		"iS": 1114116,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/cafedamanha-brunch@3x.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/lush-v2\/img\/v2\/coracao.jpg": {
 		"ft": 16384,
 		"iS": 1938,
@@ -7099,6 +7121,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/lush-v2\/img\/v2\/parcerias-especiais@3x.jpg": {
+		"ft": 16384,
+		"iS": 929768,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/parcerias-especiais@3x.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/lush-v2\/img\/v2\/pin.jpg": {
 		"ft": 16384,
 		"iS": 1501,
@@ -7120,6 +7150,14 @@
 		"iS": 1645,
 		"oA": 0,
 		"oAP": "\/lush-v2\/img\/v2\/pin@3x.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/restaurante@3x.jpg": {
+		"ft": 16384,
+		"iS": 1646080,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/restaurante@3x.jpg",
 		"oF": 0,
 		"opt": 0
 		},

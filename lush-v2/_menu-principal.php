@@ -21,7 +21,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li><a href="suites.php">Suites</a></li>                      
-                        <li><a href="#">Gastronomia</a></li>                        
+                        <li><a href="gastronomia.php">Gastronomia</a></li>                        
                         <li><a href="#">Pacotes Especiais</a></li>                        
                         <li><a href="#">Novidades</a></li>                        
                         <li><a href="como-chegar.php">Como chegar</a></li>                        
