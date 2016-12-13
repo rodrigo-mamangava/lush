@@ -8268,10 +8268,6 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   display: flex;
   height: 30em;
   align-items: center;
-}
-.vitrine .vitrine-chamada h1 {
-  display: flex;
-  align-items: center;
   justify-content: center;
   color: white;
   font-family: "Knockout 26 A", "Knockout 26 B";
@@ -8280,7 +8276,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   line-height: .8;
   letter-spacing: .02em;
 }
-.vitrine .bg-video {
+.bg-video {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -8294,7 +8290,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   overflow: hidden;
   background: #000;
 }
-.vitrine .bg-video:before {
+.bg-video:before {
   content: " ";
   display: block;
   position: absolute;
@@ -8303,6 +8299,17 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   min-width: 100%;
   min-height: 100%;
   z-index: 0;
+}
+.bg-video h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Knockout 26 A", "Knockout 26 B";
+  font-size: 6.5em;
+  text-transform: uppercase;
+  line-height: .8;
+  letter-spacing: .02em;
 }
 .menu-header {
   padding-top: 106px;
