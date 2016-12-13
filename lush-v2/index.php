@@ -1,40 +1,42 @@
 <?php include './_header.php'; ?>
 
 <div class="jumbotron faixa-vitrine">
-    <div class="row">
-        <div class="vitrine">
-            <div class="container menu-header">
-                <div class="row">
-                    <div class="col-lg-offset-1 col-lg-4 col-xs-5 logo">
-                        <img src="img/logo_lush_branco@2x.png">
+    <div class="container">
+        <div class="row">
+            <div class="vitrine">
+                <div class="container menu-header">
+                    <div class="row">
+                        <div class="col-lg-offset-1 col-lg-4 col-xs-5 logo">
+                            <img src="img/logo_lush_branco@2x.png">
+                        </div>
+                        <div class="col-lg-7 col-xs-6 menu-itens">
+                            <ul class="language-social">
+                                <li>pt</li>
+                                <li>en</li>
+                                <li><img src="img/face_branco@2x.png"></li>
+                                <li><img src="img/insta_branco@2x.png"></li>
+                            </ul>
+                        </div>
+
                     </div>
-                    <div class="col-lg-7 col-xs-6 menu-itens">
-                        <ul class="language-social">
-                            <li>pt</li>
-                            <li>en</li>
-                            <li><img src="img/face_branco@2x.png"></li>
-                            <li><img src="img/insta_branco@2x.png"></li>
-                        </ul>
+                    <div class="row">
+                        <div class="col-lg-offset-1 col-lg-6 col-xs-12 col-md-8 logo">
+                            <div class="vitrine-chamada">
+                                <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
+                            </div>
+                        </div>
                     </div>
+                    <video autoplay loop poster="" class="bg-video">
+                        <source src="img/video/lush-vitrine-video.mp4" type="video/webm">
+                    </video>
 
                 </div>
-                <div class="row">
-                  <div class="col-lg-offset-1 col-lg-6 col-xs-12 col-md-8 logo">
-                      <div class="vitrine-chamada">
-                        <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
-                      </div>
-                  </div>
-                </div>
-                  <video autoplay loop poster="" class="bg-video">
-                    <source src="img/video/lush-vitrine-video.mp4" type="video/webm">
-                  </video>
-
+            </div>
         </div>
     </div>
-  </div>
 </div><!-- .faixa-vitrine -->
 
-<?php include './_menu-principal.php';?>
+<?php include '_menu-home.php'; ?>
 
 <div class="container-fluid faixa-carousel-suites">
 
@@ -211,7 +213,7 @@
 </div><!-- faixa-lush-member -->
 
 
-<?php include './faixa-explore.php';?>
+<?php include './faixa-explore.php'; ?>
 
 
 <?php include './_footer.php'; ?>

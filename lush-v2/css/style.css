@@ -6772,7 +6772,8 @@ h3,
 h4,
 h5,
 p,
-a {
+a,
+hr {
   margin: 0;
   padding: 0;
 }
@@ -8259,6 +8260,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
 }
 .vitrine {
   height: 90vh;
+  height: 835px;
   width: 100%;
   overflow-y: hidden;
 }
@@ -8332,6 +8334,9 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   height: auto;
 }
 .menu-principal .navbar {
+  left: 0;
+  right: 0;
+  top: 0;
   border: 0;
   min-height: 64px;
   margin-bottom: 0px;
@@ -9691,6 +9696,9 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   margin-top: 72px;
   margin-bottom: 50px;
 }
+.gastronomia .faixa-explore-cardapio .btn-explore-cardapio {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+}
 .gastronomia .faixa-gastronomia-cats {
   background-color: #f2f2f2;
   padding-bottom: 126px;
@@ -9846,4 +9854,70 @@ footer .links-sociais img {
   width: 18px;
   height: 18px;
   margin-left: 32px;
+}
+.faixa-bastidores {
+  margin-top: 50px;
+}
+.faixa-bastidores .bastidores-item {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.faixa-bastidores .bastidores-item .meta-dados {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.8px;
+  color: #b8b8b8;
+  padding-top: 17px;
+}
+.faixa-bastidores .bastidores-item h2 {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 30px;
+  font-weight: 500;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  color: #3f2658;
+  padding-bottom: 12px;
+}
+.faixa-bastidores .bastidores-item .intro {
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.2px;
+  color: #b8b8b8;
+}
+.faixa-bastidores .passador {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  text-transform: uppercase;
+  padding-top: 90px;
+  padding-bottom: 146px;
+}
+.faixa-bastidores .passador ul {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.faixa-bastidores .passador ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.faixa-bastidores .passador ul li a {
+  color: #d2d2d2;
+}
+.faixa-bastidores .passador ul li a:hover,
+.faixa-bastidores .passador ul li a:active {
+  text-decoration: none;
+  color: #6e5e8b;
 }
