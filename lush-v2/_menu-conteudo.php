@@ -17,14 +17,14 @@
         <ul class="nav navbar-nav">
             <li><a href="suites.php">Suites</a></li>                      
             <li><a href="gastronomia.php">Gastronomia</a></li>                        
-            <li><a href="#">Pacotes Especiais</a></li>                        
+            <li><a href="experiencia.php">Pacotes Especiais</a></li>                        
             <li><a href="bastidores.php">Novidades</a></li>                        
             <li><a href="como-chegar.php">Como chegar</a></li>                        
             <li><a href="#">Contato</a></li>                        
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-            <li><a class="btn-verde-v02" href="#">Reservar</a></li>
+            <li><a class="btn-reserva-v2" href="#">Reservar</a></li>
         </ul>
     </div><!-- /.navbar-collapse -->
 </div><!-- /.container-fluid -->

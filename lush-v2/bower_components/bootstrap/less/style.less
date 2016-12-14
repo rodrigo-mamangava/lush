@@ -277,12 +277,18 @@ body{
     .button-variant(@branco, @verde-agua, @verde-agua) !important;
     border-radius: 0;
     text-transform: uppercase;
-
     .sombra-padrao;
     box-shadow: 0 2px 0 0 #008672 !important;
     font-family: @knockout29;
     margin-top: 9px;
     padding: 11px 48px !important;
+
+    
+}
+
+.btn-reserva-v2{
+    .btn-verde-v02;
+    margin-right: 10px;
 }
 
 
@@ -1499,60 +1505,142 @@ body{
 
 }
 
+/*--------------------------------------------------------------
+# experiencia
+--------------------------------------------------------------*/
+.experiencia{
 
+    .faixa-destaque{
+        background-color: @roxo;
+        padding-top: 64px;
 
-footer{
+        .para-presentear{
 
-    background-color: #2a1a3c;
-    margin-top: 32px;
-    padding-top: 90px;
-    padding-bottom: 103px;
+            background-color: #ffffff;
+            box-shadow: 0 -4px 0 0 #3f2658, inset 0 0 0 0 rgba(242, 242, 242, 0.5);
+            
+            margin-top: 127px;
+            margin-bottom: 146px;
 
-    .logo{
-        width: 72px;
-        height: auto;
-
-        margin-bottom: 68.4px;
-    }
-
-    p{
-        font-family: @FairfieldRegular;
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 2.2;
-        letter-spacing: 0.2px;
-        color: #6e5e8b;
-    }
-
-    .menu-footer{
-        list-style-type: none;
-        li{
-            a{
-
+            h2{
                 font-family: @knockout29;
                 font-size: 16px;
-                line-height: 2.2;
-                letter-spacing: 1.4px;
-                color: #6e5e8b;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 1.6px;
+                color: #969696;
+                
+                padding-top: 30px;
+            }
+
+            h3{
+                font-family: @FairfieldItalic;
+                font-size: 42px;
+                font-weight: 500;
+                font-style: italic;
+                font-stretch: normal;
+                line-height: 1.43;
+                letter-spacing: 0.4px;
+                color: #3f2658;
+                
+                padding-top: 6px;
+            }
+
+            p{
+                font-family: @FairfieldRegular;
+                font-size: 18px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.56;
+                letter-spacing: 0.2px;
+                color: #969696;
+                
+                padding-top: 9px;
             }
 
         }
+
+
+
+
     }
 
-    .links-sociais{
-        .list-inline;
-        .text-right;
-        img{
-            width: 18px;
-            height: 18px;
-            margin-left: 32px;
+
+
+    .faixa-pacotes-cats{
+
+        .faixa-saiba-mais;
+        background-color: transparent;
+
+        .subfaixa-destaque{
+            border: solid 2px #f2f2f2;
+
+            .item-subfaixa{
+
+                .destaque-img{
+
+                }
+
+                .destaque-texto{
+                    padding-top: 100px;
+                    padding-bottom: 0;
+
+                    h3{
+                        font-family: @FairfieldItalic;
+                        font-size: 38px;
+                        font-weight: 500;
+                        font-style: italic;
+                        font-stretch: normal;
+                        line-height: 0.74;
+                        letter-spacing: 0.4px;
+                        text-align: center;
+                        color: #3f2658;
+
+                    }
+
+                    p{
+                        font-family: @FairfieldRegular;
+                        font-size: 18px;
+                        font-weight: 500;
+                        font-style: normal;
+                        font-stretch: normal;
+                        line-height: 1.56;
+                        letter-spacing: 0.2px;
+                        text-align: center;
+                        color: #969696;
+                    }
+
+                    a{
+                        font-family: @knockout29;
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 1.8px;
+                        text-align: center;
+                        color: #b8b8b8;
+                    }
+
+                }
+            }
+
+
+
         }
-    }
+
+
+
+    }//faixa-gastronomia-cats
+
 }
 
 
 
-
+/*--------------------------------------------------------------
+# bastidores
+--------------------------------------------------------------*/
 .faixa-bastidores{
 
     margin-top: 50px;
@@ -1640,3 +1728,57 @@ footer{
 
     }
 }//faixa-bastidores
+
+
+
+footer{
+
+    background-color: #2a1a3c;
+    margin-top: 32px;
+    padding-top: 90px;
+    padding-bottom: 103px;
+
+    .logo{
+        width: 72px;
+        height: auto;
+
+        margin-bottom: 68.4px;
+    }
+
+    p{
+        font-family: @FairfieldRegular;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.2;
+        letter-spacing: 0.2px;
+        color: #6e5e8b;
+    }
+
+    .menu-footer{
+        list-style-type: none;
+        li{
+            a{
+
+                font-family: @knockout29;
+                font-size: 16px;
+                line-height: 2.2;
+                letter-spacing: 1.4px;
+                color: #6e5e8b;
+            }
+
+        }
+    }
+
+    .links-sociais{
+        .list-inline;
+        .text-right;
+        img{
+            width: 18px;
+            height: 18px;
+            margin-left: 32px;
+        }
+    }
+}
+
+
+
