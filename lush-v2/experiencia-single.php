@@ -5,7 +5,7 @@
 
 
     <?php
-    $urlImagem = 'img/v2/drink-lush@2x.jpg';
+    $urlImagem = 'img/v2/img-centro@2x_1.jpg';
     $nomeSuite = "noite romântica";
     include './_vitrine.php';
     ?>
@@ -13,7 +13,7 @@
     <div class="faixa-texto-simples">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12 col-sm-8 col-sm-offset-2">
                     <h2>
                         O LUSH te ajuda a transformar sua comemoração em uma 
                         experiência sensorial completa. Acrescente na reserva da 
@@ -27,35 +27,28 @@
     <div class="pacote-loop">
         <div class="container-fluid">
             <div class="row">
-                <div class="pacote-item col-xs-12 col-sm-10 col-sm-offset-1">
-                    <div class="row">
-                        <div class="col-xs-6 item-texto">
-                            <h3>LUSH SENSATION</h3>
-                            <p class="descricao">
-                                Welcome drinks, jantar (1 entrada + 2 prato principal), 
-                                sobremesa, Chandon e café da manhã LUSH.                             
-                            </p>
-                        </div><!-- item-texto -->
-                        <div class="col-xs-6 item-reserve">
-                            <div class="preco">
-                                <p>
-                                    R$ 375 + SUÍTE ESCOLHIDA
-                                </p>
-                            </div>
-                            <a class="btn-verde-v02">RESERVAR</a>
-
-
-                        </div><!-- item-reserve -->
-                    </div>
-                </div><!-- pacote-item -->
-
+                <?php for ($i = 1; $i <= 10; $i++): ?>
+                    <?php include './_experiencia-item.php'; ?>
+                <?php endfor; ?>
             </div>
         </div>
     </div><!-- pacote-loop -->
 
 
+    <div class="container-fluid">
 
-</div>
+        <div class="row">
+            <?php
+            $titulo_compartilhe = "Convide quem vai vivenciar uma experiência inesquecível com você.";
+            include './faixa-compartilhar.php';
+            ?>
+        </div>
+
+    </div>
+
+
+
+</div><!-- experiencia-single -->
 
 <?php
 include './_footer.php';

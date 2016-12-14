@@ -2,7 +2,7 @@
 <?php include './_menu-principal.php'; ?>
 
 <div class="suite-single">
-    
+
     <?php
     $urlImagem = 'img/lush_spa_splash_02.png';
     $nomeSuite = "Lush Spa Splash";
@@ -80,22 +80,12 @@
         <div class="col-xs-12 info-reserve">
             <a href="#" class="brn-reserve-suite">RESERVAR ESTA SUÍTE</a>
         </div>
-        <div class="col-xs-12 info-compartilhe">
-
-            <div class="compartilhar">
 
 
-                <p>CONVIDE SEU PAR PARA ESTA SUÍTE :)</p>
-
-                <ul class="icones">
-                    <li><img src="img/icones_msg@2x.png"></li>
-                    <li><img src="img/icone_whatsapp@2x.png"></li>
-                    <li><img src="img/icones_msg@2x.png"></li>
-                </ul>
-
-            </div>
-
-        </div>
+        <?php
+        $titulo_compartilhe = "CONVIDE SEU PAR PARA ESTA SUÍTE :";
+        include './faixa-compartilhar.php';
+        ?>
 
     </div><!-- faixa-detalhes -->
 

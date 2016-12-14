@@ -7780,6 +7780,125 @@ fieldset[disabled] .btn-participar-v2.focus {
   color: #6e5e8b;
   background-color: white;
 }
+.btn-roxo-v02 {
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: white !important;
+  background-color: #6e5e8b !important;
+  border-color: #6e5e8b !important;
+  border-radius: 0;
+  text-transform: uppercase;
+  box-shadow: 0 2px 0 #3F2A56;
+  box-shadow: 0 2px 0 0 #3f2658 !important;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  margin-top: 9px;
+  padding: 11px 48px !important;
+  font-size: 18px;
+  letter-spacing: 2.2px;
+}
+.btn-roxo-v02:focus,
+.btn-roxo-v02:active:focus,
+.btn-roxo-v02.active:focus,
+.btn-roxo-v02.focus,
+.btn-roxo-v02:active.focus,
+.btn-roxo-v02.active.focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+.btn-roxo-v02:hover,
+.btn-roxo-v02:focus,
+.btn-roxo-v02.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn-roxo-v02:active,
+.btn-roxo-v02.active {
+  outline: 0;
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+.btn-roxo-v02.disabled,
+.btn-roxo-v02[disabled],
+fieldset[disabled] .btn-roxo-v02 {
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+a.btn-roxo-v02.disabled,
+fieldset[disabled] a.btn-roxo-v02 {
+  pointer-events: none;
+}
+.btn-roxo-v02:focus,
+.btn-roxo-v02.focus {
+  color: white !important;
+  background-color: #56496d !important;
+  border-color: #322b3f !important;
+}
+.btn-roxo-v02:hover {
+  color: white !important;
+  background-color: #56496d !important;
+  border-color: #514566 !important;
+}
+.btn-roxo-v02:active,
+.btn-roxo-v02.active,
+.open > .dropdown-toggle.btn-roxo-v02 {
+  color: white !important;
+  background-color: #56496d !important;
+  border-color: #514566 !important;
+}
+.btn-roxo-v02:active:hover,
+.btn-roxo-v02.active:hover,
+.open > .dropdown-toggle.btn-roxo-v02:hover,
+.btn-roxo-v02:active:focus,
+.btn-roxo-v02.active:focus,
+.open > .dropdown-toggle.btn-roxo-v02:focus,
+.btn-roxo-v02:active.focus,
+.btn-roxo-v02.active.focus,
+.open > .dropdown-toggle.btn-roxo-v02.focus {
+  color: white !important;
+  background-color: #453b57 !important;
+  border-color: #322b3f !important;
+}
+.btn-roxo-v02:active,
+.btn-roxo-v02.active,
+.open > .dropdown-toggle.btn-roxo-v02 {
+  background-image: none !important;
+}
+.btn-roxo-v02.disabled:hover,
+.btn-roxo-v02[disabled]:hover,
+fieldset[disabled] .btn-roxo-v02:hover,
+.btn-roxo-v02.disabled:focus,
+.btn-roxo-v02[disabled]:focus,
+fieldset[disabled] .btn-roxo-v02:focus,
+.btn-roxo-v02.disabled.focus,
+.btn-roxo-v02[disabled].focus,
+fieldset[disabled] .btn-roxo-v02.focus {
+  background-color: #6e5e8b !important;
+  border-color: #6e5e8b !important;
+}
+.btn-roxo-v02 .badge {
+  color: #6e5e8b !important;
+  background-color: white !important;
+}
 .btn-verde-v02 {
   display: inline-block;
   margin-bottom: 0;
@@ -7809,6 +7928,8 @@ fieldset[disabled] .btn-participar-v2.focus {
   font-family: "Knockout 29 A", "Knockout 29 B";
   margin-top: 9px;
   padding: 11px 48px !important;
+  font-size: 18px;
+  letter-spacing: 2.2px;
 }
 .btn-verde-v02:focus,
 .btn-verde-v02:active:focus,
@@ -7926,6 +8047,8 @@ fieldset[disabled] .btn-verde-v02.focus {
   font-family: "Knockout 29 A", "Knockout 29 B";
   margin-top: 9px;
   padding: 11px 48px !important;
+  font-size: 18px;
+  letter-spacing: 2.2px;
   margin-right: 10px;
 }
 .btn-reserva-v2:focus,
@@ -8465,8 +8588,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   border: 0;
   min-height: 64px;
   margin-bottom: 0px;
-  opacity: 0.85;
-  background-color: #f2f2f2;
+  background-color: rgba(242, 242, 242, 0.9);
 }
 .menu-principal .navbar .navbar-header .navbar-brand {
   background-color: #3f2a56;
@@ -9294,6 +9416,8 @@ fieldset[disabled] .faixa-concierge .btn-reservar-v2.focus {
   font-family: "Knockout 29 A", "Knockout 29 B";
   margin-top: 9px;
   padding: 11px 48px !important;
+  font-size: 18px;
+  letter-spacing: 2.2px;
   font-size: 22px;
   letter-spacing: 2.7px;
 }
@@ -9513,6 +9637,42 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 51;
 }
+.info-compartilhe {
+  padding-top: 60px;
+  background-color: transparent;
+  text-align: center;
+}
+.info-compartilhe .compartilhar {
+  padding-top: 80px;
+}
+.info-compartilhe .compartilhar p {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #3f2658;
+}
+.info-compartilhe .compartilhar ul {
+  padding-top: 27px;
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+.info-compartilhe .compartilhar ul > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.info-compartilhe .compartilhar ul li {
+  margin-right: 32.5px;
+}
+.info-compartilhe .compartilhar ul li img {
+  height: 26px;
+  width: auto;
+}
 .vitrine-interna {
   position: relative;
   z-index: 50;
@@ -9642,41 +9802,6 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .suite-single .faixa-detalhes .info-reserve .brn-reserve-suite {
   text-transform: uppercase;
-}
-.suite-single .faixa-detalhes .info-compartilhe {
-  padding-top: 60px;
-  text-align: center;
-}
-.suite-single .faixa-detalhes .info-compartilhe .compartilhar {
-  padding-top: 80px;
-}
-.suite-single .faixa-detalhes .info-compartilhe .compartilhar p {
-  font-family: "Knockout 29 A", "Knockout 29 B";
-  font-size: 18px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: 1.6px;
-  text-align: center;
-  color: #3f2658;
-}
-.suite-single .faixa-detalhes .info-compartilhe .compartilhar ul {
-  padding-top: 27px;
-  padding-left: 0;
-  list-style: none;
-  margin-left: -5px;
-}
-.suite-single .faixa-detalhes .info-compartilhe .compartilhar ul > li {
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.suite-single .faixa-detalhes .info-compartilhe .compartilhar ul li {
-  margin-right: 32.5px;
-}
-.suite-single .faixa-detalhes .info-compartilhe .compartilhar ul li img {
-  height: 26px;
-  width: auto;
 }
 .suite-single .faixa-fotos-produto .carousel img {
   display: block;
@@ -10108,6 +10233,76 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 /*--------------------------------------------------------------
 # experiencia-single
 --------------------------------------------------------------*/
+.experiencia-single .pacote-loop .pacote-item {
+  padding-top: 72px;
+  padding-bottom: 64px;
+  border-bottom: solid 1px #e6e6e6;
+}
+.experiencia-single .pacote-loop .pacote-item:last-of-type {
+  border-bottom: 0;
+}
+.experiencia-single .pacote-loop .pacote-item .item-texto h3 {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 34px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.6px;
+  color: #3f2658;
+  padding-bottom: 16px;
+}
+.experiencia-single .pacote-loop .pacote-item .item-texto .descricao {
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.3px;
+}
+.experiencia-single .pacote-loop .pacote-item .item-reserve {
+  text-align: right;
+}
+.experiencia-single .pacote-loop .pacote-item .item-reserve .preco {
+  font-family: Knockout-29JuniorLtweight;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  color: #3f2658;
+  padding-top: 12px;
+  padding-bottom: 23px;
+}
+.experiencia-single .info-compartilhe {
+  padding-top: 90px;
+  padding-bottom: 86px;
+}
+.experiencia-single .info-compartilhe p {
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #3f2658;
+}
+.faixa-texto-simples {
+  padding-top: 89px;
+  padding-bottom: 38px;
+  text-align: center;
+}
+.faixa-texto-simples h2 {
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 22px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.55;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #969696;
+}
 /*--------------------------------------------------------------
 # bastidores
 --------------------------------------------------------------*/

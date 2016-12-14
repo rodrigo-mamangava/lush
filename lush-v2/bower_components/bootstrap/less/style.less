@@ -269,7 +269,21 @@ body{
 
 }
 
+.btn-roxo-v02{
+    .btn;
+    .button-variant(@branco, #6e5e8b, #6e5e8b) !important;
+    border-radius: 0;
+    text-transform: uppercase;
+    .sombra-padrao;
+    box-shadow: 0 2px 0 0 #3f2658 !important;
+    font-family: @knockout29;
+    margin-top: 9px;
+    padding: 11px 48px !important;
+    font-size: 18px;
+    letter-spacing: 2.2px;
 
+
+}
 
 
 .btn-verde-v02{
@@ -282,6 +296,8 @@ body{
     font-family: @knockout29;
     margin-top: 9px;
     padding: 11px 48px !important;
+    font-size: 18px;
+    letter-spacing: 2.2px;
 
 
 }
@@ -445,9 +461,7 @@ body{
         min-height: 64px;
         margin-bottom: 0px;
 
-
-        opacity: 0.85;
-        background-color: #f2f2f2;
+        background-color: rgba(242,242,242,0.9);
 
         .navbar-header{
             .navbar-brand{
@@ -1108,6 +1122,47 @@ body{
 }
 
 
+.info-compartilhe{
+
+    padding-top: 60px;
+    background-color: transparent;
+
+    .text-center;
+
+    .compartilhar{
+
+        p{
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 1.6px;
+            text-align: center;
+            color: #3f2658;
+
+
+        }
+
+        padding-top: 80px;
+
+        ul{
+            padding-top: 27px;
+            .list-inline;
+
+            li{
+                margin-right: 32.5px;
+
+                img{
+                    height: 26px;
+                    width: auto;
+                }
+            }
+
+        }
+
+    }
+}//.info-compartilhe
 
 
 .vitrine-interna{
@@ -1290,44 +1345,7 @@ body{
 
         }
 
-        .info-compartilhe{
 
-            padding-top: 60px;
-
-            .text-center;
-
-            .compartilhar{
-
-                p{
-                    font-family: @knockout29;
-                    font-size: 18px;
-                    font-weight: normal;
-                    font-style: normal;
-                    font-stretch: normal;
-                    letter-spacing: 1.6px;
-                    text-align: center;
-                    color: #3f2658;
-                }
-
-                padding-top: 80px;
-
-                ul{
-                    padding-top: 27px;
-                    .list-inline;
-
-                    li{
-                        margin-right: 32.5px;
-
-                        img{
-                            height: 26px;
-                            width: auto;
-                        }
-                    }
-
-                }
-
-            }
-        }
 
     }
 
@@ -1536,7 +1554,7 @@ body{
                 font-stretch: normal;
                 letter-spacing: 1.6px;
                 color: #969696;
-                
+
                 .text-uppercase;
 
                 padding-top: 30px;
@@ -1664,7 +1682,107 @@ body{
 --------------------------------------------------------------*/
 .experiencia-single{
 
+    .pacote-loop{
 
+        .pacote-item{
+            padding-top: 72px;
+            padding-bottom: 64px;
+
+            border-bottom: solid 1px #e6e6e6;
+
+            &:last-of-type{
+                border-bottom: 0;
+            }
+
+
+
+            .item-texto{
+                h3{
+                    font-family: @knockout29;
+                    font-size: 34px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: 1.6px;
+                    color: #3f2658;
+
+                    padding-bottom: 16px;
+                }
+
+                .descricao{
+                    font-family: @FairfieldRegular;
+                    font-size: 18px;
+                    font-weight: 500;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 1.56;
+                    letter-spacing: 0.3px;
+                }
+            }
+
+            .item-reserve{
+
+                .text-right;
+
+                .preco{
+                    font-family: Knockout-29JuniorLtweight;
+                    font-size: 22px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    letter-spacing: 1px;
+                    color: #3f2658;
+
+                    padding-top: 12px;
+                    padding-bottom: 23px;
+                }
+                .btn-roxo-v02{
+
+                }
+            }
+
+        }
+
+    }
+
+    .info-compartilhe{
+        
+        padding-top: (162px-72px);
+        padding-bottom: 118px-32px;
+        
+        p{
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #3f2658;
+        }
+    }
+
+
+
+}
+
+.faixa-texto-simples{
+
+    padding-top: 89px;
+    padding-bottom: (110px-72px);
+
+    .text-center;
+
+    h2{
+        font-family: @FairfieldRegular;
+        font-size: 22px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.55;
+        letter-spacing: 0.2px;
+        text-align: center;
+        color: #969696;
+    }
 
 }
 
