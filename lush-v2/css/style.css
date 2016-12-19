@@ -8731,7 +8731,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   background-repeat: no-repeat;
 }
 .faixa-intercalada {
-  background-color: #f2f2f2;
+  background-color: white;
   padding-bottom: 126px;
 }
 .faixa-intercalada h2 {
@@ -8749,6 +8749,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   padding: 0;
   background-color: white;
   margin-bottom: 10px;
+  border: 2px solid #f2f2f2;
 }
 .faixa-intercalada .subfaixa-destaque .destaque-img {
   height: 100%;
@@ -8802,7 +8803,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   padding-left: 7.5px;
 }
 .faixa-saiba-mais {
-  background-color: #f2f2f2;
+  background-color: white;
   padding-bottom: 126px;
 }
 .faixa-saiba-mais h2 {
@@ -8820,6 +8821,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   padding: 0;
   background-color: white;
   margin-bottom: 10px;
+  border: 2px solid #f2f2f2;
 }
 .faixa-saiba-mais .subfaixa-destaque .destaque-img {
   height: 100%;
@@ -8920,7 +8922,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   color: #969696;
 }
 .faixa-lush-member {
-  background-color: #d2d2d2;
+  background-color: #f2f2f2;
   text-align: center;
   padding-top: 84px;
   padding-bottom: 100px;
@@ -8938,7 +8940,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   font-weight: 500;
   line-height: 0.7;
   letter-spacing: 0.4px;
-  color: white;
+  color: #696969;
   margin-bottom: 15px;
 }
 .faixa-lush-member p {
@@ -9860,7 +9862,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 # gastronomia
 --------------------------------------------------------------*/
 .gastronomia .faixa-explore-cardapio {
-  background-color: #f2f2f2;
+  background-color: white;
   padding-bottom: 126px;
   background-color: transparent;
   margin-bottom: 200px;
@@ -9881,6 +9883,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   padding: 0;
   background-color: white;
   margin-bottom: 10px;
+  border: 2px solid #f2f2f2;
 }
 .gastronomia .faixa-explore-cardapio .subfaixa-destaque .destaque-img {
   height: 100%;
@@ -9950,7 +9953,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   font-family: "Knockout 29 A", "Knockout 29 B";
 }
 .gastronomia .faixa-gastronomia-cats {
-  background-color: #f2f2f2;
+  background-color: white;
   padding-bottom: 126px;
   background-color: transparent;
 }
@@ -9969,6 +9972,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   padding: 0;
   background-color: white;
   margin-bottom: 10px;
+  border: 2px solid #f2f2f2;
 }
 .gastronomia .faixa-gastronomia-cats .subfaixa-destaque .destaque-img {
   height: 100%;
@@ -10067,10 +10071,12 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   background-color: #3f2a56;
   padding-top: 64px;
 }
+.experiencia .faixa-destaque.faixa-destaque-home {
+  background-color: white;
+}
 .experiencia .faixa-destaque .para-presentear {
   position: relative;
   background-color: #ffffff;
-  box-shadow: 0 -4px 0 0 #3f2658, inset 0 0 0 0 rgba(242, 242, 242, 0.5);
   margin-top: 127px;
   margin-bottom: 146px;
   padding-left: 31px;
@@ -10120,7 +10126,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   margin-top: -55px;
 }
 .experiencia .faixa-pacotes-cats {
-  background-color: #f2f2f2;
+  background-color: white;
   padding-bottom: 126px;
   background-color: transparent;
 }
@@ -10139,6 +10145,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   padding: 0;
   background-color: white;
   margin-bottom: 10px;
+  border: 2px solid #f2f2f2;
 }
 .experiencia .faixa-pacotes-cats .subfaixa-destaque .destaque-img {
   height: 100%;

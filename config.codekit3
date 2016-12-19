@@ -3473,6 +3473,12 @@
 		"oAP": "\/lush-v2\/bastidores-item.php",
 		"oF": 0
 		},
+	"\/lush-v2\/bastidores-single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lush-v2\/bastidores-single.php",
+		"oF": 0
+		},
 	"\/lush-v2\/bastidores.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -7360,6 +7366,14 @@
 		"iS": 6937,
 		"oA": 0,
 		"oAP": "\/lush-v2\/img\/v2\/simbolo@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/vogue.jpg": {
+		"ft": 16384,
+		"iS": 230502,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/vogue.jpg",
 		"oF": 0,
 		"opt": 0
 		},

@@ -14,24 +14,23 @@
                     <div class="row">
                         <div class="col-sm-8 ">
                             <p>
-                                Presenteie com muito estilo e personalidade com 
-                                nossos vales-presente disponíveis em diversos 
-                                valores e válidos para qualquer uma de nossas 
+                                Presenteie com muito estilo e personalidade com
+                                nossos vales-presente disponíveis em diversos
+                                valores e válidos para qualquer uma de nossas
                                 suítes exclusivas.
                             </p>
                         </div>
                     </div>
 
                     <a class="btn-verde-v02">COMPRAR AGORA</a>
-                    
+
                     <img class="gift-cards" src="img/v2/bitmap@3x.png" >
-                    
+
 
                 </div><!-- para-presentear -->
-            </div> 
+            </div>
 
         </div>
-        <>
     </div><!-- faixa-destaque-->
 
 
@@ -58,7 +57,7 @@
                                 <img class="icon-destaque" src="img/v2/coracao@2x.jpg">
                                 <h3>Noite Romântica</h3>
                                 <p>
-                                   O LUSH te ajuda a transformar sua comemoração 
+                                   O LUSH te ajuda a transformar sua comemoração
                                    em uma experiência sensorial completa.
                                 </p>
 
@@ -76,7 +75,7 @@
                                 <img class="icon-destaque" src="img/v2/restaurante@3x.png">
                                 <h3>Jantar Harmonizado</h3>
                                 <p>
-                                    Um exclusivo cardápio gourmet, carta de vinhos, 
+                                    Um exclusivo cardápio gourmet, carta de vinhos,
                                     carta de cervejas importadas e drinks especiais.
                                 </p>
 
@@ -102,7 +101,7 @@
                                 <img class="icon-destaque" src="img/v2/chinelo@3x.png">
                                 <h3>Private Spa</h3>
                                 <p>
-                                    Relaxe em uma de nossas suítes com piscina 
+                                    Relaxe em uma de nossas suítes com piscina
                                     aquecida privativa, hidromassagem e muito mais.
                                 </p>
 
@@ -120,7 +119,7 @@
                                 <img class="icon-destaque" src="img/v2/cinema@3x.png">
                                 <h3>Noite de Cinema</h3>
                                 <p>
-                                    Que tal uma sessão de cinema romântica com 
+                                    Que tal uma sessão de cinema romântica com
                                     aquela pessoa especial?
                                 </p>
 

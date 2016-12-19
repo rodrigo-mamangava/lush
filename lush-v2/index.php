@@ -212,8 +212,37 @@
     </div>
 </div><!-- faixa-lush-member -->
 
+<div class="experiencia">
+  <div class="faixa-destaque faixa-destaque-home">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="para-presentear col-sm-8 col-sm-offset-1">
 
-<?php include './faixa-explore.php'; ?>
+          <h2>para presentear</h2>
+          <h3>Lush Gift Card</h3>
+          <div class="row">
+            <div class="col-sm-8 ">
+              <p>
+                Presenteie com muito estilo e personalidade com
+                nossos vales-presente disponíveis em diversos
+                valores e válidos para qualquer uma de nossas
+                suítes exclusivas.
+              </p>
+            </div>
+          </div>
+
+          <a class="btn-verde-v02">COMPRAR AGORA</a>
+
+          <img class="gift-cards" src="img/v2/bitmap@3x.png" >
+
+
+        </div><!-- para-presentear -->
+      </div>
+
+    </div>
+  </div><!-- faixa-destaque-->
+
+</div>
 
 
 <?php include './_footer.php'; ?>
