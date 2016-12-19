@@ -7,7 +7,7 @@
 		"uuidString": "4F7A519F-6797-4EF5-A3AE-FD5F5229DB2D"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25479",
 "files": {
 	"\/lush-front\/_carousel-suite.php": {
 		"ft": 8192,
@@ -3425,6 +3425,12 @@
 		"oAP": "\/lush-v2\/_carousel-suite.php",
 		"oF": 0
 		},
+	"\/lush-v2\/_experiencia-item.php": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/lush-v2\/_experiencia-item.php",
+		"oF": 0
+		},
 	"\/lush-v2\/_footer.php": {
 		"ft": 8192,
 		"oA": 1,
@@ -3437,6 +3443,18 @@
 		"oAP": "\/lush-v2\/_header.php",
 		"oF": 0
 		},
+	"\/lush-v2\/_menu-conteudo.php": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/lush-v2\/_menu-conteudo.php",
+		"oF": 0
+		},
+	"\/lush-v2\/_menu-home.php": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/lush-v2\/_menu-home.php",
+		"oF": 0
+		},
 	"\/lush-v2\/_menu-principal.php": {
 		"ft": 8192,
 		"oA": 1,
@@ -3447,6 +3465,18 @@
 		"ft": 8192,
 		"oA": 1,
 		"oAP": "\/lush-v2\/_vitrine.php",
+		"oF": 0
+		},
+	"\/lush-v2\/bastidores-item.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lush-v2\/bastidores-item.php",
+		"oF": 0
+		},
+	"\/lush-v2\/bastidores.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lush-v2\/bastidores.php",
 		"oF": 0
 		},
 	"\/lush-v2\/bower.json": {
@@ -3472,6 +3502,12 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/lush-v2\/bower_components\/bootstrap\/CHANGELOG.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lush-v2\/bower_components\/bootstrap\/CHANGELOG.html",
+		"oF": 0
 		},
 	"\/lush-v2\/bower_components\/bootstrap\/CHANGELOG.md": {
 		"cS": 0,
@@ -3753,6 +3789,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/lush-v2\/bower_components\/bootstrap\/ISSUE_TEMPLATE.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lush-v2\/bower_components\/bootstrap\/ISSUE_TEMPLATE.html",
+		"oF": 0
 		},
 	"\/lush-v2\/bower_components\/bootstrap\/ISSUE_TEMPLATE.md": {
 		"cS": 0,
@@ -5171,6 +5213,12 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/lush-v2\/bower_components\/bootstrap\/README.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lush-v2\/bower_components\/bootstrap\/README.html",
+		"oF": 0
+		},
 	"\/lush-v2\/bower_components\/bootstrap\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -6475,6 +6523,24 @@
 		"oAP": "\/lush-v2\/css\/style.css.map",
 		"oF": 0
 		},
+	"\/lush-v2\/experiencia-single.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lush-v2\/experiencia-single.php",
+		"oF": 0
+		},
+	"\/lush-v2\/experiencia.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lush-v2\/experiencia.php",
+		"oF": 0
+		},
+	"\/lush-v2\/faixa-compartilhar.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lush-v2\/faixa-compartilhar.php",
+		"oF": 0
+		},
 	"\/lush-v2\/faixa-explore.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -6889,11 +6955,35 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/lush-v2\/img\/v2\/bitmap@3x.png": {
+		"ft": 32768,
+		"iS": 500090,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/bitmap@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/lush-v2\/img\/v2\/cafedamanha-brunch@3x.jpg": {
 		"ft": 16384,
 		"iS": 1114116,
 		"oA": 0,
 		"oAP": "\/lush-v2\/img\/v2\/cafedamanha-brunch@3x.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/chinelo@3x.png": {
+		"ft": 32768,
+		"iS": 5864,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/chinelo@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/cinema@3x.png": {
+		"ft": 32768,
+		"iS": 1745,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/cinema@3x.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -6921,11 +7011,43 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/lush-v2\/img\/v2\/coracao@3x.png": {
+		"ft": 32768,
+		"iS": 2709,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/coracao@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/drink-lush-copy-2@3x.png": {
+		"ft": 32768,
+		"iS": 2086403,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/drink-lush-copy-2@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/drink-lush-copy@3x.png": {
+		"ft": 32768,
+		"iS": 2006805,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/drink-lush-copy@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/lush-v2\/img\/v2\/drink-lush@2x.jpg": {
 		"ft": 16384,
 		"iS": 433847,
 		"oA": 0,
 		"oAP": "\/lush-v2\/img\/v2\/drink-lush@2x.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/email@3x.png": {
+		"ft": 32768,
+		"iS": 1569,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/email@3x.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -6985,6 +7107,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/lush-v2\/img\/v2\/img-centro@2x_1.jpg": {
+		"ft": 16384,
+		"iS": 1808939,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/img-centro@2x_1.jpg",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/lush-v2\/img\/v2\/instagram.jpg": {
 		"ft": 16384,
 		"iS": 1835,
@@ -7030,6 +7160,30 @@
 		"iS": 7113,
 		"oA": 0,
 		"oAP": "\/lush-v2\/img\/v2\/logo@3x.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/logo@3x.png": {
+		"ft": 32768,
+		"iS": 3784,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/logo@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/love-romantic-date-candlelight-copy-2@3x.png": {
+		"ft": 32768,
+		"iS": 1883024,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/love-romantic-date-candlelight-copy-2@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/love-romantic-date-candlelight-copy@3x.png": {
+		"ft": 32768,
+		"iS": 2262516,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/love-romantic-date-candlelight-copy@3x.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -7113,6 +7267,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/lush-v2\/img\/v2\/messenger@3x.png": {
+		"ft": 32768,
+		"iS": 2495,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/messenger@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/lush-v2\/img\/v2\/pacotes@2x.png": {
 		"ft": 32768,
 		"iS": 3409,
@@ -7161,6 +7323,14 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/lush-v2\/img\/v2\/restaurante@3x.png": {
+		"ft": 32768,
+		"iS": 5419,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/restaurante@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/lush-v2\/img\/v2\/seta.jpg": {
 		"ft": 16384,
 		"iS": 1501,
@@ -7182,6 +7352,22 @@
 		"iS": 1645,
 		"oA": 0,
 		"oAP": "\/lush-v2\/img\/v2\/seta@3x.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/simbolo@3x.png": {
+		"ft": 32768,
+		"iS": 6937,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/simbolo@3x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/lush-v2\/img\/v2\/whatsapp@3x.png": {
+		"ft": 32768,
+		"iS": 3263,
+		"oA": 0,
+		"oAP": "\/lush-v2\/img\/v2\/whatsapp@3x.png",
 		"oF": 0,
 		"opt": 0
 		},
@@ -7701,6 +7887,10 @@
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
 			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
 		"class-methods-use-this": {
 			"active": 0,
 			"optionString": "{'exceptMethods': []}"
@@ -7864,6 +8054,10 @@
 		"max-statements": {
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
+			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
 			},
 		"multiline-ternary": {
 			"active": 0,
@@ -8229,6 +8423,10 @@
 			"active": 0,
 			"optionString": "'except-parens'"
 			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-script-url": {
 			"active": 0,
 			"optionString": ""
@@ -8460,6 +8658,10 @@
 		"radix": {
 			"active": 0,
 			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-jsdoc": {
 			"active": 0,
@@ -9293,6 +9495,10 @@
 			},
 		"space-colon": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {
