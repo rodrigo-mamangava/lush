@@ -15,12 +15,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li><a href="suites.php">Suítes</a></li>                      
-            <li><a href="gastronomia.php">Gastronomia</a></li>
-            <li><a href="experiencia.php">Experiências</a></li>
-            <li><a href="bastidores.php">Bastidores</a></li>
-            <li><a href="como-chegar.php">Como chegar</a></li>
-            <li><a href="#">Contato</a></li>
+            <?php include './_itens-menu.php';?>
         </ul>
 
         <ul class="nav navbar-nav navbar-right">

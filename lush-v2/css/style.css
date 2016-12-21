@@ -8499,6 +8499,46 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   background-color: white;
 }
 /*--------------------------------------------------------------
+# listas
+--------------------------------------------------------------*/
+.list-language,
+.list-social {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+  color: white;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  float: right !important;
+}
+.list-language > li,
+.list-social > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.list-language a,
+.list-social a {
+  color: #ffffff;
+}
+.list-language a:active,
+.list-social a:active,
+.list-language a.active,
+.list-social a.active,
+.list-language a:hover,
+.list-social a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+.list-language {
+  margin-right: 42px;
+}
+.list-social li {
+  padding-right: 32px;
+}
+/*--------------------------------------------------------------
 # MENU
 --------------------------------------------------------------*/
 .menu-header {
@@ -8510,43 +8550,6 @@ fieldset[disabled] .btn-explore-cardapio.focus {
 }
 .menu-header .menu-itens {
   text-align: right;
-}
-.menu-header .menu-itens .list-language,
-.menu-header .menu-itens .list-social {
-  padding-left: 0;
-  list-style: none;
-  margin-left: -5px;
-  color: white;
-  font-family: "Knockout 29 A", "Knockout 29 B";
-  font-size: 18px;
-  letter-spacing: 1.4px;
-  text-transform: uppercase;
-  float: right !important;
-}
-.menu-header .menu-itens .list-language > li,
-.menu-header .menu-itens .list-social > li {
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.menu-header .menu-itens .list-language a,
-.menu-header .menu-itens .list-social a {
-  color: #ffffff;
-}
-.menu-header .menu-itens .list-language a:active,
-.menu-header .menu-itens .list-social a:active,
-.menu-header .menu-itens .list-language a.active,
-.menu-header .menu-itens .list-social a.active,
-.menu-header .menu-itens .list-language a:hover,
-.menu-header .menu-itens .list-social a:hover {
-  color: #999999;
-  text-decoration: none;
-}
-.menu-header .menu-itens .list-language {
-  margin-right: 42px;
-}
-.menu-header .menu-itens .list-social li {
-  padding-right: 32px;
 }
 .menu-principal .navbar {
   left: 0;
@@ -8641,8 +8644,20 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   color: #ffffff;
   text-transform: uppercase;
 }
+.faixa-vitrine .seta-baixo {
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.faixa-vitrine .seta-baixo img {
+  width: 40px;
+  height: 40px;
+}
 .faixa-carousel-suites {
   margin-bottom: 123px;
+  padding-top: 125px;
 }
 .faixa-carousel-suites .carousel-slick {
   background-color: white;
@@ -8668,17 +8683,17 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 16px;
   letter-spacing: 1.6px;
-  color: #969696;
   margin-bottom: 12px;
   text-transform: uppercase;
+  color: #969696;
 }
 .faixa-carousel-suites .carousel-slick .suite .suite-card h2 {
   font-family: 'FairfieldLTW01-46LightI';
   font-size: 42px;
   font-weight: 500;
   font-style: normal;
-  line-height: 1.4;
-  letter-spacing: 0.5px;
+  line-height: 1.43;
+  letter-spacing: 0.4px;
   color: #3f2658;
   margin-bottom: 9px;
 }
@@ -8686,7 +8701,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   font-family: 'FairfieldLTW01-55Medium 706181';
   font-size: 18px;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.56;
   letter-spacing: 0.2px;
   color: #969696;
   margin-bottom: 48px;
@@ -8765,11 +8780,14 @@ fieldset[disabled] .btn-explore-cardapio.focus {
 .faixa-intercalada h2 {
   margin-top: 124px;
   margin-bottom: 46px;
-  text-align: center;
+  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 18px;
-  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
   letter-spacing: 1.6px;
+  text-align: center;
   color: #b8b8b8;
 }
 .faixa-intercalada .subfaixa-destaque {
@@ -8837,11 +8855,14 @@ fieldset[disabled] .btn-explore-cardapio.focus {
 .faixa-saiba-mais h2 {
   margin-top: 124px;
   margin-bottom: 46px;
-  text-align: center;
+  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 18px;
-  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
   letter-spacing: 1.6px;
+  text-align: center;
   color: #b8b8b8;
 }
 .faixa-saiba-mais .subfaixa-destaque {
@@ -8956,7 +8977,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   padding-bottom: 100px;
 }
 .faixa-lush-member h2 {
-  font-family: "Knockout 34 A", "Knockout 34 B";
+  font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 18px;
   letter-spacing: 1.6px;
   color: #969696;
@@ -8966,7 +8987,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 38px;
   font-weight: 500;
-  line-height: 0.7;
+  line-height: 0.74;
   letter-spacing: 0.4px;
   color: #696969;
   margin-bottom: 15px;
@@ -9002,6 +9023,120 @@ fieldset[disabled] .btn-explore-cardapio.focus {
 }
 .faixa-lush-member .btn-participar-v2 {
   margin-bottom: 0px;
+  padding: 11px 42px;
+}
+.faixa-destaque {
+  background-color: #3f2a56;
+  padding-top: 64px;
+}
+.faixa-destaque .para-presentear {
+  position: relative;
+  background-color: #ffffff;
+  margin-top: 127px;
+  margin-bottom: 146px;
+  padding-left: 31px;
+  padding-bottom: 27px;
+}
+.faixa-destaque .para-presentear h2 {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.6px;
+  color: #969696;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+.faixa-destaque .para-presentear h3 {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 42px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.4px;
+  color: #3f2658;
+  padding-top: 6px;
+}
+.faixa-destaque .para-presentear p {
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.2px;
+  color: #969696;
+  padding-top: 9px;
+  padding-bottom: 26px;
+}
+.faixa-destaque .para-presentear .gift-cards {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 592px;
+  height: auto;
+  margin-right: -300px;
+  margin-top: -55px;
+  width: 100%;
+}
+.faixa-destaque-home {
+  background-color: #3f2a56;
+  padding-top: 64px;
+  background-color: white;
+}
+.faixa-destaque-home .para-presentear {
+  position: relative;
+  background-color: #ffffff;
+  margin-top: 127px;
+  margin-bottom: 146px;
+  padding-left: 31px;
+  padding-bottom: 27px;
+}
+.faixa-destaque-home .para-presentear h2 {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.6px;
+  color: #969696;
+  text-transform: uppercase;
+  padding-top: 30px;
+}
+.faixa-destaque-home .para-presentear h3 {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 42px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: 0.4px;
+  color: #3f2658;
+  padding-top: 6px;
+}
+.faixa-destaque-home .para-presentear p {
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.56;
+  letter-spacing: 0.2px;
+  color: #969696;
+  padding-top: 9px;
+  padding-bottom: 26px;
+}
+.faixa-destaque-home .para-presentear .gift-cards {
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-width: 592px;
+  height: auto;
+  margin-right: -300px;
+  margin-top: -55px;
+  width: 100%;
 }
 .faixa-explore {
   background-color: #00d0b0;
@@ -9899,11 +10034,14 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .gastronomia .faixa-explore-cardapio h2 {
   margin-top: 124px;
   margin-bottom: 46px;
-  text-align: center;
+  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 18px;
-  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
   letter-spacing: 1.6px;
+  text-align: center;
   color: #b8b8b8;
 }
 .gastronomia .faixa-explore-cardapio .subfaixa-destaque {
@@ -9988,11 +10126,14 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .gastronomia .faixa-gastronomia-cats h2 {
   margin-top: 124px;
   margin-bottom: 46px;
-  text-align: center;
+  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 18px;
-  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
   letter-spacing: 1.6px;
+  text-align: center;
   color: #b8b8b8;
 }
 .gastronomia .faixa-gastronomia-cats .subfaixa-destaque {
@@ -10095,64 +10236,6 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 /*--------------------------------------------------------------
 # experiencia
 --------------------------------------------------------------*/
-.experiencia .faixa-destaque {
-  background-color: #3f2a56;
-  padding-top: 64px;
-}
-.experiencia .faixa-destaque.faixa-destaque-home {
-  background-color: white;
-}
-.experiencia .faixa-destaque .para-presentear {
-  position: relative;
-  background-color: #ffffff;
-  margin-top: 127px;
-  margin-bottom: 146px;
-  padding-left: 31px;
-  padding-bottom: 27px;
-}
-.experiencia .faixa-destaque .para-presentear h2 {
-  font-family: "Knockout 29 A", "Knockout 29 B";
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  letter-spacing: 1.6px;
-  color: #969696;
-  text-transform: uppercase;
-  padding-top: 30px;
-}
-.experiencia .faixa-destaque .para-presentear h3 {
-  font-family: 'FairfieldLTW01-56Medium';
-  font-size: 42px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.43;
-  letter-spacing: 0.4px;
-  color: #3f2658;
-  padding-top: 6px;
-}
-.experiencia .faixa-destaque .para-presentear p {
-  font-family: 'FairfieldLTW01-55Medium 706181';
-  font-size: 18px;
-  font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.56;
-  letter-spacing: 0.2px;
-  color: #969696;
-  padding-top: 9px;
-  padding-bottom: 26px;
-}
-.experiencia .faixa-destaque .para-presentear .gift-cards {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 592px;
-  height: auto;
-  margin-right: -300px;
-  margin-top: -55px;
-}
 .experiencia .faixa-pacotes-cats {
   background-color: white;
   padding-bottom: 126px;
@@ -10161,11 +10244,14 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .experiencia .faixa-pacotes-cats h2 {
   margin-top: 124px;
   margin-bottom: 46px;
-  text-align: center;
+  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 18px;
-  text-transform: uppercase;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
   letter-spacing: 1.6px;
+  text-align: center;
   color: #b8b8b8;
 }
 .experiencia .faixa-pacotes-cats .subfaixa-destaque {
@@ -10426,29 +10512,30 @@ footer p {
   letter-spacing: 0.2px;
   color: #6e5e8b;
 }
-footer .menu-footer {
+footer .menu-footer,
+footer .list-social,
+footer .list-language {
   list-style-type: none;
 }
-footer .menu-footer li a {
+footer .menu-footer li a,
+footer .list-social li a,
+footer .list-language li a {
+  text-transform: uppercase;
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 16px;
   line-height: 2.2;
   letter-spacing: 1.4px;
   color: #6e5e8b;
 }
-footer .links-sociais {
-  padding-left: 0;
-  list-style: none;
-  margin-left: -5px;
-  text-align: right;
-}
-footer .links-sociais > li {
-  display: inline-block;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-footer .links-sociais img {
-  width: 18px;
-  height: 18px;
-  margin-left: 32px;
+footer .menu-footer li a:hover,
+footer .list-social li a:hover,
+footer .list-language li a:hover,
+footer .menu-footer li a:active,
+footer .list-social li a:active,
+footer .list-language li a:active,
+footer .menu-footer li a.active,
+footer .list-social li a.active,
+footer .list-language li a.active {
+  color: white;
+  text-decoration: none;
 }

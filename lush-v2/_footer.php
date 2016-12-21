@@ -5,7 +5,7 @@
                 <img class="logo" src="img/logo_lush_branco@2x.png">
             </div>
             <div class="col-lg-3 col-lg-offset-1 col-sm-4 col-xs-12">
-                
+
 
                 <p>
                     Avenida do Estado 6600, Ipiranga
@@ -17,22 +17,15 @@
 
             </div>
             <div class="col-lg-3 col-lg-offset-1 col-sm-4 col-xs-12">
-                
+
                 <ul class="menu-footer">
-                    <li><a href="#">SUÍTES</a></li>
-                    <li><a href="#">GASTRONOMIA</a></li>
-                    <li><a href="#">PACOTES ESPECIAIS</a></li>
-                    <li><a href="#">NOVIDADES</a></li>
-                    <li><a href="#">COMO CHEGAR</a></li>
-                    <li><a href="#">CONTATO</a></li>
+                    <?php include './_itens-menu.php'; ?>
                 </ul>
-                
+
             </div>
             <div class="col-lg-3 col-sm-3">
-                <ul class="links-sociais">
-                    <li> <a href="#"><img src="img/face_branco@2x.png"></a></li>
-                    <li> <a href="#"><img src="img/insta_branco@2x.png"></a></li>
-                </ul>
+                <?php include './_link-social.php'; ?>
+                <?php include './_link-language.php'; ?>
             </div>
         </div>
     </div>

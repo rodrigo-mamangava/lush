@@ -354,6 +354,44 @@ body{
 }
 
 /*--------------------------------------------------------------
+# listas
+--------------------------------------------------------------*/
+.list-language, .list-social{
+    .list-inline;
+    color: @branco;
+    font-family: @knockout29;
+    font-size: 18px;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+
+    .pull-right;
+
+    a{
+
+        color: #ffffff;
+
+        &:active, &.active, &:hover{
+            color: @cinza-escuro;
+            text-decoration: none;
+        }
+
+        i{
+
+        }
+    }
+
+}
+
+.list-language{
+    margin-right: 42px;
+}
+.list-social{
+    li{
+        padding-right: 32px;
+    }
+}
+
+/*--------------------------------------------------------------
 # MENU
 --------------------------------------------------------------*/
 
@@ -371,44 +409,13 @@ body{
     .menu-itens{
         .text-right;
 
-        .list-language, .list-social{
-            .list-inline;
-            color: @branco;
-            font-family: @knockout29;
-            font-size: 18px;
-            letter-spacing: 1.4px;
-            text-transform: uppercase;
 
-            .pull-right;
-
-            a{
-
-                color: #ffffff;
-
-                &:active, &.active, &:hover{
-                    color: @cinza-escuro;
-                    text-decoration: none;
-                }
-
-                i{
-
-                }
-            }
-
-        }
-
-        .list-language{
-            margin-right: 42px;
-        }
-        .list-social{
-            li{
-                padding-right: 32px;
-            }
-        }
 
     }
 
 }
+
+
 
 
 .menu-principal{
@@ -507,9 +514,9 @@ body{
     }//.vitrine
 
     .vitrine-chamada {
-        
+
         padding-top: 126px;
-        
+
         height: 100%;
         display: flex;
         align-items: center;
@@ -538,12 +545,21 @@ body{
 
     }//.vitrine-chamada
 
+    .seta-baixo{
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+        right: 0;
+
+        .text-center;
+
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+
 }
-
-
-
-
-
 
 
 
@@ -551,6 +567,8 @@ body{
 .faixa-carousel-suites{
 
     margin-bottom: 123px;
+    padding-top: 125px;
+
 
     .carousel-slick{
         background-color: @branco;
@@ -573,9 +591,6 @@ body{
                 box-shadow: 0 -4px 0 0 #3f2658;
                 padding: 30px 32px;
 
-
-
-
                 .escolha{
                     font-family: @knockout29;
                     font-size: 16px;
@@ -583,6 +598,7 @@ body{
                     color: #969696;
                     margin-bottom: 12px;
                     text-transform: uppercase;
+                    color: #969696;
                 }
 
 
@@ -591,8 +607,8 @@ body{
                     font-size: 42px;
                     font-weight: 500;
                     font-style: normal;
-                    line-height: 1.4;
-                    letter-spacing: 0.5px;
+                    line-height: 1.43;
+                    letter-spacing: 0.4px;
                     color: #3f2658;
 
                     margin-bottom: 9px;
@@ -602,7 +618,7 @@ body{
                     font-family: @FairfieldRegular;
                     font-size: 18px;
                     font-weight: 500;
-                    line-height: 1.6;
+                    line-height: 1.56;
                     letter-spacing: 0.2px;
                     color: #969696;
                     margin-bottom: 48px;
@@ -711,6 +727,15 @@ body{
     h2{
         .subtitulo-h2;
 
+        font-family: @knockout29;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 1.6px;
+        text-align: center;
+        color: #b8b8b8;
+
     }
 
     .subfaixa-destaque{
@@ -786,6 +811,11 @@ body{
 
 .faixa-saiba-mais{
     .faixa-intercalada;
+
+
+
+
+
 }//faixa-saiba-mais
 
 .faixa-mapa{
@@ -842,7 +872,7 @@ body{
     padding-bottom: 100px;
 
     h2{
-        font-family: @knockout34;
+        font-family: @knockout29;
         font-size: 18px;
         letter-spacing: 1.6px;
         color: #969696;
@@ -856,7 +886,7 @@ body{
         font-family: @FairfieldItalic;
         font-size: 38px;
         font-weight: 500;
-        line-height: 0.7;
+        line-height: 0.74;
         letter-spacing: 0.4px;
         color: #696969;
 
@@ -905,11 +935,100 @@ body{
 
 
     .btn-participar-v2{
-        margin-bottom: 0px
+        margin-bottom: 0px;
+        padding: 11px 42px;
+
+
+
     }
 
 
 
+}
+
+
+.faixa-destaque{
+    background-color: @roxo;
+    padding-top: 64px;
+
+    .para-presentear{
+
+        position: relative;
+
+        background-color: #ffffff;
+
+        margin-top: 127px;
+        margin-bottom: 146px;
+
+        padding-left: 31px;
+
+        padding-bottom: 27px;
+
+        h2{
+            font-family: @knockout29;
+            font-size: 16px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 1.6px;
+            color: #969696;
+
+            .text-uppercase;
+
+            padding-top: 30px;
+        }
+
+        h3{
+            font-family: @FairfieldItalic;
+            font-size: 42px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.43;
+            letter-spacing: 0.4px;
+            color: #3f2658;
+
+            padding-top: 6px;
+        }
+
+        p{
+            font-family: @FairfieldRegular;
+            font-size: 18px;
+            font-weight: 500;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.56;
+            letter-spacing: 0.2px;
+            color: #969696;
+
+            padding-top: 9px;
+            padding-bottom:  26px;
+        }
+
+        a{
+
+        }
+
+        .gift-cards{
+            position: absolute;
+            right:0;
+            top: 0;
+            max-width: 592px;
+            height: auto;
+            margin-right: -300px;
+            margin-top: -55px;
+
+            width: 100%;
+
+        }
+
+    }
+
+}
+
+.faixa-destaque-home{
+    .faixa-destaque;
+    background-color: @branco;
 }
 
 .faixa-explore{
@@ -1578,87 +1697,7 @@ body{
 # experiencia
 --------------------------------------------------------------*/
 .experiencia{
-    .faixa-destaque{
-        background-color: @roxo;
-        padding-top: 64px;
-        &.faixa-destaque-home {
-            background-color: white;
-        }
-        .para-presentear{
 
-            position: relative;
-
-            background-color: #ffffff;
-
-            margin-top: 127px;
-            margin-bottom: 146px;
-
-            padding-left: 31px;
-
-            padding-bottom: 27px;
-
-            h2{
-                font-family: @knockout29;
-                font-size: 16px;
-                font-weight: normal;
-                font-style: normal;
-                font-stretch: normal;
-                letter-spacing: 1.6px;
-                color: #969696;
-
-                .text-uppercase;
-
-                padding-top: 30px;
-            }
-
-            h3{
-                font-family: @FairfieldItalic;
-                font-size: 42px;
-                font-weight: 500;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.43;
-                letter-spacing: 0.4px;
-                color: #3f2658;
-
-                padding-top: 6px;
-            }
-
-            p{
-                font-family: @FairfieldRegular;
-                font-size: 18px;
-                font-weight: 500;
-                font-style: normal;
-                font-stretch: normal;
-                line-height: 1.56;
-                letter-spacing: 0.2px;
-                color: #969696;
-
-                padding-top: 9px;
-                padding-bottom:  26px;
-            }
-
-            a{
-
-            }
-
-            .gift-cards{
-                position: absolute;
-                right:0;
-                top: 0;
-                width: 592px;
-                height: auto;
-                margin-right: -300px;
-                margin-top: -55px;
-            }
-
-        }
-
-
-
-
-
-    }
 
 
 
@@ -1956,28 +1995,29 @@ footer{
         color: #6e5e8b;
     }
 
-    .menu-footer{
+    .menu-footer, .list-social, .list-language{
         list-style-type: none;
         li{
             a{
-
+                .text-uppercase;
                 font-family: @knockout29;
                 font-size: 16px;
                 line-height: 2.2;
                 letter-spacing: 1.4px;
                 color: #6e5e8b;
+
+                &:hover, &:active, &.active{
+                    color: white;
+                    text-decoration: none;
+                }
+
             }
 
         }
     }
 
-    .links-sociais{
-        .list-inline;
-        .text-right;
-        img{
-            width: 18px;
-            height: 18px;
-            margin-left: 32px;
-        }
-    }
+
+
+
+
 }

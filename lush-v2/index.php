@@ -21,17 +21,10 @@
                     </div>
                     <div class="col-lg-7 col-xs-6 menu-itens">
 
-                        <ul class="list-social">
-                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
+                        <?php include './_link-social.php' ;?>
+                        <?php include './_link-language.php' ;?>
 
-                        <ul class="list-language">
-                            <li><a href="#" class="active">pt</a></li>
-                            <li><a href="#">en</a></li>
-
-                        </ul>
+                        
 
                     </div>
 
@@ -50,6 +43,13 @@
                 <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
             </div>
         </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-xs-12 seta-baixo">
+            <img src="img/scroll-down@3x.png">
+        </div>
+        
     </div>
 
 
@@ -141,7 +141,7 @@
     <div class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                <h2>Saiba mais</h2>
+                <h2>SAIBA MAIS SOBRE O LUSH</h2>
             </div>
         </div>
 
@@ -157,11 +157,11 @@
                                 <img class="icon-destaque" src="img/v2/coracao@2x.jpg">
                                 <h3>Noites mais que especiais</h3>
                                 <p>
-                                    Um exclusivo cardápio gourmet, carta de vinhos, carta de cervejas
-                                    importadas e drinks especiais.
+                                    O LUSH te ajuda a transformar sua comemoração 
+                                    em uma experiência sensorial completa.
                                 </p>
 
-                                <a>ver pacotes especiais <img src="img/v2/seta@2x.jpg"></a>
+                                <a>VER EXPERIÊNCIAS <img src="img/v2/seta@2x.jpg"></a>
                             </div>
                         </div>
                     </div>
@@ -205,14 +205,14 @@
         <div class="col-lg-10 col-lg-offset-1 col-md-12">
             <div class="mapa-wrap">
                 <h3>#VemProLush</h3>
-                <img src="img/v2/mapa@2x.jpg">
+                <img src="img/mapa@2x.png">
             </div>
         </div>
 
         <div class="col-lg-6 col-lg-offset-3 col-md-12">
             <p>
-                Estamos localizados no centro da cidade de São Paulo, na Avenida
-                do Estado 6600, Ipiranga. Telefone: (11) 2271-0020
+                Estamos localizados no centro da cidade de São Paulo,<br/> na Avenida
+                do  Estado 6600, Ipiranga. Telefone: (11) 2271-0020
             </p>
         </div>
 
