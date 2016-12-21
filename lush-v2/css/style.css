@@ -6821,6 +6821,10 @@ body {
   font-family: 'FairfieldLTW01-55Medium 706181';
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 /*--------------------------------------------------------------
 # Cores
@@ -8494,64 +8498,9 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   color: #6e5e8b;
   background-color: white;
 }
-.jumbotron.faixa-vitrine {
-  background: transparent;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-.vitrine {
-  height: 90vh;
-  height: 835px;
-  width: 100%;
-  overflow-y: hidden;
-}
-.vitrine .vitrine-chamada {
-  display: flex;
-  height: 30em;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: "Knockout 26 A", "Knockout 26 B";
-  font-size: 6.5em;
-  text-transform: uppercase;
-  line-height: .8;
-  letter-spacing: .02em;
-}
-.bg-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1000;
-  overflow: hidden;
-  background: #000;
-}
-.bg-video:before {
-  content: " ";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: 0;
-}
-.bg-video h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-family: "Knockout 26 A", "Knockout 26 B";
-  font-size: 6.5em;
-  text-transform: uppercase;
-  line-height: .8;
-  letter-spacing: .02em;
-}
+/*--------------------------------------------------------------
+# MENU
+--------------------------------------------------------------*/
 .menu-header {
   padding-top: 106px;
 }
@@ -8562,7 +8511,8 @@ fieldset[disabled] .btn-explore-cardapio.focus {
 .menu-header .menu-itens {
   text-align: right;
 }
-.menu-header .menu-itens .language-social {
+.menu-header .menu-itens .list-language,
+.menu-header .menu-itens .list-social {
   padding-left: 0;
   list-style: none;
   margin-left: -5px;
@@ -8571,15 +8521,32 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   font-size: 18px;
   letter-spacing: 1.4px;
   text-transform: uppercase;
+  float: right !important;
 }
-.menu-header .menu-itens .language-social > li {
+.menu-header .menu-itens .list-language > li,
+.menu-header .menu-itens .list-social > li {
   display: inline-block;
   padding-left: 5px;
   padding-right: 5px;
 }
-.menu-header .menu-itens .language-social img {
-  width: 17px;
-  height: auto;
+.menu-header .menu-itens .list-language a,
+.menu-header .menu-itens .list-social a {
+  color: #ffffff;
+}
+.menu-header .menu-itens .list-language a:active,
+.menu-header .menu-itens .list-social a:active,
+.menu-header .menu-itens .list-language a.active,
+.menu-header .menu-itens .list-social a.active,
+.menu-header .menu-itens .list-language a:hover,
+.menu-header .menu-itens .list-social a:hover {
+  color: #999999;
+  text-decoration: none;
+}
+.menu-header .menu-itens .list-language {
+  margin-right: 42px;
+}
+.menu-header .menu-itens .list-social li {
+  padding-right: 32px;
 }
 .menu-principal .navbar {
   left: 0;
@@ -8588,6 +8555,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   border: 0;
   min-height: 64px;
   margin-bottom: 0px;
+  z-index: 1000;
   background-color: rgba(242, 242, 242, 0.9);
 }
 .menu-principal .navbar .navbar-header .navbar-brand {
@@ -8616,8 +8584,57 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   color: #3f2658;
   background-color: initial;
 }
+/*--------------------------------------------------------------
+# HOME
+--------------------------------------------------------------*/
+.faixa-vitrine {
+  position: relative;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 92vh;
+}
+.faixa-vitrine #video-container {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.faixa-vitrine #video-container .bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+.faixa-vitrine .vitrine {
+  height: 80vh;
+  width: 100%;
+  overflow-y: hidden;
+}
+.faixa-vitrine .vitrine .vitrine-chamada h1 {
+  padding-top: 126px;
+  font-family: "Knockout 26 A", "Knockout 26 B";
+  font-size: 98px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.8;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
 .faixa-carousel-suites {
   margin-bottom: 123px;
+}
+.faixa-carousel-suites .carousel-slick {
+  background-color: white;
 }
 .faixa-carousel-suites .carousel-slick .suite {
   position: relative;
@@ -10424,4 +10441,3 @@ footer .links-sociais img {
   height: 18px;
   margin-left: 32px;
 }
-/*# sourceMappingURL=style.css.map */

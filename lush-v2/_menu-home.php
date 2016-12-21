@@ -2,7 +2,7 @@
 
     <div class="row">
 
-        <nav class="navbar navbar-default navbar-static-top"  data-spy="affix" data-offset-top="820">
+        <nav class="navbar navbar-default"  >
             <?php include '_menu-conteudo.php';?>
         </nav>
 

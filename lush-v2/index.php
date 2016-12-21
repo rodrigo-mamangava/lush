@@ -1,40 +1,64 @@
 <?php include './_header.php'; ?>
 
-<div class="jumbotron faixa-vitrine">
-    <div class="container">
-        <div class="row">
-            <div class="vitrine">
-                <div class="container menu-header">
-                    <div class="row">
-                        <div class="col-lg-offset-1 col-lg-4 col-xs-5 logo">
-                            <img src="img/logo_lush_branco@2x.png">
-                        </div>
-                        <div class="col-lg-7 col-xs-6 menu-itens">
-                            <ul class="language-social">
-                                <li>pt</li>
-                                <li>en</li>
-                                <li><img src="img/face_branco@2x.png"></li>
-                                <li><img src="img/insta_branco@2x.png"></li>
-                            </ul>
-                        </div>
+<div class=" faixa-vitrine container-fluid">
+
+    <div id="video-container">
+
+        <video autoplay loop poster="" class="bg-video">
+            <source src="img/video/lush-vitrine-video.mp4" type="video/webm">
+        </video>
+
+    </div>
+
+
+    <div class="row">
+        <div class="vitrine">
+
+
+
+
+            <div class="container menu-header">
+                <div class="row">
+                    <div class="col-lg-offset-1 col-lg-4 col-xs-5 logo">
+                        <img src="img/logo_lush_branco@2x.png">
+                    </div>
+                    <div class="col-lg-7 col-xs-6 menu-itens">
+
+                        <ul class="list-social">
+                            <li><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+
+                        <ul class="list-language">
+                            <li><a href="#" class="active">pt</a></li>
+                            <li><a href="#">en</a></li>
+
+                        </ul>
 
                     </div>
-                    <div class="row">
-                        <div class="col-lg-offset-1 col-lg-6 col-xs-12 col-md-8 logo">
-                            <div class="vitrine-chamada">
-                                <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
-                            </div>
-                        </div>
-                    </div>
-                    <video autoplay loop poster="" class="bg-video">
-                        <source src="img/video/lush-vitrine-video.mp4" type="video/webm">
-                    </video>
 
                 </div>
+                <div class="row">
+                    <div class="col-lg-offset-1 col-lg-6 col-md-8 col-xs-12">
+                        <div class="vitrine-chamada">
+                            <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </div>
+
+
 </div><!-- .faixa-vitrine -->
+
+
+
+
+
 
 <?php include '_menu-home.php'; ?>
 
@@ -213,34 +237,34 @@
 </div><!-- faixa-lush-member -->
 
 <div class="experiencia">
-  <div class="faixa-destaque faixa-destaque-home">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="para-presentear col-sm-8 col-sm-offset-1">
+    <div class="faixa-destaque faixa-destaque-home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="para-presentear col-sm-8 col-sm-offset-1">
 
-          <h2>para presentear</h2>
-          <h3>Lush Gift Card</h3>
-          <div class="row">
-            <div class="col-sm-8 ">
-              <p>
-                Presenteie com muito estilo e personalidade com
-                nossos vales-presente disponíveis em diversos
-                valores e válidos para qualquer uma de nossas
-                suítes exclusivas.
-              </p>
+                    <h2>para presentear</h2>
+                    <h3>Lush Gift Card</h3>
+                    <div class="row">
+                        <div class="col-sm-8 ">
+                            <p>
+                                Presenteie com muito estilo e personalidade com
+                                nossos vales-presente disponíveis em diversos
+                                valores e válidos para qualquer uma de nossas
+                                suítes exclusivas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a class="btn-verde-v02">COMPRAR AGORA</a>
+
+                    <img class="gift-cards" src="img/v2/bitmap@3x.png" >
+
+
+                </div><!-- para-presentear -->
             </div>
-          </div>
 
-          <a class="btn-verde-v02">COMPRAR AGORA</a>
-
-          <img class="gift-cards" src="img/v2/bitmap@3x.png" >
-
-
-        </div><!-- para-presentear -->
-      </div>
-
-    </div>
-  </div><!-- faixa-destaque-->
+        </div>
+    </div><!-- faixa-destaque-->
 
 </div>
 

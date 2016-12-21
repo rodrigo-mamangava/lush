@@ -6,6 +6,13 @@
 
 
 $(document).ready(function () {
+    
+    console.log('ok');
+    
+    
+    $(".navbar").affix({offset: {top: $(".faixa-vitrine").outerHeight(true)} });
+    
+    
     $('.carousel-slick').slick({
         centerMode: true,
         centerPadding: '110px',

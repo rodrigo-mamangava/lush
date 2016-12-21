@@ -9,12 +9,11 @@
 
     
     
-    <!-- Bootstrap -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- cloud.typography -->
     <link href="//cloud.typography.com/6062032/6854972/css/fonts.css" rel="stylesheet">
     
     <!-- font-awesome -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/61840c6c9c.js"></script>
     
     
     
