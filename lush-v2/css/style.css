@@ -8614,12 +8614,23 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   overflow: hidden;
 }
 .faixa-vitrine .vitrine {
-  height: 80vh;
   width: 100%;
   overflow-y: hidden;
 }
-.faixa-vitrine .vitrine .vitrine-chamada h1 {
+.faixa-vitrine .vitrine .menu-header {
+  height: 100%;
+}
+.faixa-vitrine .vitrine-chamada {
   padding-top: 126px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faixa-vitrine .vitrine-chamada h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-family: "Knockout 26 A", "Knockout 26 B";
   font-size: 98px;
   font-weight: normal;

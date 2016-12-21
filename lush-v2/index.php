@@ -3,19 +3,16 @@
 <div class=" faixa-vitrine container-fluid">
 
     <div id="video-container">
-
+        
         <video autoplay loop poster="" class="bg-video">
             <source src="img/video/lush-vitrine-video.mp4" type="video/webm">
         </video>
 
-    </div>
+    </div><!-- #video-container -->
 
 
     <div class="row">
         <div class="vitrine">
-
-
-
 
             <div class="container menu-header">
                 <div class="row">
@@ -39,15 +36,18 @@
                     </div>
 
                 </div>
-                <div class="row">
-                    <div class="col-lg-offset-1 col-lg-6 col-md-8 col-xs-12">
-                        <div class="vitrine-chamada">
-                            <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
-                        </div>
-                    </div>
-                </div>
 
 
+
+
+            </div><!-- container menu-header -->
+        </div><!-- .vitrine -->
+    </div><!-- .row -->
+
+    <div class="row">
+        <div class="col-lg-offset-1 col-lg-6 col-md-8 col-xs-12">
+            <div class="vitrine-chamada">
+                <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
             </div>
         </div>
     </div>
