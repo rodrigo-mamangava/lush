@@ -36,7 +36,7 @@
                     <div class="row">
                         <div class="item-subfaixa">
                             <div class="col-sm-5 destaque-img">
-                                <img src="img/v2/restaurante@3x.jpg" class="img-destaque">
+                                <img src="img/v2/restaurante@2x.png" class="img-destaque">
                             </div>
                             <div class=" col-sm-7 destaque-texto">
 
@@ -46,7 +46,7 @@
                                     em uma experiência sensorial completa.
                                 </p>
 
-                                <a>CONHEÇA NOSSO ESPAÇO <img src="img/v2/seta@2x.jpg"></a>
+                                <a>CONHEÇA NOSSO ESPAÇO <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -64,10 +64,10 @@
                                     carta de cervejas importadas e drinks especiais.
                                 </p>
 
-                                <a>SAIBA MAIS <img src="img/v2/seta@2x.jpg"></a>
+                                <a>SAIBA MAIS <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
                             <div class="col-sm-5 destaque-img">
-                                <img src="img/v2/bar-adega@3x.jpg" class="img-destaque">
+                                <img src="img/v2/bar-adega@2x.jpg" class="img-destaque">
                             </div>
 
                         </div>
@@ -91,7 +91,7 @@
                                     ainda mais incrível.
                                 </p>
 
-                                <a>NOSSOS PARCEIROS <img src="img/v2/seta@2x.jpg"></a>
+                                <a>NOSSOS PARCEIROS <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@
                                     carta de cervejas importadas e drinks especiais.
                                 </p>
 
-                                <a>EXPLORAR CARDÁPIO <img src="img/v2/seta@2x.jpg"></a>
+                                <a>EXPLORAR CARDÁPIO <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                             </div>
                             <div class="col-sm-5 destaque-img">
                                 <img src="img/v2/cafedamanha-brunch@3x.jpg" class="img-destaque">

@@ -741,6 +741,18 @@ body{
     background-position: 50%;
     background-size: cover;
     background-repeat: no-repeat;
+    position: relative;
+
+    &:hover{
+        .img-filter{
+            background-color: rgba(0, 0, 0, 0.1);
+            .transition(all 1s);
+        }
+    }
+
+    .img-filter{
+        .transition(all 1s);
+    }
 
 }//faixa-fachada
 
@@ -1778,7 +1790,7 @@ body{
                 font-weight: 500;
                 font-stretch: normal;
                 color: #b8b8b8;
-                
+
                 padding-top: 7px;
 
                 span{
@@ -1805,9 +1817,14 @@ body{
 --------------------------------------------------------------*/
 .gastronomia{
 
+    .vitrine-content{
+        background-position-y: 10%;
+    }
+
     .faixa-explore-cardapio{
 
         .faixa-intercalada;
+        padding-bottom: 0px;
         background-color: transparent;
         margin-bottom: 200px;
 
@@ -1829,6 +1846,13 @@ body{
 
         .btn-explore-cardapio{
             font-family: @knockout29;
+            font-size: 22px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 2.7px;
+
+            padding: 13px 93.5px;
 
         }
 
@@ -1837,6 +1861,7 @@ body{
     .faixa-gastronomia-cats{
 
         .faixa-saiba-mais;
+        padding-bottom: 136px;
         background-color: transparent;
 
         .subfaixa-destaque{
@@ -1886,6 +1911,16 @@ body{
                         letter-spacing: 1.8px;
                         text-align: center;
                         color: #b8b8b8;
+
+                        cursor: pointer;
+
+                        &:hover{
+                            text-decoration: none;
+                        }
+
+                        i{
+                            font-size: 14px;
+                        }
                     }
 
                 }

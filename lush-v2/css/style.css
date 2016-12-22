@@ -8909,6 +8909,18 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   background-position: 50%;
   background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
+}
+.faixa-faichada:hover .img-filter {
+  background-color: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.faixa-faichada .img-filter {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .faixa-intercalada {
   background-color: white;
@@ -10350,9 +10362,13 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 /*--------------------------------------------------------------
 # gastronomia
 --------------------------------------------------------------*/
+.gastronomia .vitrine-content {
+  background-position-y: 10%;
+}
 .gastronomia .faixa-explore-cardapio {
   background-color: white;
   padding-bottom: 126px;
+  padding-bottom: 0px;
   background-color: transparent;
   margin-bottom: 200px;
   text-align: center;
@@ -10443,10 +10459,17 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .gastronomia .faixa-explore-cardapio .btn-explore-cardapio {
   font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 2.7px;
+  padding: 13px 93.5px;
 }
 .gastronomia .faixa-gastronomia-cats {
   background-color: white;
   padding-bottom: 126px;
+  padding-bottom: 136px;
   background-color: transparent;
 }
 .gastronomia .faixa-gastronomia-cats h2 {
@@ -10558,6 +10581,13 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   letter-spacing: 1.8px;
   text-align: center;
   color: #b8b8b8;
+  cursor: pointer;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .item-subfaixa .destaque-texto a:hover {
+  text-decoration: none;
+}
+.gastronomia .faixa-gastronomia-cats .subfaixa-destaque .item-subfaixa .destaque-texto a i {
+  font-size: 14px;
 }
 /*--------------------------------------------------------------
 # experiencia

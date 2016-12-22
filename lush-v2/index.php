@@ -131,6 +131,7 @@
     <div class="row">
 
     </div>
+    <div class="img-filter"></div>
 </div><!-- faixa-faichada -->
 
 
