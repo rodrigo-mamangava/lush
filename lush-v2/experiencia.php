@@ -12,7 +12,7 @@
                     <h2>para presentear</h2>
                     <h3>Lush Gift Card</h3>
                     <div class="row">
-                        <div class="col-sm-8 ">
+                        <div class="col-sm-6 ">
                             <p>
                                 Presenteie com muito estilo e personalidade com
                                 nossos vales-presente disponíveis em diversos
@@ -36,12 +36,12 @@
 
 
 
-    <div class="faixa-intercalada faixa-pacotes-cats">
+    <div class="faixa-intercalada faixa-pacotes-exp">
         <div class="container">
 
             <div class="row">
                 <div class="col-xs-12 col-sm-10 col-sm-offset-1">
-                    <h2>Saiba mais</h2>
+                    <h2>PACOTES ESPECIAIS</h2>
                 </div>
             </div>
 
@@ -57,11 +57,14 @@
                                 <img class="icon-destaque" src="img/v2/coracao@2x.jpg">
                                 <h3>Noite Romântica</h3>
                                 <p>
-                                   O LUSH te ajuda a transformar sua comemoração
-                                   em uma experiência sensorial completa.
+                                    O LUSH te ajuda a transformar sua comemoração
+                                    em uma experiência sensorial completa.
                                 </p>
 
-                                <a href="experiencia-single.php" >CONFIRA OS PACOTES ESPECIAIS <img src="img/v2/seta@2x.jpg"></a>
+                                <a href="experiencia-single.php" >
+                                    CONFIRA OS PACOTES ESPECIAIS 
+                                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                                </a>
                             </div>
                         </div>
                     </div>

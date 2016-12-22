@@ -9175,7 +9175,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   padding: 11px 42px;
 }
 .faixa-destaque {
-  background-color: #3f2a56;
+  background-color: #2a1a3c;
   padding-top: 64px;
 }
 .faixa-destaque .para-presentear {
@@ -9220,6 +9220,15 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   padding-top: 9px;
   padding-bottom: 26px;
 }
+.faixa-destaque .para-presentear .btn-verde-v02 {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 2.2px;
+  padding: 11px 22.5px;
+}
 .faixa-destaque .para-presentear .gift-cards {
   position: absolute;
   right: 0;
@@ -9231,7 +9240,7 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   width: 100%;
 }
 .faixa-destaque-home {
-  background-color: #3f2a56;
+  background-color: #2a1a3c;
   padding-top: 64px;
   background-color: white;
 }
@@ -9276,6 +9285,15 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   color: #969696;
   padding-top: 9px;
   padding-bottom: 26px;
+}
+.faixa-destaque-home .para-presentear .btn-verde-v02 {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 2.2px;
+  padding: 11px 22.5px;
 }
 .faixa-destaque-home .para-presentear .gift-cards {
   position: absolute;
@@ -10592,12 +10610,12 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 /*--------------------------------------------------------------
 # experiencia
 --------------------------------------------------------------*/
-.experiencia .faixa-pacotes-cats {
+.experiencia .faixa-pacotes-exp {
   background-color: white;
   padding-bottom: 126px;
   background-color: transparent;
 }
-.experiencia .faixa-pacotes-cats h2 {
+.experiencia .faixa-pacotes-exp h2 {
   margin-top: 124px;
   margin-bottom: 46px;
   text-transform: uppercase;
@@ -10610,31 +10628,31 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   text-align: center;
   color: #b8b8b8;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque {
   position: relative;
   padding: 0;
   background-color: white;
   margin-bottom: 10px;
   border: 2px solid #f2f2f2;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .destaque-img {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-img {
   height: 100%;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .destaque-img img {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-img img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .destaque-texto {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto {
   padding: 8em 5em 5em;
   text-align: center;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .destaque-texto .icon-destaque {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto .icon-destaque {
   width: 25.8px;
   height: auto;
   margin-bottom: 2em;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .destaque-texto h3 {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto h3 {
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 38px;
   font-weight: 500;
@@ -10642,7 +10660,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   letter-spacing: 0.4px;
   color: #3f2658;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .destaque-texto p {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto p {
   margin-top: 22px;
   margin-bottom: 47px;
   font-family: 'FairfieldLTW01-56Medium';
@@ -10655,7 +10673,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   font-family: 'FairfieldLTW01-55Medium 706181';
   padding: 0 4em;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .destaque-texto a {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto a {
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 18px;
   letter-spacing: 1.8px;
@@ -10663,19 +10681,30 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   color: #b8b8b8;
   text-transform: uppercase;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .destaque-texto a img {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .destaque-texto a img {
   width: 12px;
   height: auto;
   padding-left: 7.5px;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque {
   border: solid 2px #f2f2f2;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .item-subfaixa .destaque-texto {
-  padding-top: 100px;
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .item-subfaixa .destaque-img img {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  filter: brightness(85%);
+}
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .item-subfaixa .destaque-texto {
+  padding-top: 80px;
   padding-bottom: 0;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .item-subfaixa .destaque-texto h3 {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .item-subfaixa .destaque-texto .icon-destaque {
+  margin-bottom: 22px;
+  width: 29px;
+  height: auto;
+}
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .item-subfaixa .destaque-texto h3 {
   font-family: 'FairfieldLTW01-56Medium';
   font-size: 38px;
   font-weight: 500;
@@ -10686,7 +10715,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   text-align: center;
   color: #3f2658;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .item-subfaixa .destaque-texto p {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .item-subfaixa .destaque-texto p {
   font-family: 'FairfieldLTW01-55Medium 706181';
   font-size: 18px;
   font-weight: 500;
@@ -10697,7 +10726,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   text-align: center;
   color: #969696;
 }
-.experiencia .faixa-pacotes-cats .subfaixa-destaque .item-subfaixa .destaque-texto a {
+.experiencia .faixa-pacotes-exp .subfaixa-destaque .item-subfaixa .destaque-texto a {
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 18px;
   font-weight: normal;
@@ -10706,6 +10735,12 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   letter-spacing: 1.8px;
   text-align: center;
   color: #b8b8b8;
+}
+.experiencia .faixa-pacotes-exp .subfaixa-destaque:hover .destaque-img img {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  filter: brightness(100%);
 }
 /*--------------------------------------------------------------
 # experiencia-single

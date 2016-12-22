@@ -990,20 +990,16 @@ body{
 
 
 .faixa-destaque{
-    background-color: @roxo;
+    background-color: #2a1a3c;
     padding-top: 64px;
 
     .para-presentear{
 
         position: relative;
-
         background-color: #ffffff;
-
         margin-top: 127px;
         margin-bottom: 146px;
-
         padding-left: 31px;
-
         padding-bottom: 27px;
 
         h2{
@@ -1047,7 +1043,15 @@ body{
             padding-bottom:  26px;
         }
 
-        a{
+        .btn-verde-v02{
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 2.2px;
+
+            padding: 11px 22.5px;
 
         }
 
@@ -1944,7 +1948,7 @@ body{
 
 
 
-    .faixa-pacotes-cats{
+    .faixa-pacotes-exp{
 
         .faixa-saiba-mais;
         background-color: transparent;
@@ -1952,15 +1956,27 @@ body{
         .subfaixa-destaque{
             border: solid 2px #f2f2f2;
 
+
+
             .item-subfaixa{
 
                 .destaque-img{
-
+                    img{
+                        .transition(all 1s);  
+                        filter: brightness(85%);
+                    }
                 }
 
                 .destaque-texto{
-                    padding-top: 100px;
+                    padding-top: 80px;
                     padding-bottom: 0;
+
+                    .icon-destaque{
+                        margin-bottom: 22px;
+                        width: 29px;
+                        height: auto;
+
+                    }
 
                     h3{
                         font-family: @FairfieldItalic;
@@ -1998,6 +2014,15 @@ body{
                         color: #b8b8b8;
                     }
 
+                }
+            }
+
+            &:hover{
+                .destaque-img{
+                    img{
+                        .transition(all 1s);
+                        filter: brightness(100%);
+                    }
                 }
             }
 
