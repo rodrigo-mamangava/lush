@@ -6857,6 +6857,16 @@ body {
 /*--------------------------------------------------------------
 # Botoes
 --------------------------------------------------------------*/
+.btn {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.btn:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
 .btn-lupa {
   display: inline-block;
   margin-bottom: 0;
@@ -6876,6 +6886,9 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: white;
   background-color: transparent;
   border-color: transparent;
@@ -6914,6 +6927,11 @@ fieldset[disabled] .btn-lupa {
 a.btn-lupa.disabled,
 fieldset[disabled] a.btn-lupa {
   pointer-events: none;
+}
+.btn-lupa:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-lupa:focus,
 .btn-lupa.focus {
@@ -6989,6 +7007,9 @@ fieldset[disabled] .btn-lupa.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: white;
   background-color: transparent;
   border-color: white;
@@ -7035,6 +7056,11 @@ fieldset[disabled] .btn-reservar {
 a.btn-reservar.disabled,
 fieldset[disabled] a.btn-reservar {
   pointer-events: none;
+}
+.btn-reservar:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-reservar:focus,
 .btn-reservar.focus {
@@ -7106,6 +7132,9 @@ fieldset[disabled] .btn-reservar.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: #A44FC7;
   background-color: transparent;
   border-color: #A44FC7;
@@ -7153,6 +7182,11 @@ fieldset[disabled] .btn-reservar-lilas {
 a.btn-reservar-lilas.disabled,
 fieldset[disabled] a.btn-reservar-lilas {
   pointer-events: none;
+}
+.btn-reservar-lilas:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-reservar-lilas:focus,
 .btn-reservar-lilas.focus {
@@ -7225,6 +7259,9 @@ fieldset[disabled] .btn-reservar-lilas.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: #3f2a56;
   background-color: transparent;
   border-color: #3f2a56;
@@ -7268,6 +7305,11 @@ fieldset[disabled] .btn-padrao-roxo {
 a.btn-padrao-roxo.disabled,
 fieldset[disabled] a.btn-padrao-roxo {
   pointer-events: none;
+}
+.btn-padrao-roxo:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-padrao-roxo:focus,
 .btn-padrao-roxo.focus {
@@ -7340,6 +7382,9 @@ fieldset[disabled] .btn-padrao-roxo.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: #3f2a56;
   background-color: transparent;
   border-color: #3f2a56;
@@ -7383,6 +7428,11 @@ fieldset[disabled] .btn-enviar {
 a.btn-enviar.disabled,
 fieldset[disabled] a.btn-enviar {
   pointer-events: none;
+}
+.btn-enviar:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-enviar:focus,
 .btn-enviar.focus {
@@ -7455,6 +7505,9 @@ fieldset[disabled] .btn-enviar.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: white;
   background-color: #A44FC7;
   border-color: #A44FC7;
@@ -7497,6 +7550,11 @@ fieldset[disabled] .btn-lilas {
 a.btn-lilas.disabled,
 fieldset[disabled] a.btn-lilas {
   pointer-events: none;
+}
+.btn-lilas:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-lilas:focus,
 .btn-lilas.focus {
@@ -7572,6 +7630,9 @@ fieldset[disabled] .btn-lilas.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: #00d0b0;
   background-color: white;
   border-color: white;
@@ -7615,6 +7676,11 @@ fieldset[disabled] .btn-branco-v2 {
 a.btn-branco-v2.disabled,
 fieldset[disabled] a.btn-branco-v2 {
   pointer-events: none;
+}
+.btn-branco-v2:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-branco-v2:focus,
 .btn-branco-v2.focus {
@@ -7687,6 +7753,9 @@ fieldset[disabled] .btn-branco-v2.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: white;
   background-color: #6e5e8b;
   border-color: #6e5e8b;
@@ -7731,6 +7800,11 @@ fieldset[disabled] .btn-participar-v2 {
 a.btn-participar-v2.disabled,
 fieldset[disabled] a.btn-participar-v2 {
   pointer-events: none;
+}
+.btn-participar-v2:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-participar-v2:focus,
 .btn-participar-v2.focus {
@@ -7803,6 +7877,9 @@ fieldset[disabled] .btn-participar-v2.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: white !important;
   background-color: #6e5e8b !important;
   border-color: #6e5e8b !important;
@@ -7850,6 +7927,11 @@ fieldset[disabled] .btn-roxo-v02 {
 a.btn-roxo-v02.disabled,
 fieldset[disabled] a.btn-roxo-v02 {
   pointer-events: none;
+}
+.btn-roxo-v02:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-roxo-v02:focus,
 .btn-roxo-v02.focus {
@@ -7922,6 +8004,9 @@ fieldset[disabled] .btn-roxo-v02.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: white !important;
   background-color: #00d0b0 !important;
   border-color: #00d0b0 !important;
@@ -7969,6 +8054,11 @@ fieldset[disabled] .btn-verde-v02 {
 a.btn-verde-v02.disabled,
 fieldset[disabled] a.btn-verde-v02 {
   pointer-events: none;
+}
+.btn-verde-v02:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-verde-v02:focus,
 .btn-verde-v02.focus {
@@ -8041,6 +8131,9 @@ fieldset[disabled] .btn-verde-v02.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: white !important;
   background-color: #00d0b0 !important;
   border-color: #00d0b0 !important;
@@ -8054,6 +8147,7 @@ fieldset[disabled] .btn-verde-v02.focus {
   font-size: 18px;
   letter-spacing: 2.2px;
   margin-right: 10px;
+  padding: 11px 48px !important;
 }
 .btn-reserva-v2:focus,
 .btn-reserva-v2:active:focus,
@@ -8089,6 +8183,11 @@ fieldset[disabled] .btn-reserva-v2 {
 a.btn-reserva-v2.disabled,
 fieldset[disabled] a.btn-reserva-v2 {
   pointer-events: none;
+}
+.btn-reserva-v2:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-reserva-v2:focus,
 .btn-reserva-v2.focus {
@@ -8171,6 +8270,9 @@ fieldset[disabled] .btn-reserva-v2.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: #b8b8b8 !important;
   background-color: transparent !important;
   border-color: transparent !important;
@@ -8216,6 +8318,11 @@ fieldset[disabled] .btn-transparente {
 a.btn-transparente.disabled,
 fieldset[disabled] a.btn-transparente {
   pointer-events: none;
+}
+.btn-transparente:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-transparente:focus,
 .btn-transparente.focus {
@@ -8288,6 +8395,9 @@ fieldset[disabled] .btn-transparente.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: #6e5e8b;
   background-color: white;
   border-color: white;
@@ -8333,6 +8443,11 @@ fieldset[disabled] .btn-servico-concierge {
 a.btn-servico-concierge.disabled,
 fieldset[disabled] a.btn-servico-concierge {
   pointer-events: none;
+}
+.btn-servico-concierge:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-servico-concierge:focus,
 .btn-servico-concierge.focus {
@@ -8405,6 +8520,9 @@ fieldset[disabled] .btn-servico-concierge.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: white;
   background-color: #6e5e8b;
   border-color: #6e5e8b;
@@ -8450,6 +8568,11 @@ fieldset[disabled] .btn-explore-cardapio {
 a.btn-explore-cardapio.disabled,
 fieldset[disabled] a.btn-explore-cardapio {
   pointer-events: none;
+}
+.btn-explore-cardapio:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .btn-explore-cardapio:focus,
 .btn-explore-cardapio.focus {
@@ -9194,6 +9317,9 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: #00d0b0;
   background-color: white;
   border-color: white;
@@ -9239,6 +9365,11 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2 {
 a.faixa-explore .btn-reservar-v2.disabled,
 fieldset[disabled] a.faixa-explore .btn-reservar-v2 {
   pointer-events: none;
+}
+.faixa-explore .btn-reservar-v2:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .faixa-explore .btn-reservar-v2:focus,
 .faixa-explore .btn-reservar-v2.focus {
@@ -9341,10 +9472,10 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   color: #999999;
 }
 .post-type-archive-suite .lista-suites .item-suite {
-  background-color: #f2f2f2;
+  background-color: white;
 }
 .post-type-archive-suite .lista-suites .item-suite:first-of-type {
-  margin-top: 86px;
+  margin-top: 64px;
 }
 .post-type-archive-suite .lista-suites .item-suite .detalhes {
   position: relative;
@@ -9522,6 +9653,9 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: #00d0b0;
   background-color: white;
   border-color: white;
@@ -9567,6 +9701,11 @@ fieldset[disabled] .faixa-concierge .btn-reservar-v2 {
 a.faixa-concierge .btn-reservar-v2.disabled,
 fieldset[disabled] a.faixa-concierge .btn-reservar-v2 {
   pointer-events: none;
+}
+.faixa-concierge .btn-reservar-v2:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .faixa-concierge .btn-reservar-v2:focus,
 .faixa-concierge .btn-reservar-v2.focus {
@@ -9672,6 +9811,9 @@ fieldset[disabled] .faixa-concierge .btn-reservar-v2.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: white !important;
   background-color: #00d0b0 !important;
   border-color: #00d0b0 !important;
@@ -9721,6 +9863,11 @@ fieldset[disabled] .brn-reserve-suite {
 a.brn-reserve-suite.disabled,
 fieldset[disabled] a.brn-reserve-suite {
   pointer-events: none;
+}
+.brn-reserve-suite:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .brn-reserve-suite:focus,
 .brn-reserve-suite.focus {
@@ -9798,6 +9945,9 @@ fieldset[disabled] .brn-reserve-suite.focus {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   color: #3f2a56;
   background-color: transparent;
   border-color: #3f2a56;
@@ -9841,6 +9991,11 @@ fieldset[disabled] .faixa-btn .btn-concierge {
 a.faixa-btn .btn-concierge.disabled,
 fieldset[disabled] a.faixa-btn .btn-concierge {
   pointer-events: none;
+}
+.faixa-btn .btn-concierge:hover {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
 }
 .faixa-btn .btn-concierge:focus,
 .faixa-btn .btn-concierge.focus {
@@ -9951,6 +10106,17 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   position: relative;
   z-index: 50;
 }
+.vitrine-interna .vitrine-content:hover .img-filter {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.vitrine-interna .vitrine-content .img-filter {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
 .vitrine-interna .vitrine-content .image-vitrine img {
   display: block;
   max-width: 100%;
@@ -9986,6 +10152,15 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   left: 0;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 51;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.vitrine-interna .vitrine-content .img-filter :hover {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 .vitrine-interna .vitrine-content .seta-baixo {
   position: absolute;
@@ -10005,7 +10180,7 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   height: auto;
 }
 .suite-single .faixa-detalhes {
-  padding-top: 62px;
+  padding-top: 66px;
   padding-bottom: 100px;
 }
 .suite-single .faixa-detalhes .atributos {
@@ -10021,6 +10196,12 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .suite-single .faixa-detalhes .atributos ul {
   padding-top: 5px;
+  list-style-type: none;
+}
+.suite-single .faixa-detalhes .atributos ul li:before {
+  font-family: 'FontAwesome';
+  content: '\f0da';
+  margin: 0 5px 0 -15px;
 }
 .suite-single .faixa-detalhes .info-preco .descricao {
   font-family: 'FairfieldLTW01-55Medium 706181';
@@ -10033,31 +10214,39 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   color: #3f2658;
 }
 .suite-single .faixa-detalhes .info-preco .tabela-preco {
-  padding-top: 29px;
+  margin-top: -19px;
 }
 .suite-single .faixa-detalhes .info-preco .tabela-preco p {
-  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-family: 'FairfieldLTW01-56Medium';
   font-size: 22px;
   font-weight: 500;
-  font-style: normal;
   font-stretch: normal;
-  line-height: 2.95;
-  color: #b8b8b8;
+  color: #6e5e8b;
+  padding-top: 19px;
+  padding-bottom: 16px;
   position: relative;
-  border-bottom: 1px solid #d2d2d2;
+  border-bottom: 1px solid #e6e6e6;
 }
 .suite-single .faixa-detalhes .info-preco .tabela-preco p span {
   font-family: "Knockout 29 A", "Knockout 29 B";
-  font-size: 22px;
+  font-size: 24px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 2.95;
-  letter-spacing: 0.7px;
-  text-align: right;
+  letter-spacing: 1.1px;
   color: #6e5e8b;
   position: absolute;
   right: 0;
+  top: 18px;
+}
+.suite-single .faixa-detalhes .info-preco .info-checkin {
+  padding-top: 46px;
+  font-family: 'FairfieldLTW01-46LightI';
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  color: #b8b8b8;
+  text-align: center;
 }
 .suite-single .faixa-detalhes .info-reserve {
   padding-top: 81px;
@@ -10068,6 +10257,25 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .suite-single .faixa-detalhes .info-reserve .brn-reserve-suite {
   text-transform: uppercase;
+  font-size: 22px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 2.7px;
+  padding: 13px 87px 15px;
+}
+.suite-single .faixa-detalhes .info-compartilhe {
+  padding-top: 0;
+}
+.suite-single .faixa-detalhes .info-compartilhe .compartilhar {
+  padding-top: 54px;
+}
+.suite-single .faixa-detalhes .info-compartilhe .compartilhar ul li {
+  margin-right: 25px;
+}
+.suite-single .faixa-detalhes .info-compartilhe .compartilhar ul li img {
+  height: auto;
+  width: 20px;
 }
 .suite-single .faixa-fotos-produto .carousel img {
   display: block;
@@ -10077,19 +10285,22 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 .suite-single .faixa-outras-suites-list {
   padding-top: 125px;
-  padding-bottom: 124px;
+  padding-bottom: 91px;
 }
 .suite-single .faixa-outras-suites-list .titulo {
   text-align: center;
+  padding-bottom: 50px;
+  text-transform: uppercase;
+}
+.suite-single .faixa-outras-suites-list .titulo h2 {
   font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 18px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 1.6px;
+  text-align: center;
   color: #b8b8b8;
-  padding-bottom: 50px;
-  text-transform: uppercase;
 }
 .suite-single .faixa-outras-suites-list .suite-item {
   padding-bottom: 39px;
@@ -10106,12 +10317,25 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   height: auto;
   width: 100%;
 }
+.suite-single .faixa-outras-suites-list .suite-item .outra-site-item:hover .img-filter {
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.suite-single .faixa-outras-suites-list .suite-item .outra-site-item .img-filter {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+  background-color: rgba(0, 0, 0, 0.2);
+}
 .suite-single .faixa-outras-suites-list .suite-item p {
   font-family: 'FairfieldLTW01-56Medium';
-  font-size: 24px;
+  font-size: 30px;
   font-weight: 500;
   font-stretch: normal;
   color: #b8b8b8;
+  padding-top: 7px;
 }
 .suite-single .faixa-outras-suites-list .suite-item p span {
   font-family: "Knockout 26 A", "Knockout 26 B";
@@ -10119,8 +10343,9 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  letter-spacing: .02em;
+  letter-spacing: 1.7px;
   color: #3f2658;
+  margin-right: 12px;
 }
 /*--------------------------------------------------------------
 # gastronomia

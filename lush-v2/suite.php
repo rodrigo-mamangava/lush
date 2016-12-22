@@ -57,11 +57,11 @@
 
             <div class="col-sm-5 info-preco">
 
-                <p class="descricao">
+<!--                <p class="descricao">
                     Uma suite exuberante e única, completa com piscina aquecida 
                     privativa dentro da suite, 75 m2 com muito conforto, 
                     entretenimento e privacidade.
-                </p>
+                </p>-->
 
                 <div class="tabela-preco">
                     <p>Período <span>R$ 500</span></p>
@@ -70,6 +70,10 @@
                     <p>Período (3h)<span>R$ 500</span></p>
                     <p>Hora adicional <span>R$ 500</span></p>
                 </div>
+                
+                <p class="info-checkin">
+                    Check-in 15h e check-out as 13h do dia seguinte.
+                </p>
 
 
             </div><!-- info-preco -->
@@ -83,7 +87,7 @@
 
 
         <?php
-        $titulo_compartilhe = "CONVIDE SEU PAR PARA ESTA SUÍTE :";
+        $titulo_compartilhe = "Convide quem vai vivenciar uma experiência inesquecível com você nessa suíte.";
         include './faixa-compartilhar.php';
         ?>
 
@@ -173,6 +177,9 @@
 
 
 </div><!-- suite-single -->
+
+<?php include './faixa-concierge.php';?>
+
 
 <?php
 include './_footer.php';

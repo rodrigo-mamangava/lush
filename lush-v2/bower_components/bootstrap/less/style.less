@@ -188,6 +188,14 @@ body{
 # Botoes
 --------------------------------------------------------------*/
 
+.btn{
+    .transition(all .5s);
+
+    &:hover{
+        .transition(all .5s);
+    }
+}
+
 .btn-padrao-lush(@cor: @roxo){
     .btn;
     .button-variant(@cor, transparent, @cor);
@@ -306,6 +314,7 @@ body{
 .btn-reserva-v2{
     .btn-verde-v02;
     margin-right: 10px;
+    padding: 11px 48px !important;
 }
 
 
@@ -1162,10 +1171,10 @@ body{
         .item-suite{
 
             &:first-of-type{
-                margin-top: 86px;
+                margin-top: 64px;
             }
 
-            background-color: #f2f2f2;
+            background-color: @branco;
 
             .detalhes{
                 position: relative;
@@ -1358,7 +1367,7 @@ body{
 
     .btn-servico-concierge{
         margin-bottom: 132px;
-        
+
         font-size: 18px;
         font-weight: normal;
         font-style: normal;
@@ -1464,6 +1473,18 @@ body{
         position: relative;
         z-index: 50;
 
+        &:hover{
+            .img-filter{
+                .transition(all 1s);
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        .img-filter{
+            .transition(all 1s);
+
+        }
+
 
         .image-vitrine{
             img{
@@ -1504,7 +1525,13 @@ body{
             top: 0;
             left: 0;
             background-color: @filtro-image-color;
-            z-index: 51;
+            z-index: 51;            
+            .transition(all 1s);
+
+            :hover{
+                .transition(all 1s);
+                background-color: rgba(0, 0, 0, 0.1);
+            }
         }
 
         .seta-baixo{
@@ -1542,7 +1569,7 @@ body{
 .suite-single{
 
     .faixa-detalhes{
-        padding-top: 62px;
+        padding-top: 66px;
         padding-bottom: 100px;
 
         .atributos{
@@ -1560,7 +1587,15 @@ body{
 
             ul{
                 padding-top: 5px;
+                list-style-type: none;
                 li{
+
+                    &:before {    
+                        font-family: 'FontAwesome';
+                        content: '\f0da';
+                        margin:0 5px 0 -15px;
+                        //color: #f00;
+                    }
 
                 }
             }
@@ -1581,49 +1616,88 @@ body{
 
             .tabela-preco{
 
-                padding-top: 29px;
+                margin-top: -19px;
 
                 p{
-                    font-family: @FairfieldRegular;
+                    font-family: @FairfieldItalic;
                     font-size: 22px;
                     font-weight: 500;
-                    font-style: normal;
                     font-stretch: normal;
-                    line-height: 2.95;
-                    color: #b8b8b8;
+                    color: #6e5e8b;
+
+                    padding-top: 19px;
+                    padding-bottom: 16px;
+
                     position: relative;
 
-                    border-bottom: 1px solid #d2d2d2;
+                    border-bottom: 1px solid #e6e6e6;
 
                     span{
                         font-family: @knockout29;
-                        font-size: 22px;
+                        font-size: 24px;
                         font-weight: normal;
                         font-style: normal;
                         font-stretch: normal;
-                        line-height: 2.95;
-                        letter-spacing: 0.7px;
-                        text-align: right;
+                        letter-spacing: 1.1px;
                         color: #6e5e8b;
+
                         position: absolute;
                         right: 0;
+                        top: 18px;
                     }
                 }
 
 
             }
 
+            .info-checkin{
+                padding-top: 46px;
+
+                font-family: @FairfieldLTW01-46LightI;
+                font-size: 20px;
+                font-weight: 500;
+                font-stretch: normal;
+                color: #b8b8b8;
+                .text-center;
+            }
+
         }
 
         .info-reserve{
             padding-top: 81px;
-
             .text-center;
             .center-block;
 
             .brn-reserve-suite{
                 text-transform: uppercase;
+                font-size: 22px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 2.7px;
+                padding: 13px 87px 15px;
 
+            }
+
+        }
+
+        .info-compartilhe{
+
+            padding-top: 0;
+
+            .compartilhar{
+                padding-top: 54px;
+
+                ul{
+                    li{
+                        margin-right: 25px;
+
+                        img {
+                            height: auto;
+                            width: 20px;
+                        }
+                    }
+                }
             }
 
         }
@@ -1644,18 +1718,23 @@ body{
     .faixa-outras-suites-list{
 
         padding-top: 125px;
-        padding-bottom: 124px;
+        padding-bottom: 130px - 39px;
 
 
         .titulo{
             .text-center;
-            font-family: @knockout29;
-            font-size: 18px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            letter-spacing: 1.6px;
-            color: #b8b8b8;
+
+            h2{
+                font-family: @knockout29;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 1.6px;
+                text-align: center;
+                color: #b8b8b8;
+            }
+
             padding-bottom: 50px;
             text-transform: uppercase;
 
@@ -1675,17 +1754,32 @@ body{
                 img{
                     .img-responsive;
                     width: 100%
+
                 }
+
+                &:hover{
+                    .img-filter{
+                        background-color: rgba(0, 0, 0, 0);
+                        .transition(all 1s);
+                    }
+                }
+
+                .img-filter{
+                    .transition(all 1s);
+                    background-color: rgba(0, 0, 0, 0.2);
+                }
+
 
             }
 
             p{
                 font-family: @FairfieldItalic;
-                font-size: 24px;
+                font-size: 30px;
                 font-weight: 500;
                 font-stretch: normal;
                 color: #b8b8b8;
-
+                
+                padding-top: 7px;
 
                 span{
                     font-family: @knockout26;
@@ -1693,8 +1787,9 @@ body{
                     font-weight: normal;
                     font-style: normal;
                     font-stretch: normal;
-                    letter-spacing: .02em;
+                    letter-spacing: 1.7px;
                     color: #3f2658;
+                    margin-right: 12px;
                 }
             }
 
