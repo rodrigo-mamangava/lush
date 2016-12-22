@@ -7931,7 +7931,7 @@ fieldset[disabled] .btn-roxo-v02.focus {
   box-shadow: 0 2px 0 0 #008672 !important;
   font-family: "Knockout 29 A", "Knockout 29 B";
   margin-top: 9px;
-  padding: 11px 48px !important;
+  padding: 11px 48px;
   font-size: 18px;
   letter-spacing: 2.2px;
 }
@@ -8050,7 +8050,7 @@ fieldset[disabled] .btn-verde-v02.focus {
   box-shadow: 0 2px 0 0 #008672 !important;
   font-family: "Knockout 29 A", "Knockout 29 B";
   margin-top: 9px;
-  padding: 11px 48px !important;
+  padding: 11px 48px;
   font-size: 18px;
   letter-spacing: 2.2px;
   margin-right: 10px;
@@ -8145,7 +8145,12 @@ fieldset[disabled] .btn-reserva-v2.focus {
 .btn-tipo-knockout34 {
   font-family: "Knockout 34 A", "Knockout 34 B";
   margin-top: 9px;
-  padding: 11px 48px !important;
+  padding: 11px 48px;
+}
+.btn-tipo-knockout29 {
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  margin-top: 9px;
+  padding: 11px 48px;
 }
 .btn-transparente {
   display: inline-block;
@@ -8173,7 +8178,7 @@ fieldset[disabled] .btn-reserva-v2.focus {
   text-transform: uppercase;
   font-family: "Knockout 34 A", "Knockout 34 B";
   margin-top: 9px;
-  padding: 11px 48px !important;
+  padding: 11px 48px;
   font-size: 18px;
   letter-spacing: 1.8px;
 }
@@ -8290,9 +8295,9 @@ fieldset[disabled] .btn-transparente.focus {
   text-transform: uppercase;
   box-shadow: 0 2px 0 #3F2A56;
   box-shadow: 0 2px 0 0 #3f2658 !important;
-  font-family: "Knockout 34 A", "Knockout 34 B";
+  font-family: "Knockout 29 A", "Knockout 29 B";
   margin-top: 9px;
-  padding: 11px 48px !important;
+  padding: 11px 48px;
 }
 .btn-servico-concierge:focus,
 .btn-servico-concierge:active:focus,
@@ -8409,7 +8414,7 @@ fieldset[disabled] .btn-servico-concierge.focus {
   box-shadow: 0 2px 0 0 #3f2658 !important;
   font-family: "Knockout 34 A", "Knockout 34 B";
   margin-top: 9px;
-  padding: 11px 48px !important;
+  padding: 11px 48px;
 }
 .btn-explore-cardapio:focus,
 .btn-explore-cardapio:active:focus,
@@ -8631,9 +8636,6 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   justify-content: center;
 }
 .faixa-vitrine .vitrine-chamada h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: "Knockout 26 A", "Knockout 26 B";
   font-size: 98px;
   font-weight: normal;
@@ -8643,6 +8645,18 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   letter-spacing: 2px;
   color: #ffffff;
   text-transform: uppercase;
+}
+.faixa-vitrine .vitrine-chamada h1 span {
+  padding-top: 32px;
+  font-family: 'FairfieldLTW01-46LightI';
+  font-size: 26px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 1.08;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: initial;
 }
 .faixa-vitrine .seta-baixo {
   position: absolute;
@@ -9333,37 +9347,45 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   margin-top: 86px;
 }
 .post-type-archive-suite .lista-suites .item-suite .detalhes {
+  position: relative;
   padding-top: 115px;
   text-align: center;
-  text-transform: uppercase;
+}
+.post-type-archive-suite .lista-suites .item-suite .detalhes .info-entra {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  text-align: center;
+  color: #3f2658;
+  font-size: 40px;
 }
 .post-type-archive-suite .lista-suites .item-suite .detalhes h2 {
-  padding-bottom: 30px;
-  font-family: 'FairfieldLTW01-55Medium 706181';
+  padding-bottom: 17px;
+  font-family: 'FairfieldLTW01-56Medium';
   font-size: 42px;
   font-weight: 500;
-  font-style: normal;
   font-stretch: normal;
   line-height: 1.43;
   letter-spacing: 0.4px;
   text-align: center;
   color: #3f2658;
-  padding-bottom: 17px;
 }
 .post-type-archive-suite .lista-suites .item-suite .detalhes .price {
-  color: #999999;
-  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-family: 'FairfieldLTW01-56Medium';
   font-size: 18px;
   font-weight: 500;
-  font-style: normal;
+  font-style: italic;
   font-stretch: normal;
   letter-spacing: 0.2px;
   text-align: center;
   color: #b8b8b8;
-  padding-bottom: 15px;
 }
-.post-type-archive-suite .lista-suites .item-suite .detalhes .price .amout {
-  font-family: "Knockout 29 A", "Knockout 29 B";
+.post-type-archive-suite .lista-suites .item-suite .detalhes .amout {
+  padding-top: 15px;
+  padding-bottom: 106px;
+  font-family: "Knockout 26 A", "Knockout 26 B";
   font-size: 98px;
   font-weight: normal;
   font-style: normal;
@@ -9380,14 +9402,22 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 1.8px;
-  color: #b8b8b8;
+  color: #00d0b0;
+  text-transform: uppercase;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .post-type-archive-suite .lista-suites .item-suite a:hover {
-  color: #929292;
+  color: #00846f;
   text-decoration: none;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
-.post-type-archive-suite .lista-suites .item-suite a p {
-  padding-top: 106px;
+.post-type-archive-suite .lista-suites .foto-produto {
+  position: relative;
+  z-index: 50;
 }
 .post-type-archive-suite .lista-suites .foto-produto:nth-child(even) {
   padding-right: 0px;
@@ -9400,11 +9430,59 @@ fieldset[disabled] .faixa-explore .btn-reservar-v2.focus {
   max-width: 100%;
   height: auto;
   width: 100%;
+  position: relative;
+  position: 51;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.post-type-archive-suite .lista-suites .foto-produto a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  margin-left: -100px;
+  z-index: 1000;
+  display: none;
+  text-transform: uppercase;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 2.2px;
+  text-align: center;
+  color: #ffffff;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.post-type-archive-suite .lista-suites .foto-produto a:hover {
+  color: #d9d9d9;
+  text-decoration: none;
+}
+.post-type-archive-suite .lista-suites .foto-produto:hover {
+  /*                -moz-transition: all 1s;
+                                -webkit-transition: all 1s;
+                                transition: all 1s;*/
+}
+.post-type-archive-suite .lista-suites .foto-produto:hover img {
+  filter: brightness(50%);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.post-type-archive-suite .lista-suites .foto-produto:hover a {
+  display: block;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .faixa-concierge {
   background-color: #00d0b0;
   margin-top: 32px;
   text-align: center;
+  margin-top: 0;
   background-color: #6e5e8b;
 }
 .faixa-concierge p {
@@ -9544,13 +9622,36 @@ fieldset[disabled] .faixa-concierge .btn-reservar-v2.focus {
 }
 .faixa-concierge p {
   color: white;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.6px;
+  text-align: center;
+  color: #ffffff;
 }
 .faixa-concierge h2 {
   color: white;
   padding-bottom: 62px;
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 38px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 0.74;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: #ffffff;
 }
 .faixa-concierge .btn-servico-concierge {
-  margin-bottom: 100px;
+  margin-bottom: 132px;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 2.2px;
+  text-align: center;
+  padding: 11px 24px;
 }
 .brn-reserve-suite {
   display: inline-block;
@@ -9580,7 +9681,7 @@ fieldset[disabled] .faixa-concierge .btn-reservar-v2.focus {
   box-shadow: 0 2px 0 0 #008672 !important;
   font-family: "Knockout 29 A", "Knockout 29 B";
   margin-top: 9px;
-  padding: 11px 48px !important;
+  padding: 11px 48px;
   font-size: 18px;
   letter-spacing: 2.2px;
   font-size: 22px;
@@ -10495,7 +10596,6 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 }
 footer {
   background-color: #2a1a3c;
-  margin-top: 32px;
   padding-top: 90px;
   padding-bottom: 103px;
 }

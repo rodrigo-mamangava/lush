@@ -296,7 +296,7 @@ body{
     box-shadow: 0 2px 0 0 #008672 !important;
     font-family: @knockout29;
     margin-top: 9px;
-    padding: 11px 48px !important;
+    padding: 11px 48px;
     font-size: 18px;
     letter-spacing: 2.2px;
 
@@ -312,7 +312,13 @@ body{
 .btn-tipo-knockout34{
     font-family: @knockout34;
     margin-top: 9px;
-    padding: 11px 48px !important;
+    padding: 11px 48px;
+}
+
+.btn-tipo-knockout29{
+    font-family: @knockout29;
+    margin-top: 9px;
+    padding: 11px 48px;
 }
 
 .btn-transparente{
@@ -338,7 +344,7 @@ body{
     .sombra-padrao;
     box-shadow: 0 2px 0 0 #3f2658 !important;
 
-    .btn-tipo-knockout34;
+    .btn-tipo-knockout29;
 }
 
 .btn-explore-cardapio{
@@ -524,11 +530,6 @@ body{
 
 
         h1 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-
             font-family: @knockout26;
             font-size: 98px;
             font-weight: normal;
@@ -540,8 +541,28 @@ body{
 
             .text-uppercase;
 
+            span{
+                padding-top: 32px;
+
+                font-family: @FairfieldLTW01-46LightI;
+                font-size: 26px;
+                font-weight: 500;
+                font-stretch: normal;
+                line-height: 1.08;
+                letter-spacing: 0.3px;
+                text-align: center;
+                color: #ffffff;
+
+                text-transform: initial;
+            }
+
 
         }//h1
+
+        p{
+
+
+        }
 
     }//.vitrine-chamada
 
@@ -1147,80 +1168,92 @@ body{
             background-color: #f2f2f2;
 
             .detalhes{
+                position: relative;
 
                 padding-top: 115px;
                 .text-center;
 
+                .info-entra{
+                    position: absolute;
+                    top: -50px;
+                    left: 50%;
+                    width: 200px;
+                    margin-left: -100px;
+                    .text-center;
+                    color: #3f2658;
+                    font-size: 40px;
+
+
+                }
+
                 h2{
-                    padding-bottom: 30px;
-                    font-family: @FairfieldRegular;
+                    padding-bottom: 17px;
+                    font-family: @FairfieldItalic;
                     font-size: 42px;
                     font-weight: 500;
-                    font-style: normal;
                     font-stretch: normal;
                     line-height: 1.43;
                     letter-spacing: 0.4px;
                     text-align: center;
                     color: #3f2658;
-                    padding-bottom: 17px;
                 }
 
                 .price{
-                    color: @cinza-escuro;
-                    font-family: @FairfieldRegular;
+
+                    //color: @cinza-escuro;
+                    font-family: @FairfieldItalic;
                     font-size: 18px;
                     font-weight: 500;
-                    font-style: normal;
+                    font-style: italic;
                     font-stretch: normal;
                     letter-spacing: 0.2px;
                     text-align: center;
                     color: #b8b8b8;
-                    padding-bottom: 15px;
-
-                    .amout{
-                        font-family: @knockout29;
-                        font-size: 98px;
-                        font-weight: normal;
-                        font-style: normal;
-                        font-stretch: normal;
-                        line-height: 0.8;
-                        letter-spacing: 2px;
-                        text-align: center;
-                        color: #3f2658;
-                    }
-
-
                 }
-                text-transform: uppercase;
+
+                .amout{
+                    padding-top: 15px;
+                    padding-bottom: 106px;
+
+                    font-family: @knockout26;
+                    font-size: 98px;
+                    font-weight: normal;
+                    font-style: normal;
+                    font-stretch: normal;
+                    line-height: 0.8;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    color: #3f2658;
+                }
             }
 
 
 
             a{
-
                 font-family: @knockout29;
                 font-size: 18px;
                 font-weight: normal;
                 font-style: normal;
                 font-stretch: normal;
                 letter-spacing: 1.8px;
-                color: #b8b8b8;
-
+                color: #00d0b0;
+                .text-uppercase;
+                .transition(all 1s);
 
                 &:hover{
-                    color:  darken(#b8b8b8, 15%);
+                    color:  darken(#00d0b0, 15%);
                     text-decoration: none;
+                    .transition(all 1s);
                 }
 
-                p{
-                    padding-top: 106px;
-                }
             }
 
 
         }
 
         .foto-produto{
+            position: relative;
+            z-index: 50;
 
             &:nth-child(even) {
                 padding-right: 0px;
@@ -1232,8 +1265,59 @@ body{
             img{
                 .img-responsive;
                 width: 100%;
+                position: relative;
+                position: 51;
+                .transition(all 1s);
+            }
+
+            a{
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                width: 200px;
+                margin-left: -100px;
+                z-index: 1000;
+                display: none;
+
+                .text-uppercase;
+
+                font-family: @knockout29;
+                font-size: 18px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 2.2px;
+                text-align: center;
+                color: #ffffff;
+
+                .transition(all 1s);
+
+                &:hover{
+                    color:  darken(#ffffff, 15%);
+                    text-decoration: none;
+                }
+
+
 
             }
+
+            &:hover{
+                img {
+                    filter: brightness(50%);
+                    .transition(all 1s);
+                }
+                a {
+                    display: block;
+                    .transition(all 1s);
+
+                }
+
+                /*                -moz-transition: all 1s;
+                                -webkit-transition: all 1s;
+                                transition: all 1s;*/
+            }
+
         }
 
     }
@@ -1243,19 +1327,48 @@ body{
 
 .faixa-concierge{
     .faixa-explore;
+    margin-top: 0;
 
     background-color: #6e5e8b;
     p{
         color: @branco;
+        font-family: @knockout29;
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 1.6px;
+        text-align: center;
+        color: #ffffff;
     }
     h2{
         color: @branco;
         padding-bottom: 62px;
 
+        font-family: @FairfieldItalic;
+        font-size: 38px;
+        font-weight: 500;
+        font-stretch: normal;
+        line-height: 0.74;
+        letter-spacing: 0.4px;
+        text-align: center;
+        color: #ffffff;
+
     }
 
     .btn-servico-concierge{
-        margin-bottom: 100px;
+        margin-bottom: 132px;
+        
+        font-size: 18px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        letter-spacing: 2.2px;
+        text-align: center;
+        padding: 11px 24px;
+
+
+
     }
 
 }
@@ -1975,7 +2088,7 @@ body{
 footer{
 
     background-color: #2a1a3c;
-    margin-top: 32px;
+
     padding-top: 90px;
     padding-bottom: 103px;
 

@@ -14,8 +14,8 @@
     <div class="row">
         <div class="vitrine">
 
-            <div class="container menu-header">
-                <div class="row">
+            <div class="menu-header">
+                <div class="">
                     <div class="col-lg-offset-1 col-lg-4 col-xs-5 logo">
                         <img src="img/logo_lush_branco@2x.png">
                     </div>
@@ -23,16 +23,8 @@
 
                         <?php include './_link-social.php' ;?>
                         <?php include './_link-language.php' ;?>
-
-                        
-
                     </div>
-
                 </div>
-
-
-
-
             </div><!-- container menu-header -->
         </div><!-- .vitrine -->
     </div><!-- .row -->
@@ -40,7 +32,12 @@
     <div class="row">
         <div class="col-lg-offset-1 col-lg-6 col-md-8 col-xs-12">
             <div class="vitrine-chamada">
-                <h1>Criado nos mínimos detalhes para ativar suas melhores experiências.</h1>
+                <h1>
+                    Criado nos mínimos detalhes para ativar suas melhores experiências.
+                    <br/>
+                    <span>#VemProLush</span>
+                </h1>
+                
             </div>
         </div>
     </div>
