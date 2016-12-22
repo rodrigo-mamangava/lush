@@ -14,7 +14,7 @@
                         R$ 375 + SUÍTE ESCOLHIDA
                     </p>
                 </div>
-                <a class="btn-roxo-v02">RESERVAR</a>
+                <a class="btn-roxo-v02">PRESENTEAR</a>
 
 
             </div><!-- item-reserve -->

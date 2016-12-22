@@ -10764,33 +10764,43 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   padding-bottom: 16px;
 }
 .experiencia-single .pacote-loop .pacote-item .item-texto .descricao {
-  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-family: 'FairfieldLTW01-45Light';
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.56;
   letter-spacing: 0.3px;
+  color: #7e7e7e;
 }
 .experiencia-single .pacote-loop .pacote-item .item-reserve {
   text-align: right;
 }
 .experiencia-single .pacote-loop .pacote-item .item-reserve .preco {
-  font-family: Knockout-29JuniorLtweight;
+  padding-top: 12px;
+  padding-bottom: 23px;
+}
+.experiencia-single .pacote-loop .pacote-item .item-reserve .preco p {
+  font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 22px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
   letter-spacing: 1px;
   color: #3f2658;
-  padding-top: 12px;
-  padding-bottom: 23px;
+}
+.experiencia-single .pacote-loop .pacote-item .item-reserve .btn-roxo-v02 {
+  padding: 11px 39.5px;
 }
 .experiencia-single .info-compartilhe {
-  padding-top: 90px;
+  padding-top: 0;
   padding-bottom: 86px;
 }
-.experiencia-single .info-compartilhe p {
+.experiencia-single .info-compartilhe .compartilhar {
+  padding-top: 101px;
+}
+.experiencia-single .info-compartilhe .compartilhar p {
+  font-family: "Knockout 29 A", "Knockout 29 B";
   font-size: 16px;
   font-weight: normal;
   font-style: normal;
@@ -10798,6 +10808,11 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   letter-spacing: 1px;
   text-align: center;
   color: #3f2658;
+  text-transform: uppercase;
+}
+.experiencia-single .info-compartilhe .compartilhar .icones li img {
+  width: 21px;
+  height: auto;
 }
 .faixa-texto-simples {
   padding-top: 89px;

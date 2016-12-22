@@ -2069,13 +2069,14 @@ body{
                 }
 
                 .descricao{
-                    font-family: @FairfieldRegular;
+                    font-family: @fairfield;
                     font-size: 18px;
                     font-weight: 500;
                     font-style: normal;
                     font-stretch: normal;
                     line-height: 1.56;
                     letter-spacing: 0.3px;
+                    color: #7e7e7e;
                 }
             }
 
@@ -2084,18 +2085,22 @@ body{
                 .text-right;
 
                 .preco{
-                    font-family: Knockout-29JuniorLtweight;
-                    font-size: 22px;
-                    font-weight: normal;
-                    font-style: normal;
-                    font-stretch: normal;
-                    letter-spacing: 1px;
-                    color: #3f2658;
+                    p{
+                        font-family: @knockout29;
+                        font-size: 22px;
+                        font-weight: normal;
+                        font-style: normal;
+                        font-stretch: normal;
+                        letter-spacing: 1px;
+                        color: #3f2658;
+                    }
+
 
                     padding-top: 12px;
                     padding-bottom: 23px;
                 }
                 .btn-roxo-v02{
+                    padding: 11px 39.5px;
 
                 }
             }
@@ -2106,18 +2111,37 @@ body{
 
     .info-compartilhe{
 
-        padding-top: (162px-72px);
+        padding-top: 0;
         padding-bottom: 118px-32px;
 
-        p{
-            font-size: 16px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            letter-spacing: 1px;
-            text-align: center;
-            color: #3f2658;
+        .compartilhar{
+            
+            padding-top: 165px - 64px;
+            
+            p{
+                font-family: @knockout29;
+                font-size: 16px;
+                font-weight: normal;
+                font-style: normal;
+                font-stretch: normal;
+                letter-spacing: 1px;
+                text-align: center;
+                color: #3f2658;
+
+                .text-uppercase;
+            }
+
+            .icones{
+                li{
+                    img{
+                        width: 21px;
+                        height: auto;
+                    }
+                }
+            }
         }
+
+
     }
 
 
