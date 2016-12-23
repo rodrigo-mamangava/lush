@@ -10833,6 +10833,90 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   text-align: center;
   color: #969696;
 }
+.flag {
+  width: 110px;
+  height: 23px;
+  position: relative;
+  margin-top: -23px;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.flag:hover {
+  color: white;
+}
+#flag-midia {
+  width: 110px;
+  height: 23px;
+  position: relative;
+  margin-top: -23px;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background: #b8b8b8;
+}
+#flag-midia:hover {
+  color: white;
+}
+#flag-midia:before,
+#flag-midia:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-top: 11.5px solid transparent;
+  border-bottom: 11.5px solid transparent;
+}
+#flag-midia:before {
+  border-left: 6px solid #fff;
+  left: -1px;
+}
+#flag-midia:after {
+  border-right: 6px solid #fff;
+  right: -1px;
+}
+#flag-essencia {
+  width: 110px;
+  height: 23px;
+  position: relative;
+  margin-top: -23px;
+  display: block;
+  margin-bottom: 10px;
+  padding-top: 1px;
+  font-family: "Knockout 29 A", "Knockout 29 B";
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #6e5e8b;
+  border-radius: 10px;
+}
+#flag-essencia:hover {
+  color: white;
+}
 /*--------------------------------------------------------------
 # bastidores
 --------------------------------------------------------------*/
@@ -10840,8 +10924,8 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
   margin-top: 50px;
 }
 .faixa-bastidores .bastidores-item {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 65px;
+  padding-bottom: 45px;
 }
 .faixa-bastidores .bastidores-item .meta-dados {
   font-family: "Knockout 29 A", "Knockout 29 B";
