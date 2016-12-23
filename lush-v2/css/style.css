@@ -8630,6 +8630,32 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   background-color: white;
 }
 /*--------------------------------------------------------------
+# forms
+--------------------------------------------------------------*/
+.form-lush .campo {
+  margin-bottom: 36px;
+  background: transparent;
+  border-bottom: solid 1px #b8b8b8;
+  width: 384px;
+  font-family: 'FairfieldLTW01-55Medium 706181';
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: 0.2px;
+  color: #3f2658;
+}
+.form-lush .campo:focus {
+  border-bottom: solid 1px #3f2658;
+  outline: none;
+  outline-color: none;
+  outline-style: none;
+  outline-width: 0;
+}
+.form-lush .btn-participar-v2 {
+  margin-bottom: 0px;
+  padding: 11px 42px;
+}
+/*--------------------------------------------------------------
 # listas
 --------------------------------------------------------------*/
 .list-language,
@@ -9153,29 +9179,6 @@ fieldset[disabled] .btn-explore-cardapio.focus {
   text-align: center;
   color: #969696;
   margin-bottom: 60px;
-}
-.faixa-lush-member .campo {
-  margin-bottom: 36px;
-  background: transparent;
-  border-bottom: solid 1px #b8b8b8;
-  width: 384px;
-  font-family: 'FairfieldLTW01-55Medium 706181';
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 1.3;
-  letter-spacing: 0.2px;
-  color: #3f2658;
-}
-.faixa-lush-member .campo:focus {
-  border-bottom: solid 1px #3f2658;
-  outline: none;
-  outline-color: none;
-  outline-style: none;
-  outline-width: 0;
-}
-.faixa-lush-member .btn-participar-v2 {
-  margin-bottom: 0px;
-  padding: 11px 42px;
 }
 .faixa-destaque {
   background-color: #2a1a3c;
@@ -11063,6 +11066,90 @@ fieldset[disabled] .faixa-btn .btn-concierge.focus {
 .bastidores-single .conteudo a {
   font-style: italic;
   color: #696969;
+}
+/*--------------------------------------------------------------
+# contato
+--------------------------------------------------------------*/
+.contato {
+  padding-top: 164px;
+  padding-bottom: 110px;
+}
+.contato .conhecer p {
+  padding-bottom: 64px;
+  font-family: 'FairfieldLTW01-45Light';
+  font-size: 20px;
+  font-weight: 300;
+  font-stretch: normal;
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: #696969;
+}
+.contato .conhecer p.destaque {
+  padding-bottom: 18px;
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 32px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: 0.3px;
+  color: #3f2658;
+}
+.contato .form-lush {
+  width: 100%;
+}
+.contato .form-lush .campo {
+  width: 100%;
+  margin-bottom: 36px;
+  padding-bottom: 11px;
+}
+.contato .form-lush .btn-participar-v2 {
+  margin-top: 28px;
+  width: 176px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.contato .trabalhar {
+  padding-top: 116px;
+  text-align: center;
+}
+.contato .trabalhar .destaque {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 32px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 0.88;
+  letter-spacing: 0.4px;
+  color: #3f2658;
+  padding-top: 32px;
+}
+.contato .trabalhar .normal {
+  font-family: 'FairfieldLTW01-56Medium';
+  font-size: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #969696;
+  padding-top: 32px;
+}
+.contato .trabalhar .destaque-2 {
+  padding-top: 89px;
+}
+.contato .trabalhar .list-social {
+  float: initial !important;
+  margin-top: 32px;
+}
+.contato .trabalhar .list-social li {
+  text-align: center;
+  padding-right: 0px;
+  padding-left: 32px;
+}
+.contato .trabalhar .list-social li a {
+  color: #3f2658;
+  font-size: 22px;
 }
 /*--------------------------------------------------------------
 # footer

@@ -224,7 +224,7 @@
             <h2>LUSH MEMBER</h2>
             <h3>Seja um Lush Member agora mesmo</h3>
             <p>Seja o primeiro a saber das novidades e ganhe descontos exclusivos.</p>
-            <form>
+            <form class="form-lush">
                 <input type="text" id="nome" name="nome" placeholder="Nome" class="campo"><br/>
                 <input type="email" id="email" name="email" placeholder="Email" class="campo"><br/>
                 <input type="submit" value="Participar" class="btn-participar-v2"><br/>

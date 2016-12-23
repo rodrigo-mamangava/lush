@@ -3,5 +3,6 @@
 <li><a href="experiencia.php">Experiências</a></li>
 <li><a href="bastidores.php">Bastidores</a></li>
 <li><a href="como-chegar.php">Como chegar</a></li>
-<li><a href="#">Contato</a></li>
+<li><a href="contato.php">Contato</a></li>
+
 
