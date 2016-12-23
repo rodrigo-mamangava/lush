@@ -5,6 +5,14 @@
 
     <div class="container-fluid">
 
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <a id="flag-midia" href="">ESSÊNCIA LUSH</a>
+            </div>
+        </div>
+
+
+
         <div class="titulo">
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
@@ -69,8 +77,13 @@
                         assada, maionese cítrica de limão e sementes crocantes, 
                         e o Ancho ao molho de mostarda e mascavo, com tempurá de 
                         raízes da época, uma homenagem ao famoso “Entrecôte et
-                        frites”. Confira a matéria completa 
-                        aqui: http://www.guiadasemana.com.br/evento/restaurantes/chefs-no-motel-motel-lush-by-concavo-e-convexo-11-04-2016
+                        frites”. 
+                    </p>
+
+                    <p>
+                        Confira a matéria completa 
+                        aqui: 
+                        <a href="$">http://www.guiadasemana.com.br/evento/restaurantes/chefs-no-motel-motel-lush-by-concavo-e-convexo-11-04-2016</a>
                     </p>
 
                 </div>
