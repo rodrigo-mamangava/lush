@@ -1119,48 +1119,89 @@ body{
 }
 
 
-.faixa-mapa-como-chegar{
-    height: 736px;
-    background-position: 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
+.page-chegar{
+    .faixa-mapa-como-chegar{
+        height: 736px;
+        background-position: 50%;
+        background-size: cover;
+        background-repeat: no-repeat;
 
-    .card-endereco{
-        .text-center;
-        background-color: @branco;
-        padding-top: 22px;
-        padding-bottom: 25px;
-        margin-top: 85%;
+        .card-endereco{
+            .text-center;
+            background-color: @branco;
+            padding-top: 18px;
+            padding-bottom: 35px;
+            margin-top: 85%;
 
-        h1{
-            font-family: @FairfieldRegular;
-            font-size: 24px;
-            font-weight: 500;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.17;
-            letter-spacing: 0.3px;
-            text-align: center;
-            color: #3f2658;
+            h1{
+                font-family: @FairfieldRegular;
+                font-size: 24px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.17;
+                letter-spacing: 0.3px;
+                text-align: center;
+                color: #3f2658;
 
-            margin-bottom: 9px;
+                margin-bottom: 9px;
+            }
+
+            p{
+                font-family: @FairfieldRegular;
+                font-size: 16px;
+                font-weight: 500;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.63;
+                text-align: center;
+                color: #969696;              
+
+                &.a-partir{
+                    font-family: @FairfieldItalic;
+                    font-size: 20px;
+                    font-weight: 500;
+                    font-stretch: normal;
+                    line-height: 1.4;
+                    text-align: center;
+                    color: #3f2658;
+                }
+            }
+
+            hr{    
+                border: 0;
+                border-top: 1px solid #3f2658;
+                margin: 0 40px;
+                margin-top: 22px;
+                margin-bottom: 16px;
+            }
+
         }
 
-        p{
-            font-family: @FairfieldRegular;
-            font-size: 16px;
-            font-weight: 500;
+    }//faixa-mapa-como-chegar    
+
+    .faixa-explore{
+        margin-top: 0;
+
+        .btn-reservar-v2{
+            font-family: @knockout29;
+            font-size: 18px;
+            font-weight: normal;
             font-style: normal;
             font-stretch: normal;
-            line-height: 1.75;
-            letter-spacing: 0.2px;
+            letter-spacing: 2.2px;
             text-align: center;
-            color: #969696;
+            color: #00d0b0;
 
+            padding: 11px 0;
+
+            width: 176px;
         }
+
     }
+}
 
-}//faixa-mapa-como-chegar
+
 
 
 .faixa-orderby{
@@ -2511,7 +2552,7 @@ body{
             letter-spacing: 0.2px;
             text-align: center;
             color: #969696;
-            
+
             padding-top: 32px;
         }
 
@@ -2521,9 +2562,9 @@ body{
 
         .list-social{
             float: initial !important;
-            
+
             margin-top: 32px;
-            
+
             li{
                 .text-center;
                 padding-right: 0px; 
