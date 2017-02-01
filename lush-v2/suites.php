@@ -4,6 +4,7 @@
 <?php include './_menu-principal.php'; ?>
 
 
+
 <div class="post-type-archive-suite">
 
     <div class="container-fluid lista-suites">
@@ -14,9 +15,7 @@
                 <div class="row">
                     <div class="col-sm-7 col-sm-offset-2">
                         <h2>Lush Spa Splash</h2>                
-                        <p class="price">
-                            a partir de                            
-                        </p>
+                        <p><span class="price">a partir de</span></p>
                         <p class="amout">R$ 350</p>
 
                         <a href="suite.php">                          

@@ -2,7 +2,7 @@
 
     <div class="row">
 
-        <nav class="navbar navbar-default navbar-fixed-top"  data-spy="affix" >
+        <nav id="menu-geral" class="navbar navbar-default navbar-fixed-top"  data-spy="affix" >
             <?php include './_menu-conteudo.php';?>
         </nav>
 

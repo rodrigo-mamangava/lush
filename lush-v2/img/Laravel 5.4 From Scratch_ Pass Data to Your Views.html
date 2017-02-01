@@ -1,0 +1,955 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://laracasts.com/series/laravel-from-scratch-2017/episodes/5?autoplay=true -->
+<html class="" lang="html"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style><style class="vjs-styles-dimensions">
+      .laracasts-video-dimensions {
+        width: 997px;
+        height: 623px;
+      }
+
+      .laracasts-video-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+      }
+    </style>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="initial-scale=1.1">
+<meta name="description" content="Admittedly, so far, we&#39;ve needed to do a bit of boring infrastructure work. But the silver lining is that you now have everything you need to work in...">
+<meta property="og:site_name" content="Laracasts">
+<meta property="fb:app_id" content="511211375738022">
+<title>Laravel 5.4 From Scratch: Pass Data to Your Views</title>
+<link rel="apple-touch-icon" sizes="180x180" href="https://laracasts.com/favicons/apple-touch-icon.png?v=XBrbNbbRQ4">
+<link rel="icon" type="image/png" href="https://laracasts.com/favicons/favicon-32x32.png?v=XBrbNbbRQ4" sizes="32x32">
+<link rel="icon" type="image/png" href="https://laracasts.com/favicons/favicon-16x16.png?v=XBrbNbbRQ4" sizes="16x16">
+<link rel="manifest" href="https://laracasts.com/favicons/manifest.json?v=XBrbNbbRQ4">
+<link rel="mask-icon" href="https://laracasts.com/favicons/safari-pinned-tab.svg?v=XBrbNbbRQ4" color="#4fb6b5">
+<link rel="shortcut icon" href="https://laracasts.com/favicons/favicon.ico?v=XBrbNbbRQ4">
+<meta name="msapplication-config" content="/favicons/browserconfig.xml?v=XBrbNbbRQ4">
+<meta name="theme-color" content="#4fb6b5">
+<link rel="alternate" type="application/atom+xml" title="Laracasts" href="https://laracasts.com/feed">
+<link rel="stylesheet" href="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/fonts.css">
+<link href="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/css" rel="stylesheet">
+<script src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/analytics.js.download"></script><script src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/wow.min.js.download"></script>
+<script>new WOW({ mobile: false }).init();</script>
+<link href="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/min.css" rel="stylesheet">
+<script>
+            window.LARACASTS = {"signedIn":false,"csrfToken":"yeVqDImXEUmvGg6AF5B3E9x6LSG95zHP5GufvVD1","stripeKey":"pk_live_42cAcd2OvCDs4hpErd5ZscBT","user":null};
+        </script>
+<meta property="og:title" content="Pass Data to Your Views">
+<meta property="og:description" content="Admittedly, so far, we&#39;ve needed to do a bit of boring infrastructure work. But the silver lining is that you now have everything you need to work in a professional environment. You should have PHP 7.1, MySQL, Brew, Composer, and Valet or Homestead installed. Now, we can get back to our Laravel application, and learn about passing data to any view.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://laracasts.com/series/laravel-from-scratch-2017/episodes/5">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@laracasts">
+<meta name="twitter:title" content="Pass Data to Your Views">
+<meta name="twitter:description" content="Admittedly, so far, we&#39;ve needed to do a bit of boring infrastructure work. But the silver lining is that you now have everything you need to work in a professional environment. You should have PHP 7.1, MySQL, Brew, Composer, and Valet or Homestead installed. Now, we can get back to our Laravel application, and learn about passing data to any view.">
+<link rel="stylesheet" href="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/videojs-watermark.css">
+<script src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/embed.js.download" data-timestamp="1485862292153"></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body class="video guest ">
+<script id="flash-template" type="text/template">
+    <div class="notification is-primary for-user">
+        <a href="#" class="notification-body inherits-color" target="_blank" rel="noreferrer noopener"></a>
+    </div>
+</script>
+<div id="root" class="page ">
+<div>
+<nav class="nav is-normal">
+<div class="container">
+<div class="nav-left dont-flex mr-2">
+<a class="nav-item is-brand" href="https://laracasts.com/">
+<svg id="white-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 792.51 102.4">
+<defs><style>.svg-logo-white{fill:#fff;}</style></defs>
+<path class="svg-logo-white" d="M103.08,445.39v65.52h35.74v13.42H87V445.39Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M191.63,445.39h14.7l34.18,78.93H223l-7.07-17.09H182.05L175,524.33H157.45Zm7.4,20.87-11.52,27.5h22.88Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M285.3,491.87h-7.85v32.45H261.37V445.39h36a23.65,23.65,0,0,1,17.26,6.9,23.17,23.17,0,0,1,7,17.31q0,9.85-6.9,15.64a30.93,30.93,0,0,1-12.36,5.84l22.15,33.23H305Zm-7.85-33.06v21.76h16.42a10.65,10.65,0,0,0,10.8-11,10.24,10.24,0,0,0-3.15-7.79,10.72,10.72,0,0,0-7.65-3Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M374.58,445.39h14.7l34.18,78.93H405.91l-7.07-17.09H365l-7.07,17.09H340.4Zm7.4,20.87-11.52,27.5h22.88Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M500.09,471.17a24.2,24.2,0,0,0-3.67-4.84q-7.07-7.24-18.09-7.24t-18.09,7.24q-7,7.18-7,18.65t7,18.68q7,7.21,18,7.21t18.09-7.24a23.49,23.49,0,0,0,3.67-4.9L515,505.46a38.79,38.79,0,0,1-6.79,8.74q-11.8,11.52-29.78,11.52t-29.92-11.55q-11.94-11.55-11.94-29.2t11.94-29.28q11.94-11.63,29.92-11.63T508,455.86a38.8,38.8,0,0,1,6.79,8.57Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M677.73,444a44.48,44.48,0,0,1,29.11,10.35l-9.46,11.41a28.39,28.39,0,0,0-9.24-5.59,30.16,30.16,0,0,0-10.24-1.75q-6.12,0-9.63,2.67a6.49,6.49,0,0,0-2.56,5.29,6.56,6.56,0,0,0,3.28,5.68q2.56,1.73,12.41,4.51,11.63,3,17.31,6.57,10,6.63,10,18.43,0,10.8-9.35,17.92-8.46,6.24-21.49,6.23a46.6,46.6,0,0,1-33-13l9-11.47a36.24,36.24,0,0,0,10.3,7.07,29.9,29.9,0,0,0,13.64,3.28q6.68,0,10.58-2.84a8.35,8.35,0,0,0,3.51-6.62,7.28,7.28,0,0,0-3.56-6.29q-2.62-1.78-12.13-4.45-12.19-3.51-17.14-6.4-10.3-6.07-10.3-17.59A20.53,20.53,0,0,1,657,450.46Q665.21,444,677.73,444Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M730.16,445.39h64.13v13.3h-24v65.63H754.09V458.7H730.16Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M848.49,444a44.47,44.47,0,0,1,29.11,10.35l-9.46,11.41a28.36,28.36,0,0,0-9.24-5.59,30.16,30.16,0,0,0-10.24-1.75q-6.12,0-9.63,2.67a6.49,6.49,0,0,0-2.56,5.29,6.56,6.56,0,0,0,3.29,5.68q2.56,1.73,12.41,4.51,11.63,3,17.31,6.57,10,6.63,10,18.43,0,10.8-9.35,17.92-8.46,6.24-21.49,6.23a46.6,46.6,0,0,1-33-13l9-11.47a36.23,36.23,0,0,0,10.3,7.07,29.91,29.91,0,0,0,13.64,3.28q6.68,0,10.58-2.84a8.35,8.35,0,0,0,3.51-6.62,7.28,7.28,0,0,0-3.56-6.29Q856.56,494,847,491.37q-12.19-3.51-17.14-6.4-10.3-6.07-10.3-17.59a20.53,20.53,0,0,1,8.18-16.92Q836,444,848.49,444Z" transform="translate(-86.99 -435.26)"></path>
+<path id="arrow" fill="#00b1b2" d="M549.44,537.66V504.75h12v13.78L621,489.74a29.75,29.75,0,0,0,4.21-2.31,15.41,15.41,0,0,0-1.36-.88l-62.42-31.73v19.93h-12V435.26L629.58,476c2.95,1.62,9.73,6.09,9,12.45-.68,6.09-8.18,10.27-12.67,12.24l-76.49,37Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M579.77,499H535a4.08,4.08,0,1,1,0-8.16h44.75a4.08,4.08,0,1,1,0,8.16Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M525.91,499h-8.23a4.08,4.08,0,1,1,0-8.16h8.23a4.08,4.08,0,1,1,0,8.16Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M544.14,488.13h-8.23a4.08,4.08,0,0,1,0-8.16h8.23a4.08,4.08,0,1,1,0,8.16Z" transform="translate(-86.99 -435.26)"></path><path class="svg-logo-white" d="M596.19,488.14H553.44a4.08,4.08,0,1,1,0-8.16h42.75a4.08,4.08,0,0,1,0,8.16Z" transform="translate(-86.99 -435.26)"></path>
+</svg> </a>
+</div>
+<div class="nav-center flex mr-2">
+<form method="GET" class="nav-search-form is-flex" action="https://laracasts.com/search"><svg class="is-hidden-mobile" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 30px"><title>search</title><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="search-icon" fill="#cacaca"><path d="M11.1921711,12.6063847 C10.0235906,13.4815965 8.5723351,14 7,14 C3.13400675,14 0,10.8659932 0,7 C0,3.13400675 3.13400675,0 7,0 C10.8659932,0 14,3.13400675 14,7 C14,8.5723351 13.4815965,10.0235906 12.6063847,11.1921711 L14.0162265,12.6020129 C14.6819842,12.4223519 15.4217116,12.5932845 15.9484049,13.1199778 L18.7795171,15.95109 C19.5598243,16.7313971 19.5646685,17.9916807 18.7781746,18.7781746 C17.997126,19.5592232 16.736965,19.5653921 15.95109,18.7795171 L13.1199778,15.9484049 C12.5960188,15.4244459 12.4217025,14.6840739 12.6018353,14.0160489 L11.1921711,12.6063847 Z M7,12 C9.76142375,12 12,9.76142375 12,7 C12,4.23857625 9.76142375,2 7,2 C4.23857625,2 2,4.23857625 2,7 C2,9.76142375 4.23857625,12 7,12 Z"></path></g></g></svg> <span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="input aa-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0% 0% / auto repeat scroll padding-box border-box rgb(255, 255, 255);"><span class="algolia-autocomplete" style="position: relative; display: inline-block; direction: ltr;"><input type="search" class="input aa-input aa-hint" autocomplete="off" spellcheck="false" dir="auto" style="vertical-align: top; position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1; background: none 0px 0px / auto repeat scroll padding-box border-box transparent;" readonly="" tabindex="-1"><input type="search" class="input aa-input" id="search" name="q" required="" placeholder="WHAT WILL YOU LEARN NEXT?" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Gotham SSm A&quot;, &quot;Gotham SSm B&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; word-spacing: 0px; letter-spacing: normal; text-indent: 10px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="aa-dataset-2"></div><div class="aa-dataset-3"></div></span></span><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre; font-family: &quot;Gotham SSm A&quot;, &quot;Gotham SSm B&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: normal; word-spacing: 0px; letter-spacing: normal; text-indent: 10px; text-rendering: auto; text-transform: none;"></pre><span class="aa-dropdown-menu" style="position: absolute; top: 100%; z-index: 100; display: none; left: 0px; right: auto;"><div class="aa-dataset-0"></div><div class="aa-dataset-1"></div></span></span> <button type="submit" class="button is-primary in-caps is-hidden-mobile">Search</button></form>
+</div>
+<span class="nav-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+</span>
+
+    <div class="nav-right nav-menu">
+        <a class="nav-item is-bold in-caps" href="https://laracasts.com/join">
+            Sign Up
+        </a>
+
+        <a href="https://laracasts.com/login" class="nav-item is-bold color-primary in-caps">
+            Sign In
+        </a>
+    </div>
+    </div>
+</nav>
+                <nav class="nav-bottom ">
+    <div class="container">
+        <ul class="is-flex-tablet nav-menu">
+            <li class="is-hidden-tablet">
+                <form method="GET" class="nav-search-form is-flex" action="https://laracasts.com/search"><svg class="is-hidden-mobile" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width: 30px"><title>search</title><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="search-icon" fill="#cacaca"><path d="M11.1921711,12.6063847 C10.0235906,13.4815965 8.5723351,14 7,14 C3.13400675,14 0,10.8659932 0,7 C0,3.13400675 3.13400675,0 7,0 C10.8659932,0 14,3.13400675 14,7 C14,8.5723351 13.4815965,10.0235906 12.6063847,11.1921711 L14.0162265,12.6020129 C14.6819842,12.4223519 15.4217116,12.5932845 15.9484049,13.1199778 L18.7795171,15.95109 C19.5598243,16.7313971 19.5646685,17.9916807 18.7781746,18.7781746 C17.997126,19.5592232 16.736965,19.5653921 15.95109,18.7795171 L13.1199778,15.9484049 C12.5960188,15.4244459 12.4217025,14.6840739 12.6018353,14.0160489 L11.1921711,12.6063847 Z M7,12 C9.76142375,12 12,9.76142375 12,7 C12,4.23857625 9.76142375,2 7,2 C4.23857625,2 2,4.23857625 2,7 C2,9.76142375 4.23857625,12 7,12 Z"></path></g></g></svg> <input type="search" class="input" id="search" name="q" required="" placeholder="WHAT WILL YOU LEARN NEXT?"> <button type="submit" class="button is-primary in-caps is-hidden-mobile">Search</button></form>
+            </li>
+                            <li class="is-hidden-tablet">
+                    <a href="https://laracasts.com/login" class="nav-bottom-link">
+                        <span class="nav-bottom-title">Sign In</span>
+                    </a>
+                </li>
+
+                <li class="is-hidden-tablet">
+                    <a href="https://laracasts.com/join" class="nav-bottom-link">
+                        <span class="nav-bottom-title">Sign Up</span>
+                    </a>
+                </li>
+            
+            <li class="">
+                <a href="https://laracasts.com/lessons" class="nav-bottom-link ">
+                    <span class="icon icon-catalog"></span>
+                    <span class="nav-bottom-title">Catalog</span>
+                </a>
+            </li>
+
+            <li class="active is-active">
+                <a href="https://laracasts.com/series?curated" class="nav-bottom-link active is-active">
+                    <span class="icon icon-series"></span>
+                    <span class="nav-bottom-title">Series</span>
+                </a>
+            </li>
+
+            <li class="">
+                <div class="dropdown  w-100"><div class="is-vertically-centered"><button class="button has-dropdown w-100"><span slot="heading" href="#" class="has-arrow nav-bottom-link ">
+                        <span class="icon icon-skills"></span>
+                        <span class="nav-bottom-title">Skills</span>
+                    </span></button></div><div class="dropdown-menu" style="min-width: 250px"><ul slot="dropdown-links">
+                        <li class="dropdown-item">
+                            <a href="https://laracasts.com/skills/php" class=" is-flex">
+                                <span class="flex">PHP</span>
+                                <span class="is-circle icon" style="color: #8893BD"></span>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="https://laracasts.com/skills/laravel" class=" is-flex">
+                                <span class="flex">Laravel</span>
+                                <span class="is-circle icon" style="color: #ed6c63"></span>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="https://laracasts.com/skills/testing" class=" is-flex">
+                                <span class="flex">Testing</span>
+                                <span class="is-circle icon" style="color: #90CE94"></span>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="https://laracasts.com/skills/javascript" class=" is-flex">
+                                <span class="flex">Front-End</span>
+                                <span class="is-circle icon" style="color: #abaa43"></span>
+                            </a>
+                        </li>
+
+                        <li class="dropdown-item">
+                            <a href="https://laracasts.com/skills/tooling" class=" is-flex">
+                                <span class="flex">Tooling</span>
+                                <span class="is-circle icon" style="color: #ef6733"></span>
+                            </a>
+                        </li>
+                    </ul></div></div>
+            </li>
+
+            <li class="">
+                <a href="https://laracasts.com/shop" class="nav-bottom-link ">
+                    <span class="icon icon-apparel"></span>
+                    <span class="nav-bottom-title">Apparel</span>
+                </a>
+            </li>
+
+            <li class="">
+                <a href="https://laracasts.com/discuss" class="nav-bottom-link ">
+                    <span class="icon icon-discuss"></span>
+                    <span class="nav-bottom-title">Discussions</span>
+                </a>
+            </li>
+
+                    </ul>
+    </div>
+</nav>
+
+    <div class="video-player-wrap">
+    <div class="video-player">
+        <span class="watch-later-button" style="display: none;">
+                <button class="button series-button is-rounded is-toggle fade-in wait-2s " data-toggles="is-active">
+                    Add to Watchlist
+                </button>
+            </span>
+
+            <div preload="auto" class="video-js vjs-big-play-centered laracasts-video-dimensions vjs-fluid vjs-controls-enabled vjs-workinghover vjs-watermark vjs-has-started vjs-playing vjs-user-inactive" id="laracasts-video" role="region" aria-label="video player" tabindex="-1" style="outline: none;"><video id="laracasts-video_html5_api" class="vjs-tech" preload="auto" src="//player.vimeo.com/external/201295470.hd.mp4?s=f8620ddbbb9fa6d7aca324c1e8d9b3fc6526a899&amp;profile_id=119">
+                 <source src="//player.vimeo.com/external/201295470.hd.mp4?s=f8620ddbbb9fa6d7aca324c1e8d9b3fc6526a899&amp;profile_id=119" type="video/mp4" data-quality="HD" label="HD" data-default="true">
+
+                                     <source src="//player.vimeo.com/external/201295470.hd.mp4?s=f8620ddbbb9fa6d7aca324c1e8d9b3fc6526a899&amp;profile_id=174" type="video/mp4" data-quality="SD" label="SD">
+                
+                 <p class="vjs-no-js">
+                     To view this video please enable JavaScript, and consider upgrading to a web browser that
+                     <a href="http://videojs.com/html5-video-support/" target="_blank" rel="noreferrer noopener" class="vjs-hidden" hidden="hidden">supports HTML5 video.</a>
+                 </p>
+            </video><div></div><div class="vjs-poster vjs-hidden" tabindex="-1" aria-disabled="false"></div><div class="vjs-text-track-display" aria-live="off" aria-atomic="true"></div><div class="vjs-loading-spinner" dir="ltr"></div><button class="vjs-big-play-button" type="button" aria-live="polite" title="Play Video" aria-disabled="false"><span class="vjs-control-text">Play Video</span></button><div class="vjs-control-bar" dir="ltr" role="group"><button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" aria-live="polite" title="Pause" aria-disabled="false"><span class="vjs-control-text">Pause</span></button><div class="vjs-volume-menu-button vjs-menu-button vjs-menu-button-inline vjs-control vjs-button vjs-volume-menu-button-horizontal vjs-vol-3" tabindex="0" role="button" aria-live="polite" title="Mute" aria-disabled="false"><div class="vjs-menu"><div class="vjs-menu-content"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="100.00" aria-valuemin="0" aria-valuemax="100" aria-label="volume level" aria-valuetext="100.00%"><div class="vjs-volume-level"><span class="vjs-control-text"></span></div></div></div></div><span class="vjs-control-text">Mute</span></div><div class="vjs-current-time vjs-time-control vjs-control"><div class="vjs-current-time-display" aria-live="off"><span class="vjs-control-text">Current Time</span> 1:23</div></div><div class="vjs-time-control vjs-time-divider"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><div class="vjs-duration-display" aria-live="off"><span class="vjs-control-text">Duration Time</span> 5:11</div></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="26.95" aria-valuemin="0" aria-valuemax="100" aria-label="progress bar" aria-valuetext="1:23"><div class="vjs-load-progress" style="width: 43.5794%;"><span class="vjs-control-text"><span>Loaded</span>: 0%</span><div style="left: 0%; width: 100%;"></div></div><div class="vjs-mouse-display" data-current-time="3:00" style="left: 397px;"></div><div class="vjs-play-progress vjs-slider-bar" data-current-time="1:23" style="width: 26.95%;"><span class="vjs-control-text"><span>Progress</span>: 0%</span></div></div></div><div class="vjs-live-control vjs-control vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type</span>LIVE</div></div><div class="vjs-remaining-time vjs-time-control vjs-control"><div class="vjs-remaining-time-display" aria-live="off"><span class="vjs-control-text">Remaining Time</span> -3:47</div></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button " tabindex="0" role="menuitem" aria-live="polite" title="Playback Rate" aria-disabled="false" aria-expanded="false" aria-haspopup="true"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">2x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">1.75x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">1.5x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">1.25x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">1x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">0.75x<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">0.5x<span class="vjs-control-text"></span></li></ul></div><span class="vjs-control-text">Playback Rate</span><div class="vjs-playback-rate-value">1x</div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Chapters" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Chapters Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-title" tabindex="-1">Chapters</li></ul></div><span class="vjs-control-text">Chapters</span></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Descriptions" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Descriptions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true" title=", selected">descriptions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Descriptions</span></div><div class="vjs-subtitles-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Subtitles" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Subtitles Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true" title=", selected">subtitles off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Subtitles</span></div><div class="vjs-captions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Captions" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Captions Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-texttrack-settings" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false" title=", opens captions settings dialog">captions settings<span class="vjs-control-text">, opens captions settings dialog</span></li><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitemcheckbox" aria-live="polite" aria-disabled="false" aria-checked="true" title=", selected">captions off<span class="vjs-control-text">, selected</span></li></ul></div><span class="vjs-control-text">Captions</span></div><div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden" tabindex="0" role="menuitem" aria-live="polite" title="Audio Track" aria-disabled="false" aria-expanded="false" aria-haspopup="true" aria-label="Audio Menu"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"></ul></div><span class="vjs-control-text">Audio Track</span></div><div class="vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-resolution-button" tabindex="0" role="menuitem" aria-live="polite" aria-disabled="false" aria-expanded="false" aria-haspopup="true" title="Quality"><div class="vjs-menu" role="presentation"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">HD<span class="vjs-control-text"></span></li><li class="vjs-menu-item" tabindex="-1" role="menuitem" aria-live="polite" aria-disabled="false">SD<span class="vjs-control-text"></span></li></ul></div><span class="vjs-control-text">Quality</span><span class="vjs-resolution-button-staticlabel"></span></div><button class="vjs-fullscreen-control vjs-control vjs-button " type="button" aria-live="polite" title="Fullscreen" aria-disabled="false"><span class="vjs-control-text">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " tabindex="-1" aria-describedby="laracasts-video_component_412_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-offscreen" id="laracasts-video_component_412_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-caption-settings vjs-modal-overlay vjs-hidden" tabindex="-1" role="dialog" aria-labelledby="TTsettingsDialogLabel-laracasts-video_component_417" aria-describedby="TTsettingsDialogDescription-laracasts-video_component_417"><div role="document"><div class="vjs-control-text" id="TTsettingsDialogLabel-laracasts-video_component_417" aria-level="1" role="heading">Caption Settings Dialog</div><div class="vjs-control-text" id="TTsettingsDialogDescription-laracasts-video_component_417">Beginning of dialog window. Escape will cancel and close the window.</div><div class="vjs-tracksettings"><div class="vjs-tracksettings-colors"><fieldset class="vjs-fg-color vjs-tracksetting"><legend>Text</legend><label class="vjs-label" for="captions-foreground-color-laracasts-video_component_417">Color</label><select id="captions-foreground-color-laracasts-video_component_417"><option value="#FFF">White</option><option value="#000">Black</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><label class="vjs-label" for="captions-foreground-opacity-laracasts-video_component_417">Transparency</label><select id="captions-foreground-opacity-laracasts-video_component_417"><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option></select></span></fieldset><fieldset class="vjs-bg-color vjs-tracksetting"><legend>Background</legend><label class="vjs-label" for="captions-background-color-laracasts-video_component_417">Color</label><select id="captions-background-color-laracasts-video_component_417"><option value="#000">Black</option><option value="#FFF">White</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><label class="vjs-label" for="captions-background-opacity-laracasts-video_component_417">Transparency</label><select id="captions-background-opacity-laracasts-video_component_417"><option value="1">Opaque</option><option value="0.5">Semi-Transparent</option><option value="0">Transparent</option></select></span></fieldset><fieldset class="vjs-window-color vjs-tracksetting"><legend>Window</legend><label class="vjs-label" for="captions-window-color-laracasts-video_component_417">Color</label><select id="captions-window-color-laracasts-video_component_417"><option value="#000">Black</option><option value="#FFF">White</option><option value="#F00">Red</option><option value="#0F0">Green</option><option value="#00F">Blue</option><option value="#FF0">Yellow</option><option value="#F0F">Magenta</option><option value="#0FF">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><label class="vjs-label" for="captions-window-opacity-laracasts-video_component_417">Transparency</label><select id="captions-window-opacity-laracasts-video_component_417"><option value="0">Transparent</option><option value="0.5">Semi-Transparent</option><option value="1">Opaque</option></select></span></fieldset></div><div class="vjs-tracksettings-font"><div class="vjs-font-percent vjs-tracksetting"><label class="vjs-label" for="captions-font-size-laracasts-video_component_417">Font Size</label><select id="captions-font-size-laracasts-video_component_417"><option value="0.50">50%</option><option value="0.75">75%</option><option value="1.00">100%</option><option value="1.25">125%</option><option value="1.50">150%</option><option value="1.75">175%</option><option value="2.00">200%</option><option value="3.00">300%</option><option value="4.00">400%</option></select></div><div class="vjs-edge-style vjs-tracksetting"><label class="vjs-label" for="laracasts-video_component_417">Text Edge Style</label><select id="laracasts-video_component_417"><option value="none">None</option><option value="raised">Raised</option><option value="depressed">Depressed</option><option value="uniform">Uniform</option><option value="dropshadow">Dropshadow</option></select></div><div class="vjs-font-family vjs-tracksetting"><label class="vjs-label" for="captions-font-family-laracasts-video_component_417">Font Family</label><select id="captions-font-family-laracasts-video_component_417"><option value="proportionalSansSerif">Proportional Sans-Serif</option><option value="monospaceSansSerif">Monospace Sans-Serif</option><option value="proportionalSerif">Proportional Serif</option><option value="monospaceSerif">Monospace Serif</option><option value="casual">Casual</option><option value="script">Script</option><option value="small-caps">Small Caps</option></select></div></div><div class="vjs-tracksettings-controls"><button class="vjs-default-button">Defaults</button><button class="vjs-done-button">Done</button></div></div></div></div><div class="vjs-watermark-content vjs-watermark-bottom-right vjs-watermark-fade"><img src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/logo-footer.png"></div></div>
+
+        
+                    <!-- "Previous Episode" Arrow -->
+                            <div class="next-lesson-arrow previous">
+                    <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/4?autoplay=true">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" class="icon arrow" viewBox="0 0 8 16"><path d="M5.5 3L7 4.5 3.25 8 7 11.5 5.5 13l-5-5z" fill="white"></path></svg>
+
+                        <div class="next-lesson-arrow-title previous">
+                            <span class="position is-bold">
+                                Episode 4: 
+                            </span>
+
+                            Database Setup and Sequel Pro
+                        </div>
+                    </a>
+                </div>
+            
+            <!-- "Next Episode" Arrow -->
+                            <div class="next-lesson-arrow next">
+                    <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/6?autoplay=true">
+                        <div class="next-lesson-arrow-title next">
+                            <span class="position is-bold">
+                                Episode 6: 
+                            </span>
+
+                            Working With the Query Builder
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="8" height="16" viewBox="0 0 8 16" class="icon arrow"><path d="M7.5 8l-5 5L1 11.5 4.75 8 1 4.5 2.5 3z" fill="white"></path></svg>
+                    </a>
+                </div>
+                        </div>
+</div>
+
+<div class="section">
+    <div class="container">
+        <div class="columns is-desktop is-vertically-centered-desktop mb-5">
+            <div class="video-details column is-6-desktop pr-3-desktop ">
+                <div class="wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+                                    </div>
+
+                <p class="video-details-publish-date in-caps is-bold">
+                    Published On Jan. 27th 2017
+                </p>
+
+                <h1 class="title is-1">
+                                            <a href="https://laracasts.com/series/laravel-from-scratch-2017" class="video-title-series">
+                            Laravel 5.4 From Scratch:
+                        </a>
+                    
+                    Pass Data to Your Views
+                </h1>
+
+                <p class="is-bold in-caps mb-2">
+                                            <span style="margin-right: 7px">
+                            Episode 5
+                        </span>
+                    
+                    <span class="color-primary">
+                        Run Time 5:11
+                    </span>
+                </p>
+
+                <div class="video-details-buttons mb-1-mobile">
+                    <a href="https://laracasts.com/downloads/eyJpdiI6InhVQ3d0QWpvNXdiUFNmditwQkRWUWc9PSIsInZhbHVlIjoid0wwdm42MDZYbk1qM0tQa3hNc1dyQT09IiwibWFjIjoiY2NiMDdiZDRiMDJmMjkxMWI0OWE5ZGRiMDllODczOWNmZWQ0NzUzNWVmNWJhMmRjMDg2YWU1ZjJjMmE1MWJkNyJ9" title="Download Video" class="button for-download is-outlined mr-1-tablet mb-1-mobile ">
+                        <span class="icon-download"></span>
+
+                        <span>Download</span>
+                    </a>
+
+                    <button class="button is-naked p-0" disabled="">
+                        <span class="button for-like is-outlined is-muted is-toggle " data-toggles="is-active">
+                            <span class="icon-like"></span>
+                            <span>Add to Favorites</span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="video-description column is-6-desktop content">
+                Admittedly, so far, we've needed to do a bit of boring infrastructure work. But the silver lining is that you now have everything you need to work in a professional environment. You should have PHP 7.1, MySQL, Brew, Composer, and Valet or Homestead installed. Now, we can get back to our Laravel application, and learn about passing data to any view.
+
+                            </div>
+        </div>
+
+        
+        <div class="video-comments columns pt-3-tablet">
+            <div class="comments column is-8 pr-2-tablet">
+                <div id="disqus_thread"><iframe id="dsq-app1" name="dsq-app1" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" width="100%" src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/saved_resource.html" style="width: 1px !important; min-width: 100% !important; border: none !important; overflow: hidden !important; height: 303px !important;" horizontalscrolling="no" verticalscrolling="no"></iframe><iframe id="indicator-north" name="indicator-north" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 521px !important; border: none !important; overflow: hidden !important; top: 0px !important; min-width: 521px !important; max-width: 521px !important; position: fixed !important; z-index: 2147483646 !important; height: 18px !important; min-height: 18px !important; max-height: 18px !important; display: none !important;" src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/saved_resource(1).html"></iframe><iframe id="indicator-south" name="indicator-south" allowtransparency="true" frameborder="0" scrolling="no" tabindex="0" title="Disqus" style="width: 521px !important; border: none !important; overflow: hidden !important; bottom: 0px !important; min-width: 521px !important; max-width: 521px !important; position: fixed !important; z-index: 2147483646 !important; height: 18px !important; min-height: 18px !important; max-height: 18px !important; display: none !important;" src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/saved_resource(2).html"></iframe></div>
+
+
+<noscript>
+    Please enable JavaScript to view the &lt;a href="https://disqus.com/?ref_noscript" rel="nofollow"&gt;comments powered by Disqus.&lt;/a&gt;
+</noscript>
+            </div>
+
+                <div class="column is-4 pl-0">
+                                            <div class="sidebar-section">
+    <h5 class="heading is-5 has-icon">
+        <a href="https://laracasts.com/series/laravel-from-scratch-2017" class="inherits-color">
+            Laravel 5.4 From Scratch
+        </a>
+    </h5>
+
+    <ul class="condensed-episode-list">
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">01</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/1" class="episode-title">
+                    Laravel Installation and Composer
+
+                                    </a>
+
+                <span class="length">6:29</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">02</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/2" class="episode-title">
+                    Basic Routing and Views
+
+                                    </a>
+
+                <span class="length">4:58</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">03</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/3" class="episode-title">
+                    Laravel Valet is Your Best Friend
+
+                                    </a>
+
+                <span class="length">4:22</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">04</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/4" class="episode-title">
+                    Database Setup and Sequel Pro
+
+                                    </a>
+
+                <span class="length">2:36</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                is-active
+                
+            ">
+                <span class="position">05</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/5" class="episode-title">
+                    Pass Data to Your Views
+
+                                            <span class="icon icon-eye"></span>
+                                    </a>
+
+                <span class="length">5:11</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">06</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/6" class="episode-title">
+                    Working With the Query Builder
+
+                                    </a>
+
+                <span class="length">9:52</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">07</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/7" class="episode-title">
+                    Eloquent 101
+
+                                    </a>
+
+                <span class="length">12:48</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">08</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/8" class="episode-title">
+                    Controllers
+
+                                    </a>
+
+                <span class="length">4:31</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">09</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/9" class="episode-title">
+                    Route Model Binding
+
+                                    </a>
+
+                <span class="length">2:43</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">10</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/10" class="episode-title">
+                    Layouts and Structure
+
+                                    </a>
+
+                <span class="length">11:48</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">11</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/11" class="episode-title">
+                    Form Request Data and CSRF
+
+                                    </a>
+
+                <span class="length">20:47</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">12</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/12" class="episode-title">
+                    Form Validation 101
+
+                                    </a>
+
+                <span class="length">6:05</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">13</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/13" class="episode-title">
+                    Rendering Posts
+
+                                    </a>
+
+                <span class="length">7:23</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">14</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/14" class="episode-title">
+                    Laravel Mix and the Front-end
+
+                                    </a>
+
+                <span class="length">6:25</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">15</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/15" class="episode-title">
+                    Eloquent Relationships and Comments
+
+                                    </a>
+
+                <span class="length">5:58</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">16</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/16" class="episode-title">
+                    Add Comments
+
+                                    </a>
+
+                <span class="length">8:37</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">17</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/17" class="episode-title">
+                    Rapid Authentication and Configuration
+
+                                    </a>
+
+                <span class="length">9:13</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">18</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/18" class="episode-title">
+                    Associating With Users
+
+                                    </a>
+
+                <span class="length">5:10</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">19</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/19" class="episode-title">
+                    Associating With Users: Part 2
+
+                                    </a>
+
+                <span class="length">22:54</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">20</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/20" class="episode-title">
+                    Archives
+
+                                    </a>
+
+                <span class="length">0:00</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">21</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/21" class="episode-title">
+                    View Composers
+
+                                    </a>
+
+                <span class="length">5:05</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">22</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/22" class="episode-title">
+                    Testing 101
+
+                                    </a>
+
+                <span class="length">11:26</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">23</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/23" class="episode-title">
+                    DI, Auto-Resolution, and Repositories
+
+                                    </a>
+
+                <span class="length">7:41</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">24</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/24" class="episode-title">
+                    The Service Container
+
+                                    </a>
+
+                <span class="length">5:40</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">25</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/25" class="episode-title">
+                    Service Providers Explained
+
+                                    </a>
+
+                <span class="length">7:32</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">26</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/26" class="episode-title">
+                    Sending Email
+
+                                    </a>
+
+                <span class="length">5:41</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">27</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/27" class="episode-title">
+                    Markdown Mail
+
+                                    </a>
+
+                <span class="length">5:12</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">28</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/28" class="episode-title">
+                    Form Requests and Form Objects
+
+                                    </a>
+
+                <span class="length">5:36</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">29</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/29" class="episode-title">
+                    Session Handling and Flash Messaging
+
+                                    </a>
+
+                <span class="length">5:44</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">30</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/30" class="episode-title">
+                    Tags and Pivot Tables
+
+                                    </a>
+
+                <span class="length">6:58</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">31</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/31" class="episode-title">
+                    Sorting Posts By Tags
+
+                                    </a>
+
+                <span class="length">6:41</span>
+            </li>
+                    <li class="condensed-episode-list-item
+                
+                
+            ">
+                <span class="position">32</span>
+
+                <a href="https://laracasts.com/series/laravel-from-scratch-2017/episodes/32" class="episode-title">
+                    Eventing
+
+                                    </a>
+
+                <span class="length">9:09</span>
+            </li>
+            </ul>
+</div>
+
+                                            
+                    <div class="sidebar-section">
+        <h5 class="heading is-5 has-icon">
+            <img src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/label.svg" alt="Label" class="heading-icon">
+            Tags
+        </h5>
+
+        <ul class="is-flex">
+                            <li class="pbr-1">
+                    <a href="https://laracasts.com/index/laravel" class="tag is-primary">
+                        laravel
+                    </a>
+                </li>
+                            <li class="pbr-1">
+                    <a href="https://laracasts.com/index/database" class="tag is-primary">
+                        database
+                    </a>
+                </li>
+                    </ul>
+    </div>
+                </div>
+        </div>
+    </div>
+</div>
+
+<section class="footer-section top">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-5 wow fadeIn" data-wow-delay=".5s" style="visibility: hidden; animation-delay: 0.5s; animation-name: none;">
+                <h2 class="newsletter-heading pr-1-tablet has-text-centered-mobile">
+                    Want us to email you occasionally with Laracasts news?
+                </h2>
+            </div>
+
+            <div class="column is-6 is-offset-1">
+                <form id="newsletter-form" method="POST" action="https://laracasts.com/newsletters/subscribe"><div class="newsletter-signup control has-addons wow lightSpeedIn" style="visibility: hidden; animation-name: none;"><input class="input" type="email" name="email" placeholder="Enter Your Email" autocomplete="off" required=""><button type="submit" class="button is-outlined is-primary">Subscribe</button></div></form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="footer-section bottom">
+    <footer class="container">
+        <div class="columns mb-3">
+            <div class="column is-5">
+                <h2 class="mb-3">
+                    <img src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/logo-footer.png" alt="Laracasts" width="350" height="44.92">
+                </h2>
+
+                <p class="footer-description is-heavy mb-3">
+                    Lots of your peers think Laracasts is one of the best things ever.
+                    So buy Jeffrey lunch once a month, see for yourself, and massively
+                    level up your skills in the process.
+                </p>
+
+                <ul class="is-inline-flex w-100 is-justified-to-center-mobile">
+                    <li>
+                        <a href="http://facebook.com/laracasts" target="_blank">
+                            <span class="icon is-outlined o-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 167.657 167.657" style="enable-background:new 0 0 167.657 167.657;" xml:space="preserve">
+                                    <g>
+                                        <path d="M83.829,0.349C37.532,0.349,0,37.881,0,84.178c0,41.523,30.222,75.911,69.848,82.57v-65.081H49.626   v-23.42h20.222V60.978c0-20.037,12.238-30.956,30.115-30.956c8.562,0,15.92,0.638,18.056,0.919v20.944l-12.399,0.006   c-9.72,0-11.594,4.618-11.594,11.397v14.947h23.193l-3.025,23.42H94.026v65.653c41.476-5.048,73.631-40.312,73.631-83.154   C167.657,37.881,130.125,0.349,83.829,0.349z"></path>
+                                    </g>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://twitter.com/laracasts" target="_blank">
+                            <span class="icon is-outlined is-vertically-centered is-justified-to-center bg-black o-4">
+                                <svg viewBox="0 0 2000 1625.36" width="22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="m 1999.9999,192.4 c -73.58,32.64 -152.67,54.69 -235.66,64.61 84.7,-50.78 149.77,-131.19 180.41,-227.01 -79.29,47.03 -167.1,81.17 -260.57,99.57 C 1609.3399,49.82 1502.6999,0 1384.6799,0 c -226.6,0 -410.328,183.71 -410.328,410.31 0,32.16 3.628,63.48 10.625,93.51 -341.016,-17.11 -643.368,-180.47 -845.739,-428.72 -35.324,60.6 -55.5583,131.09 -55.5583,206.29 0,142.36 72.4373,267.95 182.5433,341.53 -67.262,-2.13 -130.535,-20.59 -185.8519,-51.32 -0.039,1.71 -0.039,3.42 -0.039,5.16 0,198.803 141.441,364.635 329.145,402.342 -34.426,9.375 -70.676,14.395 -108.098,14.395 -26.441,0 -52.145,-2.578 -77.203,-7.364 52.215,163.008 203.75,281.649 383.304,284.946 -140.429,110.062 -317.351,175.66 -509.5972,175.66 -33.1211,0 -65.7851,-1.949 -97.8828,-5.738 181.586,116.4176 397.27,184.359 628.988,184.359 754.732,0 1167.462,-625.238 1167.462,-1167.47 0,-17.79 -0.41,-35.48 -1.2,-53.08 80.1799,-57.86 149.7399,-130.12 204.7499,-212.41" style="fill:white"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="http://github.com/laracasts" target="_blank">
+                            <span class="icon is-outlined o-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="column is-2 is-offset-1 is-hidden-mobile">
+    <h5 class="heading is-5 in-caps">Learn</h5>
+
+    <ul class="footer-links-list">
+        <li><a href="https://laracasts.com/lessons">Library</a></li>
+        <li><a href="https://laracasts.com/index">Lesson Index</a></li>
+        <li><a href="https://laracasts.com/shop">Shop</a></li>
+        <li><a href="https://laracasts.com/recommended-reading">Books</a></li>
+        <li><a href="https://laracasts.com/join">Sign Up</a></li>
+         <li>
+             <a href="https://laracasts.com/login">
+                Sign In
+            </a>
+        </li>
+    </ul>
+</div>
+
+<div class="column is-2 is-hidden-mobile">
+    <h5 class="heading is-5 in-caps">Discuss</h5>
+
+    <ul class="footer-links-list">
+        <li><a href="https://laracasts.com/discuss">Forum</a></li>
+        <li><a href="https://laracasts.com/podcast">Laracasts Snippet</a></li>
+        <li><a href="http://laravelpodcast.com/">Laravel Podcast</a></li>
+        <li><a href="https://laracasts.com/contact">Support</a></li>
+    </ul>
+</div>
+
+<div class="column is-2 is-hidden-mobile">
+    <h5 class="heading is-5 in-caps">Extras</h5>
+
+    <ul class="footer-links-list">
+        <li><a href="https://laracasts.com/stats">Statistics</a></li>
+        <li><a href="https://laracasts.com/testimonials">Testimonials</a></li>
+        <li><a href="https://laracasts.com/faq">FAQ</a></li>
+        <li><a href="https://laracasts.com/community?orderBy=updated_at">Community Tutorials</a></li>
+        <li><a href="https://laracasts.com/feed">RSS</a></li>
+        <li><a href="https://larajobs.com/?partner=36#">Get a Job</a></li>
+    </ul>
+
+    <ul class="zeroed footer-links-list">
+        <li><a href="https://laracasts.com/privacy">Privacy</a></li>
+        <li><a href="https://laracasts.com/terms">Terms</a></li>
+    </ul>
+</div>
+
+        </div> <!-- end columns -->
+
+        <div class="columns hosting">
+            <div class="column is-5 is-bold has-text-centered-mobile">
+                © Laracasts 2017. All rights reserved. Yes, all of them. That means you, Todd.
+            </div>
+
+            <div class="column is-5 is-offset-2 has-text-right is-bold is-hidden-mobile">
+                Proudly hosted with <a href="https://forge.laravel.com/">Laravel Forge</a>
+                and <a href="https://www.digitalocean.com/?refcode=d2070a2d5f35">DigitalOcean</a>.
+            </div>
+        </div>
+    </footer>
+</section>
+</div>
+    <div id="user-notifications" class="panel" style="display: none"><h2 class="panel-heading has-icon"><svg id="icon-alarm" class="icon" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0V0z" fill="none"></path><path d="M10.01 21.01c0 1.1.89 1.99 1.99 1.99s1.99-.89 1.99-1.99h-3.98zm8.87-4.19V11c0-3.25-2.25-5.97-5.29-6.69v-.72C13.59 2.71 12.88 2 12 2s-1.59.71-1.59 1.59v.72C7.37 5.03 5.12 7.75 5.12 11v5.82L3 18.94V20h18v-1.06l-2.12-2.12zM16 13.01h-3v3h-2v-3H8V11h3V8h2v3h3v2.01z"></path></svg> Notifications</h2><div class="panel-block p-2"><form method="POST" action="https://laracasts.com/discuss/notifications/mentions" class="has-text-centered"><input type="hidden" name="_method" value="DELETE"> <input type="hidden" name="_token" value="yeVqDImXEUmvGg6AF5B3E9x6LSG95zHP5GufvVD1"><button type="submit" class="button is-outlined is-primary">Clear All Notifications</button></form></div></div>
+    <div class="modal is-medium "><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head is-primary"><h4 class="modal-card-title">Welcome Back!</h4><button class="delete"></button></header><div class="modal-card-body"><div slot="body"><form role="form" method="post" action="https://laracasts.com/sessions"><input type="hidden" name="_token" value="yeVqDImXEUmvGg6AF5B3E9x6LSG95zHP5GufvVD1"><div class="control"><input type="email" id="email" name="email" class="input" placeholder="Email" required=""></div><div class="control"><input type="password" id="password" name="password" class="input" placeholder="Password" required=""></div><button type="submit" class="button is-primary is-submit">Log In</button><div class="control" style="display: none;"><span class="help is-danger"></span></div></form></div></div><footer class="modal-card-foot"><a href="https://laracasts.com/join" class="is-muted in-caps mr-a fs-smaller">Sign Up! </a><a href="https://laracasts.com/password_resets/create" class="is-muted in-caps fs-smaller">Forgot Your Password?</a></footer></div><button class="modal-close"></button></div>
+</div> <!-- close #root div -->
+
+
+<script src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/algoliasearch.min.js.download"></script>
+<script src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/autocomplete.min.js.download"></script>
+
+
+<!-- Google Analytics -->
+<script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+
+    ga('create','UA-44120322-1');
+</script>
+
+<script src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/jquery.min.js.download"></script>
+<script src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/all.min.js.download"></script>
+
+<script>
+    ga('send', 'pageview');
+
+    $.ajaxSetup({
+        headers: {
+            'X-CSRF-TOKEN': LARACASTS.csrfToken
+        }
+    });
+</script>
+
+<script>
+    
+    
+    </script>
+    
+
+    <script>
+        var disqus_config = function () {
+            this.page.url = "https://laracasts.com/series/laravel-from-scratch-2017/episodes/5";
+            this.page.identifier = 967;
+        };
+
+        (function() {
+            if (typeof DISQUS == 'undefined') {
+                var d = document, s = d.createElement('script');
+
+                s.src = '//laracast.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            } else {
+                setTimeout(function () {
+                    DISQUS.reset({ reload: true });
+                }, 1000);
+            }
+        })();
+    </script>
+
+
+
+<iframe style="display: none;" src="./Laravel 5.4 From Scratch_ Pass Data to Your Views_files/saved_resource(3).html"></iframe></body></html>

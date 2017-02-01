@@ -53,9 +53,9 @@
                         Garagem privativa
                     </li>
                 </ul>
-            </div><!-- descricao --> 
+            </div><!-- atributos --> 
 
-            <div class="col-sm-5 info-preco">
+            <div class="col-sm-4 col-sm-offset-1 info-preco">
 
 <!--                <p class="descricao">
                     Uma suite exuberante e única, completa com piscina aquecida 
